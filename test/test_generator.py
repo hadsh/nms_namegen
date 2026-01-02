@@ -91,6 +91,8 @@ class TestGenerator(unittest.TestCase):
        # This tests against verified data from AGT
         with open("test/fixtures/system_names.json") as file:
             data = json.load(file)
+        e = len(data)
+        best = ()
         errors = []
         for system in data:
             portal_code = int(system[2], 16)
@@ -99,4 +101,3 @@ class TestGenerator(unittest.TestCase):
                 errors.append((system_name, system[0], system[2]))
         self.maxDiff = None
         self.assertEqual(errors, [])
-

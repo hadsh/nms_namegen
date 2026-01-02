@@ -71,7 +71,7 @@ def systemName(portal_code, galaxy):
 
     # Might have to tune the rng parameter here.
     # I'm not sure where the cutoff actually as yet
-    if rng.random(0x60) < 0x20:
+    if rng.random(0x0A) < 0x03:
         n = (rng.random(19)) + 1
         if n > 19:
             n == 19
