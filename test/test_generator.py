@@ -86,3 +86,17 @@ class TestGenerator(unittest.TestCase):
             name = systemName(code[0], code[1])
             print(f"{name} // {code[1]}")
             self.assertEqual(name, code[2])
+    
+    def test_AGT_data(self):
+       # This tests against verified data from AGT
+        with open("test/fixtures/system_names.json") as file:
+            data = json.load(file)
+        errors = []
+        for system in data:
+            portal_code = int(system[2], 16)
+            system_name = systemName(portal_code, 0)
+            if system_name != system[0]:
+                errors.append((system_name, system[0], system[2]))
+        self.maxDiff = None
+        self.assertEqual(errors, [])
+
