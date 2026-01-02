@@ -1,0 +1,19 @@
+# Pseudorandom number generator for NMS Namegen
+class PRNG:
+    MULTIPLIER = 0x5A76F899
+
+    def __init__(self, seed):
+        self.seed = seed
+
+    def _updateSeed(self):
+        self.seed = ((self.seed & 0xFFFFFFFF) * self.MULTIPLIER) + (self.seed >> 32)
+
+    # Returns a random integer from 0 to range-1
+    def random(self, range):
+        self._updateSeed()
+        return ((self.seed & 0xFFFFFFFF) * range) >> 32
+
+    # Returns eight bytes
+    def randi(self):
+        self._updateSeed()
+        return self.seed & 0xFFFFFFFF
