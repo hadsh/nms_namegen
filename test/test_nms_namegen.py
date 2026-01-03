@@ -15,12 +15,12 @@ class TestGenerator(unittest.TestCase):
                 pass
         self.assertEqual(buffer.getvalue(), "Yatiiat-Suz I\n")
 
-    @patch("sys.argv", ["nms_namegen.py", "sysem", "0001ff234533"])
+    @patch("sys.argv", ["nms_namegen.py", "system", "0001ff234533"])
     def test_main_with_missing_argument(self):
         with self.assertRaises(SystemExit) as co:
             namegen.main()
         self.assertEqual(co.exception.code, 1)
-
+    
     @patch("sys.argv", ["nms_namegen.py", "sysem", "0001ff234533", "120"])
     def test_main_with_bad_command(self):
         with self.assertRaises(SystemExit) as co:
