@@ -102,7 +102,6 @@ def generateName(rng, alphaset_index, min_length, max_length):
 
     register = rng.random(max_length - min_length + 0x01)
     register = register + min_length - 0x03
-    print(register + 3)
     add = register
 
     if register > 0:
