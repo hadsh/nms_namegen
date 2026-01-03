@@ -33,40 +33,42 @@ def systemName(portal_code, galaxy):
 
     rng = PRNG(seed)
 
-    cache1 = 0x000600
+    #cache1 = 0x000600
+    alphaset_index = 0x00
 
     # Sets the alphaset index (low byte of cache1)
     alphaset_reg = ((seed & 0xFFFFFFFF) * 0x5) >> 32
     if alphaset_reg == 0:
-        cache1 |= 0x02
+        alphaset_index = 0x02
     else:
         if (alphaset_reg & 0xFF) < 0x04:
-            cache1 |= (alphaset_reg & 0xFF) + 0x02
+            alphaset_index = (alphaset_reg & 0xFF) + 0x02
         else:
-            cache1 |= 0x07
+            alphaset_index = 0x07
 
     # Set high byte of cache1
-    cache1 = ((rng.random(4) + 0x06) << 16) | cache1
+    max_length = rng.random(4) + 0x06
 
-    name, w = generateName(rng, cache1)
+    name = generateName(rng, alphaset_index, 6, max_length)
     name = name.capitalize()
 
     # Hyphenated names
     if len(name) < 8:
         r = rng.random(4)
         if r < 2:
-            cache1 = 0x000300
-            cache1 |= (r + 5) << 16
             alphaset_reg = rng.random(5)
+            min_length = 3
+            max_length = 5
+
             if alphaset_reg == 0:
-                cache1 |= 0x02
+                alphaset_index = 0x02
             else:
                 if alphaset_reg < 4:
-                    cache1 |= alphaset_reg + 2
+                    alphaset_index = alphaset_reg + 2
                 else:
-                    cache1 |= 0x07
-
-            name2, cache1 = generateName(rng, cache1)
+                    alphaset_index = 0x07
+            
+            name2 = generateName(rng, alphaset_index, min_length, max_length)
             name = f"{name}-{name2.capitalize()}"
 
     # Might have to tune the rng parameter here.

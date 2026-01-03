@@ -89,21 +89,20 @@ def getConsecutiveConsonants(name):
     return -1
 
 
-def generateName(rng, cache1):
+def generateName(rng, alphaset_index, min_length, max_length):
     # Split cache1 into bytes
-    c10 = cache1 & 0xFF
-    c11 = (cache1 & 0x00FF00) >> 8
-    c12 = cache1 >> 16
+    # alphaset_index = cache1 & 0xFF
+    # min_length = (cache1 & 0x00FF00) >> 8
+    # max_length = cache1 >> 16
 
     alternateCharGetter = False
-    name = getCharactersFromAlphaset(rng, cache1)
+    name = getCharactersFromAlphaset(rng, alphaset_index)
     if rng.randi() & 0x01:
         alternateCharGetter = True
-    register = c12 - c11 + 0x01
-    register = rng.random(register)
-    register = register + c11 - 0x03
 
-    # How many letters left to add
+    register = rng.random(max_length - min_length + 0x01)
+    register = register + min_length - 0x03
+    print(register + 3)
     add = register
 
     if register > 0:
@@ -113,21 +112,19 @@ def generateName(rng, cache1):
 
         i = 0
         while i < register:
-            charWeights = getStringWeights(name[i : i + 3], c10)
+            charWeights = getStringWeights(name[i : i + 3], alphaset_index)
             target = rng.randi() * TINY_DOUBLE
             if charWeights is None:
                 tries -= 1
                 i -= 1
-                c10 = (c10 + 1) & 0x08000007
-                if c10 < 0:
-                    c10 = -c10
-
-                cache1 = (cache1 & 0xFFFF00) | c10
+                alphaset_index = (alphaset_index + 1) & 0x08000007 # Fixme
+                if alphaset_index < 0:
+                    alphaset_index = -alphaset_index
 
                 if tries == 0:
                     if add < 3:
                         break
-                    temp = getCharactersFromAlphaset(rng, c10)
+                    temp = getCharactersFromAlphaset(rng, alphaset_index)
 
                     if name[i + 2] in "aeiou" and temp[0] in "aeiou":
                         name += "'"
@@ -200,4 +197,4 @@ def generateName(rng, cache1):
         consonanceIndex += rng.random(3) + 1
         name = insertVowel(name, rng, consonanceIndex)
 
-    return name, cache1
+    return name

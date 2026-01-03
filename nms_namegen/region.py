@@ -60,10 +60,10 @@ def regionName(portal_code, galaxy):
     seed |= seed_h << 32
     rng = PRNG(seed)
 
-    cache1 = 0x000600
-    cache1 |= (rng.random(4) + 6) << 16
-
-    (name, cache1) = generateName(rng, cache1)
+    min_length = 6
+    max_length = rng.random(4) + 6
+    alphaset_index = 0
+    name = generateName(rng, alphaset_index, min_length, max_length)
     name = name.capitalize()
 
     if rng.random(0x64) < 0x50:
