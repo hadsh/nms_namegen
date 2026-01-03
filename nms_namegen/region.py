@@ -26,6 +26,7 @@ region_name_adornments = [
 CONST_A = 0x64DD81482CBD31D7
 CONST_B = 0xE36AA5C613612997
 
+
 # Returns a region name for No Man's Sky
 #
 # Parameters:

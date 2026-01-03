@@ -2,6 +2,7 @@ from nms_namegen.generator import generateName
 from nms_namegen.prng import PRNG
 import roman
 
+
 # Returns a system name for No Man's Sky
 #
 # Parameters:
@@ -33,7 +34,7 @@ def systemName(portal_code, galaxy):
 
     rng = PRNG(seed)
 
-    #cache1 = 0x000600
+    # cache1 = 0x000600
     alphaset_index = 0x00
 
     # Sets the alphaset index (low byte of cache1)
@@ -67,7 +68,7 @@ def systemName(portal_code, galaxy):
                     alphaset_index = alphaset_reg + 2
                 else:
                     alphaset_index = 0x07
-            
+
             name2 = generateName(rng, alphaset_index, min_length, max_length)
             name = f"{name}-{name2.capitalize()}"
 

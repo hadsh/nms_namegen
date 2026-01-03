@@ -1,31 +1,10 @@
 import unittest
-from nms_namegen.region import regionName
 from nms_namegen.system import systemName
+
 import json
 
 
-class TestGenerator(unittest.TestCase):
-    def test_region_name(self):
-        portal_code = 0x01FBFF285671
-        galaxy = 9
-        reg = regionName(portal_code, galaxy)
-        self.assertEqual("Jeffriy Instability", reg)
-
-    def test_5000_region_names(self):
-        # This tests against randomly generated region names from
-        # the SystemNameCalculator C sharp code.
-        with open("test/fixtures/region_names.json") as file:
-            data = json.load(file)
-        errors = []
-        for grf in data:
-            portal_code = int(grf, 16) & 0xFFFFFFFF
-            galaxy = int(grf, 16) >> 32
-            region = regionName(portal_code, galaxy)
-            if region != data[grf]:
-                errors.append((grf, data[grf], region))
-        self.maxDiff = 500
-        self.assertEqual(errors, [])
-
+class TestSystem(unittest.TestCase):
     def test_system_names(self):
         roman_codes = [
             [0x01FBFF285671, 9, "Aemilyinn XIX"],
@@ -41,7 +20,7 @@ class TestGenerator(unittest.TestCase):
             [0x01EDFF285671, 9, "Ohamno-Pavl"],
             [0x0007FF285671, 9, "Sachipp-Imhae"],
             [0x01A1FF285671, 9, "Essing-Agur"],
-            #[0x00420007A906, 0, "Oavslue-Kotyv"], Currently broken
+            # [0x00420007A906, 0, "Oavslue-Kotyv"], Currently broken
             [0x002FDCD6424D, 0, "Aakita-Ebre"],
         ]
 
@@ -63,36 +42,35 @@ class TestGenerator(unittest.TestCase):
             [0x01F8FF285671, 9, "Naheil-Aichi XI"],
         ]
 
-        print("--- plain ---")
+        # print("--- plain ---")
         for code in plain_codes:
             name = systemName(code[0], code[1])
-            print(f"{name} // {code[1]}")
+            # print(f"{name} // {code[1]}")
             self.assertEqual(name, code[2])
 
-        print("--- hyphen ---")
+        # print("--- hyphen ---")
         for code in hyphen_codes:
             name = systemName(code[0], code[1])
-            print(f"{name} // {code[1]}")
+            # print(f"{name} // {code[1]}")
             self.assertEqual(name, code[2])
 
-        print("--- roman ---")
+        # print("--- roman ---")
         for code in roman_codes:
             name = systemName(code[0], code[1])
-            print(f"{name} // {code[1]}")
+            # print(f"{name} // {code[1]}")
             self.assertEqual(name, code[2])
 
-        print("--- hyphen roman ---")
+        # print("--- hyphen roman ---")
         for code in hyphen_roman_codes:
             name = systemName(code[0], code[1])
-            print(f"{name} // {code[1]}")
+            # print(f"{name} // {code[1]}")
             self.assertEqual(name, code[2])
-    
+
     def test_AGT_data(self):
-       # This tests against verified data from AGT
+        # This tests against verified data from AGT
         with open("test/fixtures/system_names.json") as file:
             data = json.load(file)
-        e = len(data)
-        best = ()
+
         errors = []
         for system in data:
             portal_code = int(system[2], 16)
