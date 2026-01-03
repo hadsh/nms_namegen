@@ -24,10 +24,10 @@ galaxy being 255.
 
 Example: 
 
->
-> ./namegen.py system 03E9F3545C3E 0
-> Abarof-Dulin
->
+```bash
+ ./namegen.py system 03E9F3545C3E 0
+ #output: Abarof-Dulin
+```
 
 ## Caveats 
 As far as I can tell this generates the correct names for regions and 
