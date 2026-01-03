@@ -34,10 +34,7 @@ def systemName(portal_code, galaxy):
 
     rng = PRNG(seed)
 
-    # cache1 = 0x000600
     alphaset_index = 0x00
-
-    # Sets the alphaset index (low byte of cache1)
     alphaset_reg = ((seed & 0xFFFFFFFF) * 0x5) >> 32
     if alphaset_reg == 0:
         alphaset_index = 0x02
@@ -47,9 +44,7 @@ def systemName(portal_code, galaxy):
         else:
             alphaset_index = 0x07
 
-    # Set high byte of cache1
     max_length = rng.random(4) + 0x06
-
     name = generateName(rng, alphaset_index, 6, max_length)
     name = name.capitalize()
 

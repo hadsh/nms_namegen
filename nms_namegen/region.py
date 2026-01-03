@@ -39,7 +39,7 @@ CONST_B = 0xE36AA5C613612997
 #   XXX - X coordinate
 #
 #   Galaxy is the galaxy number starting with Euclid as 0.
-#
+#   
 def regionName(portal_code, galaxy):
     register = galaxy >> 1
     register ^= (galaxy << 32) | (portal_code & 0xFFFFFFFF)
