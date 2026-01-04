@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nms-namegen"
+version = "1.0.0"
+authors = [
+  { name="Stuart Coyle", email="stuart.coyle@proton.me" },
+]
+description = "Generates names for the game No Man's Sky"
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    
+]
+license = "MIT"
+license-files = ["LICENCE"]
+
+[project.urls]
+Homepage = "https://github.com/stuart/nms_namegen"
+Issues = "https://github.com/stuart/nms_namegen/issues"

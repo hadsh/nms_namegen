@@ -9,7 +9,13 @@ You may use the modules included in the /nms_namegen folder in your own work or 
 
 ## Installation 
 The project uses [Pipenv](https://pipenv.pypa.io/en/latest/)
+You can install dependecies with ```pipenv update```
+Or just use pip.
 
+## Dependencies
+This code requires only two dependencies:
+    - numpy ~=2.4
+    - roman ~=5.2
 
 ## Usage 
 
@@ -29,16 +35,26 @@ Example:
  #output: Abarof-Dulin
 ```
 
+```bash
+ ./namegen.py region 03E9F3545C3E 0
+ #output:Yihelli Quadrant
+```
+
 ## Caveats 
 As far as I can tell this generates the correct names for regions and 
 systems. The system name generation has been tested on a corpus of ~600 system names
 from AGT data. It differs only where a profanity filter has changed the system name.
+Of course it has no knowledge of system names that have been changed by travellers, it only provides the original naming.
 
 ## Development 
 The code was written by Stuart Coyle. 
 
 It is based on C Sharp code from [SystemNameCalculator](https://github.com/andraemon/SystemNameCalculator.git) by Andraemon.
 
-This code is 
+This code is independently produced and not associated with Hello Games. 
 
+## Thanks 
+Thanks go to Andraemon and (monkeyman192)[https://github.com/monkeyman192] for the original code this is based on. 
 
+Thanks to had of (had.sh)[https://had.sh/] and the (AGT)[https://www.nms-agt.com/] for supplying test data to enable 
+the extension of the system name code. 
