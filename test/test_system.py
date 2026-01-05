@@ -20,7 +20,7 @@ class TestSystem(unittest.TestCase):
             [0x01EDFF285671, 9, "Ohamno-Pavl"],
             [0x0007FF285671, 9, "Sachipp-Imhae"],
             [0x01A1FF285671, 9, "Essing-Agur"],
-            [0x00420007A906, 0, "Oavslue-Kotyv"], 
+            [0x00420007A906, 0, "Oavslue-Kotyv"],
             [0x002FDCD6424D, 0, "Aakita-Ebre"],
         ]
 
