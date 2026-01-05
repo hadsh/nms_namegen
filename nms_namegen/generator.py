@@ -32,7 +32,7 @@ TINY_DOUBLE = np.double(2.3283064370807974e-10)
 
 
 def getCharactersFromAlphaset(rng, cache1):
-    alphaset_index = cache1 & 0x07q
+    alphaset_index = cache1 & 0x07
     alphaset = ALPHASETS[alphaset_index]
     r = rng.random(len(alphaset) // 3) * 3
     return alphaset[r : r + 3]
