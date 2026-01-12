@@ -5,6 +5,7 @@ import json
 
 
 class TestSystem(unittest.TestCase):
+
     def test_system_names(self):
         roman_codes = [
             [0x01FBFF285671, 9, "Aemilyinn XIX"],

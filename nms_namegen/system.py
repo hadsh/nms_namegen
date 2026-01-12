@@ -20,7 +20,6 @@ def systemName(portal_code, galaxy):
     galacticCoords = portal_code & 0xFFFFFFFF
     systemIndex = ((portal_code & 0x0FFF00000000) >> 24) | galaxy
 
-    # Swap words
     rolCoords = ((galacticCoords & 0x0000FFFF) << 16) | (
         (galacticCoords & 0xFFFF0000) >> 16
     )

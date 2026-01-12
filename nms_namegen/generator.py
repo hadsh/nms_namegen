@@ -106,7 +106,7 @@ def generateName(rng, alphaset_index, min_length, max_length):
             if charWeights is None:
                 tries -= 1
                 i -= 1
-                alphaset_index = (alphaset_index + 1) & 0x08000007  # Fixme
+                alphaset_index = (alphaset_index + 1) & 0x08000007
                 if alphaset_index < 0:
                     alphaset_index = -alphaset_index
 
