@@ -92,31 +92,31 @@ def planetName(planet_seed):
     rng = PRNG(seed)
    
     adornment = rng.random(10) 
-    print(f"adornment: {hex(adornment)}")
+    #print(f"adornment: {hex(adornment)}")
     code  = (((rng.seed & 0xFFFFFFFF) * 50) >> 0x20) + 1
     shortcode = rng.random(0x1a) + 0x41
-    print(f"shortcode: ", bytes([shortcode]).decode("ascii"), hex(shortcode))   
+    #print(f"shortcode: ", bytes([shortcode]).decode("ascii"), hex(shortcode))   
     numeral = rng.random(0x12) + 2
-    print(f"numeral: {hex(numeral)}")
+    #print(f"numeral: {hex(numeral)}")
     var608 = 0x1f4
     digit = rng.random(0x09) + 1
-    print(f"digit: {hex(digit)}")
+    #print(f"digit: {hex(digit)}")
     alpha = rng.random(0x1a) + 0x41
-    print(f"alpha: {bytes([alpha]).decode("ascii")} {alpha}")
+    #print(f"alpha: {bytes([alpha]).decode("ascii")} {alpha}")
     longcode = rng.random(0x59) + 0xB
-    print(f"longcode: {hex(longcode)} {longcode}")
+    #print(f"longcode: {hex(longcode)} {longcode}")
 
     procnorm = generateName(rng, 7, 4, 8)
     procshort = generateName(rng, 5, 4, 5)
     proclong = generateName(rng, 7, 6, 10)
-    print(procnorm, procshort, proclong)
+    #print(procnorm, procshort, proclong)
 
     namegen_style = rng.random(9)
-    print(f"namegen Style: {hex(namegen_style)}") 
+    #print(f"namegen Style: {hex(namegen_style)}") 
 
     target = np.double(rng.randi()) * TINY_DOUBLE
     if not (np.double(0.0350000001) <= target):
-        print("TARGET > 0.035")
+        #print("TARGET > 0.035")
         namegen_style = 10
         # Do something?
         
@@ -130,6 +130,6 @@ def planetName(planet_seed):
     name = name.replace("%SHORTCODE%", format_shortcode(shortcode, code % 0x50))
     name = name.replace("%NUMERAL%", roman.toRoman(numeral))
     name = name.replace("%LONGCODE%", format_longcode(longcode, digit, alpha))
-    print(name)
-    print("========================================\n\n")
+    #print(name)
+    #print("========================================\n\n")
     return name
