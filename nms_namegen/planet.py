@@ -88,13 +88,14 @@ def planetName(planet_seed):
         seed = ((lowword + 1) * PRNG.MULTIPLIER) + rol16
     else:
         seed = (lowword * PRNG.MULTIPLIER) + rol16
-
+    
     rng = PRNG(seed)
-
+   
     adornment = rng.random(10) 
     print(f"adornment: {hex(adornment)}")
+    code  = ((rng.seed & 0xFFFFFFFF) * 52) >> 0x20
     shortcode = rng.random(0x1a) + 0x41
-    print(f"shortcode: ", hex(shortcode))   
+    print(f"shortcode: ", bytes([shortcode]).decode("ascii"), hex(shortcode))   
     numeral = rng.random(0x12) + 2
     print(f"numeral: {hex(numeral)}")
     var608 = 0x1f4
@@ -126,7 +127,7 @@ def planetName(planet_seed):
     name = name.replace("%PROCSHORT%", procshort.capitalize())
     name = name.replace("%PROCLONG%", proclong.capitalize())
     name = name.replace("%ADORNMENT%", adornments[adornment])
-    name = name.replace("%SHORTCODE%", format_shortcode(shortcode, "??"))
+    name = name.replace("%SHORTCODE%", format_shortcode(shortcode, code % 0x50))
     name = name.replace("%NUMERAL%", roman.toRoman(numeral))
     name = name.replace("%LONGCODE%", format_longcode(longcode, digit, alpha))
     print(name)
