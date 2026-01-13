@@ -93,7 +93,7 @@ def planetName(planet_seed):
    
     adornment = rng.random(10) 
     print(f"adornment: {hex(adornment)}")
-    code  = ((rng.seed & 0xFFFFFFFF) * 52) >> 0x20
+    code  = (((rng.seed & 0xFFFFFFFF) * 50) >> 0x20) + 1
     shortcode = rng.random(0x1a) + 0x41
     print(f"shortcode: ", bytes([shortcode]).decode("ascii"), hex(shortcode))   
     numeral = rng.random(0x12) + 2
