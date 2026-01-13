@@ -57,7 +57,18 @@ class TestPlanet(unittest.TestCase):
             [0x578CC780BAEB5C94, "Akotap XIX"],
             [0xB9FED597B2582A45, "Ophi X36"],
             [0x6F89A5F3C13E2F20, "Ristonor XIX"],
+            [0xF9DAFFE75B87C65, "Bedalmbe Major"],
+            [0x39222BFD8DEDE48A, "Hioscarpa Fujin"],
+            [0xC532445CDBDA396F, "New Ikasma"],
+            [0x9EBB56AF9E5A62BA, "Fuefu 84/X5"],
+            [0xE5A5CD32465CA2B9, "Liltons Toba"],
+            [0xC961CCCD7395E843, "Enbrigan"],
+            [0x6087656AFFF5A7CF, "Nafra"],
+            [0xB65706582461C369, "Arva Y35"],
+            [0x88D131C14DF00E25, "Stagitti V"],
         ]
+
+    
         errors = []
         for i in (seeds):
             name = planetName(i[0])
