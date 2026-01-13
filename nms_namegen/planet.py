@@ -30,7 +30,8 @@ styles = [
     "New %PROCNORM%",
     "%PROCNORM%",
     "%PROCNORM% %NUMERAL%",
-    "Style 9"
+    "Style 9",
+    "New %PROCNORM%" # Check this
 ]
 
 TINY_DOUBLE = np.double(2.3283064370807974e-10)
@@ -65,6 +66,13 @@ def planetSeed(portal_code, galaxy):
     return register
 
 
+def format_longcode(longcode, digit, alpha):
+    return f"{longcode}/{bytes([alpha]).decode("ascii")}{digit}"
+
+def format_shortcode(alpha, num):
+    # Shortcodes do not quite work yet. Cant work out where the numeral comes from. 
+    return f"{bytes([alpha]).decode("ascii")}{num}"
+
 # Returns a planet name given a planet seed. 
 def planetName(planet_seed):
     lowword = planet_seed & 0xFFFFFFFF
@@ -83,17 +91,19 @@ def planetName(planet_seed):
 
     rng = PRNG(seed)
 
-    adornment = rng.random(10) + 1
+    adornment = rng.random(10) 
     print(f"adornment: {hex(adornment)}")
     shortcode = rng.random(0x1a) + 0x41
-    print(f"shortcode: {hex(shortcode)}")   
+    print(f"shortcode: ", hex(shortcode))   
     numeral = rng.random(0x12) + 2
     print(f"numeral: {hex(numeral)}")
-    unknown = rng.random(0x09) + 1
-    print(f"unknown: {hex(unknown)}")
-    rng._updateSeed()
+    var608 = 0x1f4
+    digit = rng.random(0x09) + 1
+    print(f"digit: {hex(digit)}")
+    alpha = rng.random(0x1a) + 0x41
+    print(f"alpha: {bytes([alpha]).decode("ascii")} {alpha}")
     longcode = rng.random(0x59) + 0xB
-    print(f"longcode: {hex(longcode)}")
+    print(f"longcode: {hex(longcode)} {longcode}")
 
     procnorm = generateName(rng, 7, 4, 8)
     procshort = generateName(rng, 5, 4, 5)
@@ -103,21 +113,22 @@ def planetName(planet_seed):
     namegen_style = rng.random(9)
     print(f"namegen Style: {hex(namegen_style)}") 
 
-    target = rng.randi() * TINY_DOUBLE
-    if target > 0.0350000001:
+    target = np.double(rng.randi()) * TINY_DOUBLE
+    if not (np.double(0.0350000001) <= target):
         print("TARGET > 0.035")
+        namegen_style = 10
         # Do something?
-
+        
+        
     name = styles[namegen_style]
 
-
-    print(name)
     name = name.replace("%PROCNORM%", procnorm.capitalize())
     name = name.replace("%PROCSHORT%", procshort.capitalize())
     name = name.replace("%PROCLONG%", proclong.capitalize())
     name = name.replace("%ADORNMENT%", adornments[adornment])
-    name = name.replace("%SHORTCODE%", hex(shortcode))
+    name = name.replace("%SHORTCODE%", format_shortcode(shortcode, "??"))
     name = name.replace("%NUMERAL%", roman.toRoman(numeral))
-    name = name.replace("%LONGCODE%", hex(longcode))
-   
+    name = name.replace("%LONGCODE%", format_longcode(longcode, digit, alpha))
+    print(name)
+    print("========================================\n\n")
     return name

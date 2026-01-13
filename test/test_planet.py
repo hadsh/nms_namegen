@@ -36,4 +36,32 @@ class TestPlanet(unittest.TestCase):
         planet_seed = 0x1079D1B212B1D8C4
         self.assertEqual(planetName(planet_seed), "Onnett V")
    
- 
+    def test_planet_name_7(self):
+        planet_seed = 0x24755ED15910B159
+        self.assertEqual(planetName(planet_seed), "Liyoneh Minor")
+
+    def test_planet_name_8(self):
+        planet_seed = 0xCC997F1AE2B093A6
+        self.assertEqual(planetName(planet_seed), "New Retcolyn")
+
+    def test_planet_names(self):
+        seeds = [
+            [0xD3C191A9D28534E9, "Iacre V"],
+            [0x42479ECA7A3B9205, "Kotos 34/G8"],
+            [0xD8AE4871B9EEF06D, "Kuki 23/D1"],
+            [0x71DA29B088E68D53, "Roton XIX"],
+            [0xF9C70249A94306ED, "Wobur IV"],
+            [0xC871D1C804AE93EB, "Diadusis H29"],
+            [0x1219707B3711D500, "Lathes K28"],
+            [0x9E6038BFFE8D797B, "Mazu 39/G7"],
+            [0x578CC780BAEB5C94, "Akotap XIX"],
+            [0xB9FED597B2582A45, "Ophi X36"],
+            [0x6F89A5F3C13E2F20, "Ristonor XIX"],
+        ]
+        errors = []
+        for i in (seeds):
+            name = planetName(i[0])
+            if(name != i[1]):
+                errors.append((i[1], name))
+
+        self.assertEqual([], errors)
