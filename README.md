@@ -28,7 +28,16 @@ Portal code must be the 12 hexadecimal (0-F) digit portal code. For systems the 
 The galaxy id is the galaxy number with Euclid starting at 0 and the last
 galaxy being 255.
 
-Example: 
+For planet names the command is: 
+
+*namegen.py planet planet_seed* 
+
+The *planet_seed* is a 16 digit hexadecimal seed. 
+You can find them in save files under BaseContext -> PlayerStateData -> PlanetSeeds
+
+Currently I have not worked out any way to dermine planet seeds given portal_code and galaxy.
+
+Examples: 
 
 ```bash
  ./namegen.py system 03E9F3545C3E 0
@@ -40,11 +49,19 @@ Example:
  #output:Yihelli Quadrant
 ```
 
+```bash
+./namegen.py planet 0xC911CCCD7395E842
+ #output:Nutsvill
+```
+(I like when I find a funny name!)
+
 ## Caveats 
 As far as I can tell this generates the correct names for regions and 
 systems. The system name generation has been tested on a corpus of ~600 system names
 from AGT data. It differs only where a profanity filter has changed the system name.
-Of course it has no knowledge of system names that have been changed by travellers, it only provides the original naming.
+Planet names have not been as thoroughly tested yet. If someone has a load of correct planet_code, name pairs they
+want to share, I'd be happy. 
+Of course it has no knowledge of system names that have been changed by travellers, it only provides the original naming. 
 
 ## Development 
 The code was written by Stuart Coyle. 
