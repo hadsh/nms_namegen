@@ -17,8 +17,8 @@ class PRNG:
     def randi(self):
         self._updateSeed()
         return self.seed & 0xFFFFFFFF
-   
-   # Returns sixteen random bytes
+
+    # Returns sixteen random bytes
     def randl(self):
         self._updateSeed()
         return self.seed & 0xFFFFFFFFFFFFFFFF

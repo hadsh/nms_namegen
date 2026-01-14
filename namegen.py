@@ -5,6 +5,7 @@ from nms_namegen.system import systemName
 from nms_namegen.region import regionName
 from nms_namegen.planet import planetName
 
+
 def usage():
     print("Usage:")
     print("\tnms_namegen.py command portal_code galaxy")
@@ -15,7 +16,9 @@ def usage():
     print("")
     print("\tnms_namegen.py planet planet_code")
     print("")
-    print("planet_seed is a hexadecimal number of 16 digits. You can find them in save files.")
+    print(
+        "planet_seed is a hexadecimal number of 16 digits. You can find them in save files."
+    )
     print("planet name generation from portal codes is not yet supported.")
 
 
@@ -47,7 +50,7 @@ def main():
     except ValueError:
         print("Invalid portal code or planet_seed", sys.argv[2], file=sys.stderr)
         sys.exit(2)
-    
+
     if command in ["system", "region"]:
         try:
             galaxy = int(sys.argv[3])

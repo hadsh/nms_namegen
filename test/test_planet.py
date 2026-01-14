@@ -1,7 +1,5 @@
 import unittest
-from nms_namegen.planet import planetName, planetSeed
-
-import json
+from nms_namegen.planet import planetName
 
 
 class TestPlanet(unittest.TestCase):
@@ -13,13 +11,13 @@ class TestPlanet(unittest.TestCase):
     #     self.assertEqual(hex(seed), hex(planet_seed))
 
     def test_planet_name(self):
-        planet_seed = 0x6AC66FF304FA712A # Risidosiu X
-        self.assertEqual(planetName(planet_seed), "Risidosiu X")    
-    
+        planet_seed = 0x6AC66FF304FA712A
+        self.assertEqual(planetName(planet_seed), "Risidosiu X")
+
     def test_planet_name_2(self):
         planet_seed = 0x5AFEFB83E5EE3F6F
         self.assertEqual(planetName(planet_seed), "Nobern")
-     
+
     def test_planet_name_3(self):
         planet_seed = 0x770122D46A4D41B8
         self.assertEqual(planetName(planet_seed), "Thyonica Rioka")
@@ -35,7 +33,7 @@ class TestPlanet(unittest.TestCase):
     def test_planet_name_6(self):
         planet_seed = 0x1079D1B212B1D8C4
         self.assertEqual(planetName(planet_seed), "Onnett V")
-   
+
     def test_planet_name_7(self):
         planet_seed = 0x24755ED15910B159
         self.assertEqual(planetName(planet_seed), "Liyoneh Minor")
@@ -68,11 +66,10 @@ class TestPlanet(unittest.TestCase):
             [0x88D131C14DF00E25, "Stagitti V"],
         ]
 
-    
         errors = []
-        for i in (seeds):
+        for i in seeds:
             name = planetName(i[0])
-            if(name != i[1]):
+            if name != i[1]:
                 errors.append((i[1], name))
 
         self.assertEqual([], errors)

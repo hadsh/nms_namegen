@@ -26,7 +26,7 @@ region_name_adornments = [
 
 
 CONST_A = 0x64DD81482CBD31D7
-CONST_B = 0xE36AA5C613612997 # -0x1c955a39ec9ed669
+CONST_B = 0xE36AA5C613612997  # -0x1c955a39ec9ed669
 
 
 # Returns a region name for No Man's Sky
@@ -42,6 +42,7 @@ CONST_B = 0xE36AA5C613612997 # -0x1c955a39ec9ed669
 #
 #   Galaxy is the galaxy number starting with Euclid as 0.
 #   grf: PSSSGGYYZZZXXX
+
 
 def regionName(portal_code, galaxy):
     register = galaxy >> 1
