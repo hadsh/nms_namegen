@@ -65,3 +65,12 @@ class TestGenerator(unittest.TestCase):
             except SystemExit:
                 pass
         self.assertEqual(buffer.getvalue(), "Akotap XIX\n")
+    
+    @patch("sys.argv", ["nms_namegen.py", "planet", "0x1003ff285671", "9", "4"])
+    def test_main_planet_from_portal_code_command(self):
+        with redirect_stdout(StringIO()) as buffer:
+            try:
+                namegen.main()
+            except SystemExit:
+                pass
+        self.assertEqual(buffer.getvalue(), "Bedalmbe Tau\n")

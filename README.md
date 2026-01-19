@@ -23,7 +23,8 @@ This code requires only two dependencies:
 
 command is one of: *system*, *region* or *help* 
 
-Portal code must be the 12 hexadecimal (0-F) digit portal code. For systems the first digit (planet id) is ignored, just set it to 0 if you want. For regions the first four digits are ignored (planet and system id)
+Portal code must be the 12 hexadecimal (0-F) digit portal code. For systems the first digit (planet id) is ignored, just set it to 0 if you want. For regions the first four digits are ignored (planet and system id) 
+Portal code format is PSSSYYZZZXXX.
 
 The galaxy id is the galaxy number with Euclid starting at 0 and the last
 galaxy being 255.
@@ -35,7 +36,20 @@ For planet names the command is:
 The *planet_seed* is a 16 digit hexadecimal seed. 
 You can find them in save files under BaseContext -> PlayerStateData -> PlanetSeeds
 
-Currently I have not worked out any way to dermine planet seeds given portal_code and galaxy.
+    or try:
+
+*namegen.py planet portal_code galaxy_id n_planets*
+
+Where the *portal_code* is in the form PSSSYYZZZXXX where p is the planet number.
+The galaxy id is the galaxy number with Euclid starting at 0 and the last
+galaxy being 255. 
+*n_planets* is the total number of planets in the system. If left out this will
+default to 6 and the code may give incorrect results. 
+__The planet naming functionality is a work in progress and is known to fail on planets
+in systems that have moons.__
+
+I'm working on getting the n_planets correctly calculated by the code, but this is a 
+difficult task. 
 
 Examples: 
 
@@ -53,7 +67,11 @@ Examples:
 ./namegen.py planet 0xC911CCCD7395E842
  #output:Nutsvill
 ```
-(I like when I find a funny name!)
+
+```bash
+./namegen.py planet 1001ff218345 4 4
+#output:Lirr XVIII
+```
 
 ## Caveats 
 As far as I can tell this generates the correct names for regions and 

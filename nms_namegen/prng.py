@@ -7,6 +7,7 @@ class PRNG:
 
     def _updateSeed(self):
         self.seed = ((self.seed & 0xFFFFFFFF) * self.MULTIPLIER) + (self.seed >> 32)
+        #print(f"PRNG seed: {hex(self.seed)}")
 
     # Returns a random integer from 0 to range-1
     def random(self, range):

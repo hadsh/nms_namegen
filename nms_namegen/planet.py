@@ -7,7 +7,6 @@ CONST_A = 0x64DD81482CBD31D7
 CONST_B = 0xE36AA5C613612997
 
 adornments = [
-    "",
     "Prime",
     "Major",
     "Minor",
@@ -17,7 +16,7 @@ adornments = [
     "Delta",
     "Omega",
     "Sigma",
-    "Tau",
+    "Tau"
 ]
 
 styles = [
@@ -28,7 +27,7 @@ styles = [
     "%PROCLONG% %PROCSHORT%",
     "%PROCSHORT% %LONGCODE%",
     "New %PROCNORM%",
-    "%PROCNORM%",
+    "%PROCNORM% %ADORNMENT%",
     "%PROCNORM% %NUMERAL%",
     "Style 9",
     "New %PROCNORM%",  # Check this
@@ -39,9 +38,60 @@ TINY_DOUBLE = np.double(2.3283064370807974e-10)
 
 # TODO: Is it possible to generate a planet seed from portal_code + galaxy?
 # It should be but seems to be very convoluted.
-def planetSeed(portal_code, galaxy):
-    planet_seed = 0
-    return planet_seed
+def planetSeed(portal_code, galaxy, n_planets = 6):
+    result = 0
+    galacticCoords = portal_code & 0xFFFFFFFF
+    systemIndex = ((portal_code & 0x0FFF00000000) >> 24) | galaxy
+    planet_id = (portal_code & 0xF00000000000) >> 44
+    register = (systemIndex << 0x20) | galacticCoords
+    register = ((register >> 33) ^ register) * CONST_A
+    register &= 0xFFFFFFFFFFFFFFFF
+    register = ((register >> 33) ^ register) * CONST_B
+    register &= 0xFFFFFFFFFFFFFFFF
+    register = (register >> 33) ^ register
+
+    seed_h = (
+        (((register & 0xFFFF0000) >> 16) | ((register & 0x0000FFFF) << 16))
+        ^ (register & 0xFFFFFFFF)
+        ^ (register >> 32)
+    )
+    seed_l = register & 0xFFFFFFFF
+    if seed_h == 0:
+        seed_h = 1
+
+    seed = seed_h << 32 | seed_l
+    rng = PRNG(seed) 
+
+    for i in range(n_planets - 1):
+        size = rng.random(3)
+        if(size == 0):
+            # We just need a call to update seed here.
+            rng._updateSeed()
+
+    for i in range(n_planets - 1):
+        low = rng.randi() & 0xFFFFFFFF
+        high = rng.randi() & 0xFFFFFFFF
+        
+        register = (high << 0x20) | low
+        register = ((register >> 33) ^ register) * CONST_A
+        register &= 0xFFFFFFFFFFFFFFFF
+        register = ((register >> 33) ^ register) * CONST_B
+        register &= 0xFFFFFFFFFFFFFFFF
+        if i == planet_id - 1:
+            return (register >> 33) ^ register
+        
+    # Extra planet
+    size = rng.random(3)
+    low = rng.randi() & 0xFFFFFFFF
+    high = rng.randi() & 0xFFFFFFFF
+        
+    register = (high << 0x20) | low
+    register = ((register >> 33) ^ register) * CONST_A
+    register &= 0xFFFFFFFFFFFFFFFF
+    register = ((register >> 33) ^ register) * CONST_B
+    register &= 0xFFFFFFFFFFFFFFFF
+    
+    return (register >> 33) ^ register
 
 
 def format_longcode(longcode, digit, alpha):
@@ -54,7 +104,11 @@ def format_shortcode(alpha, num):
 
 
 # Returns a planet name given a planet seed.
-def planetName(planet_seed):
+def planetName(planet_seed_or_code, galaxy = None, n_planets = None):
+    planet_seed = planet_seed_or_code
+    if galaxy is not None and n_planets is not None:
+        planet_seed = planetSeed(planet_seed_or_code, galaxy, n_planets)
+
     lowword = planet_seed & 0xFFFFFFFF
     highword = planet_seed >> 32
 
@@ -68,10 +122,9 @@ def planetName(planet_seed):
         seed = (lowword * PRNG.MULTIPLIER) + rol16
 
     rng = PRNG(seed)
-
-    adornment = rng.random(10)
-    # print(f"adornment: {hex(adornment)}")
-    code = (((rng.seed & 0xFFFFFFFF) * 50) >> 0x20) + 1
+    adornment = ((rng.seed & 0xFFFFFFFF) * 10) >> 0x20
+    #print(f"adornment: {hex(adornment)}")
+    code = rng.random(50) + 1
     shortcode = rng.random(0x1A) + 0x41
     # print(f"shortcode: ", bytes([shortcode]).decode("ascii"), hex(shortcode))
     numeral = rng.random(0x12) + 2
@@ -89,7 +142,7 @@ def planetName(planet_seed):
     # print(procnorm, procshort, proclong)
 
     namegen_style = rng.random(9)
-    # print(f"namegen Style: {hex(namegen_style)}")
+    # print(f"namegen Style: {hex(namegen_style)} {styles[namegen_style]}")
 
     target = np.double(rng.randi()) * TINY_DOUBLE
     if not (np.double(0.0350000001) <= target):
