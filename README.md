@@ -19,7 +19,7 @@ This code requires only two dependencies:
 
 ## Usage 
 
-    *namegen.py command portal_code galaxy_id*
+    namegen.py command portal_code galaxy_id
 
 command is one of: *system*, *region* or *help* 
 
@@ -31,14 +31,14 @@ galaxy being 255.
 
 For planet names the command is: 
 
-    *namegen.py planet planet_seed* 
+    namegen.py planet planet_seed 
 
 The *planet_seed* is a 16 digit hexadecimal seed. 
 You can find them in save files under BaseContext -> PlayerStateData -> PlanetSeeds
 
 or try:
 
-    *namegen.py planet portal_code galaxy_id n_planets*
+    namegen.py planet portal_code galaxy_id n_planets
 
 Where the *portal_code* is in the form PSSSYYZZZXXX where p is the planet number.
 The galaxy id is the galaxy number with Euclid starting at 0 and the last
