@@ -35,14 +35,15 @@ styles = [
 
 TINY_DOUBLE = np.double(2.3283064370807974e-10)
 
-
-# TODO: Is it possible to generate a planet seed from portal_code + galaxy?
-# It should be but seems to be very convoluted.
-def planetSeed(portal_code, galaxy, n_planets = 6):
+# Need to work out how to get n_planets and n_prime_planets from the 
+# generator. n_prime_planets is either 1 or 0. 
+def planetSeed(portal_code, galaxy, n_planets, n_prime_planets = 0):
+    planet_seeds = []
     result = 0
     galacticCoords = portal_code & 0xFFFFFFFF
     systemIndex = ((portal_code & 0x0FFF00000000) >> 24) | galaxy
     planet_id = (portal_code & 0xF00000000000) >> 44
+
     register = (systemIndex << 0x20) | galacticCoords
     register = ((register >> 33) ^ register) * CONST_A
     register &= 0xFFFFFFFFFFFFFFFF
@@ -62,13 +63,39 @@ def planetSeed(portal_code, galaxy, n_planets = 6):
     seed = seed_h << 32 | seed_l
     rng = PRNG(seed) 
 
-    for i in range(n_planets - 1):
-        size = rng.random(3)
-        if(size == 0):
-            # We just need a call to update seed here.
-            rng._updateSeed()
+    i = 0
+    r10_1 = 0
 
-    for i in range(n_planets - 1):
+    while(i < n_planets):
+        i_2 = i # index
+        i += 1  # next index
+        size = rng.random(3)
+        #print(size)
+        r10_1 += 1 # count
+
+        if(size == 0):
+            # This is a large planet
+            # Add 1 or 2 moons.
+            r9_2 = 0
+            m = n_planets - i
+            if m < 0: m = 0
+            if m > 2: m = 2 
+
+            n_moons = rng.random(m + 1)
+            #print("moons", n_moons)
+            if n_moons > 0:
+                #rcx_25 = &lOutput_1->maiPlanetParentIndices.maArray[r10_1];
+                while(i != 0):
+                    #print(3)
+                    i += 1
+                    # set index to i_2 
+                    r10_1 += 1 # add one to count
+                    n_moons -= 1
+                    if(n_moons <= 0):
+                        break
+
+    i = 0
+    while(i < n_planets):
         low = rng.randi() & 0xFFFFFFFF
         high = rng.randi() & 0xFFFFFFFF
         
@@ -77,21 +104,48 @@ def planetSeed(portal_code, galaxy, n_planets = 6):
         register &= 0xFFFFFFFFFFFFFFFF
         register = ((register >> 33) ^ register) * CONST_B
         register &= 0xFFFFFFFFFFFFFFFF
-        if i == planet_id - 1:
-            return (register >> 33) ^ register
-        
+        p_seed = (register >> 33) ^ register
+        planet_seeds.append(p_seed)
+        i += 1
+
     # Extra planet
-    size = rng.random(3)
-    low = rng.randi() & 0xFFFFFFFF
-    high = rng.randi() & 0xFFFFFFFF
-        
-    register = (high << 0x20) | low
-    register = ((register >> 33) ^ register) * CONST_A
-    register &= 0xFFFFFFFFFFFFFFFF
-    register = ((register >> 33) ^ register) * CONST_B
-    register &= 0xFFFFFFFFFFFFFFFF
+    rng._updateSeed()
+    #print(i, n_planets, n_prime_planets)
+    while(i < (n_planets + n_prime_planets) and n_planets < 5):   
+        low = rng.randi() & 0xFFFFFFFF
+        high = rng.randi() & 0xFFFFFFFF
+        size = rng.random(3)
+        register = (high << 0x20) | low
+        register = ((register >> 33) ^ register) * CONST_A
+        register &= 0xFFFFFFFFFFFFFFFF
+        register = ((register >> 33) ^ register) * CONST_B
+        register &= 0xFFFFFFFFFFFFFFFF
+        p_seed = (register >> 33) ^ register
+        planet_seeds.append(p_seed)
+        i+=1
+        if(size == 0):
+            # This is a large planet
+            # Add 1 or 2 moons.
+            r9_2 = 0
+            m = n_planets - i
+            if m < 0: m = 0
+            if m > 2: m = 2 
+
+            n_moons = rng.random(m + 1)
+            #print("moons", n_moons)
+            if n_moons > 0:
+                #rcx_25 = &lOutput_1->maiPlanetParentIndices.maArray[r10_1];
+                while(i != 0):
+                    #print(3)
+                    i += 1
+                    # set index to i_2 
+                    r10_1 += 1 # add one to count
+                    n_moons -= 1
+                    if(n_moons <= 0):
+                        break
     
-    return (register >> 33) ^ register
+    #print(list(map(lambda x: hex(x), planet_seeds)))
+    return planet_seeds[planet_id - 1]
 
 
 def format_longcode(longcode, digit, alpha):

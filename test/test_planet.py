@@ -5,67 +5,61 @@ from nms_namegen.planet import planetName, planetSeed
 class TestPlanet(unittest.TestCase):
     # # WIP
     def test_planet_seed(self):
-        # Gamumu system
+    #     # Gamumu system
         planet_seed = 0x6087656AFFF5A7CF
-        seed = planetSeed(0x115EFF285671, 9, 3)
+        seed = planetSeed(0x115EFF285671, 9, 2, 1)
         self.assertEqual(hex(seed), hex(planet_seed))
 
         planet_seed = 0xB65706582461C369
-        seed = planetSeed(0x215EFF285671, 9, 3)
+        seed = planetSeed(0x215EFF285671, 9, 2, 1)
         self.assertEqual(hex(seed), hex(planet_seed))
 
         planet_seed = 0x88D131C14DF00E25
-        seed = planetSeed(0x315EFF285671, 9, 3)
+        seed = planetSeed(0x315EFF285671, 9, 2, 1)
         self.assertEqual(hex(seed), hex(planet_seed))
 
     def test_planet_seed_2(self):
         # Sefielde system
         planet_seed = 0x5777F1C8A290BDF4
-        seed = planetSeed(0x1094FF4185BA, 0, 4)
+        seed = planetSeed(0x1094FF4185BA, 0, 3, 1)
         self.assertEqual(hex(seed), hex(planet_seed))
 
         planet_seed = 0xAF013A23FEE67C33
-        seed = planetSeed(0x2094FF4185BA, 0, 4)
+        seed = planetSeed(0x2094FF4185BA, 0, 3 , 1)
         self.assertEqual(hex(seed), hex(planet_seed))
 
         planet_seed = 0xA70E3A6BA5AF2A0
-        seed = planetSeed(0x3094FF4185BA, 0, 4)
+        seed = planetSeed(0x3094FF4185BA, 0, 3, 1)
         self.assertEqual(hex(seed), hex(planet_seed))
 
         planet_seed = 0x75879E53D547CC8F
-        seed = planetSeed(0x4094FF4185BA, 0, 4)
+        seed = planetSeed(0x4094FF4185BA, 0, 3, 1)
         self.assertEqual(hex(seed), hex(planet_seed))
    
     def test_planet_seed_3(self):
         # Xohille system 3 planets 3 moons
         planet_seed = 0xF9DAFFE75B87C65
-        seed = planetSeed(0x1003ff285671, 9, 4)
-        print(planetName(seed), planetName(planet_seed))
+        seed = planetSeed(0x1003ff285671, 9, 6, 0)
         self.assertEqual(hex(seed), hex(planet_seed))
 
         planet_seed = 0x39222BFD8DEDE48A
-        seed = planetSeed(0x2003ff285671, 9, 4)
-        print(planetName(seed), planetName(planet_seed))
+        seed = planetSeed(0x2003ff285671, 9, 6, 0)
         self.assertEqual(hex(seed), hex(planet_seed))
 
         planet_seed = 0xC532445CDBDA396F
-        seed = planetSeed(0x3003ff285671, 9, 4)
-        print(planetName(seed), planetName(planet_seed))
+        seed = planetSeed(0x3003ff285671, 9, 6, 0)
         self.assertEqual(hex(seed), hex(planet_seed))
 
         planet_seed = 0x9EBB56AF9E5A62BA
-        seed = planetSeed(0x4003ff285671, 9, 4)
-        print(planetName(seed), planetName(planet_seed))
+        seed = planetSeed(0x4003ff285671, 9, 6, 0)
         self.assertEqual(hex(seed), hex(planet_seed))
 
         planet_seed = 0xE5A5CD32465CA2B9
-        seed = planetSeed(0x5003ff285671, 9, 4)
-        print(planetName(seed), planetName(planet_seed))
+        seed = planetSeed(0x5003ff285671, 9, 6, 0)
         self.assertEqual(hex(seed), hex(planet_seed))
 
         planet_seed = 0xC961CCCD7395E843
-        seed = planetSeed(0x6003ff285671, 9, 4)
-        print(planetName(seed), planetName(planet_seed))
+        seed = planetSeed(0x6003ff285671, 9, 6, 0)
         self.assertEqual(hex(seed), hex(planet_seed))
 
    
@@ -141,7 +135,7 @@ class TestPlanet(unittest.TestCase):
 
     def test_planet_name_from_portal_code(self):
        name = planetName(0x115EFF285671, 9, 3)
-       self.assertEqual(name, "Nafra")
+       self.assertEqual(name, "Arva Y35")
     
     def test_planet_name_from_portal_code_2(self):
        name = planetName(0x1001FF285671, 9, 2)
