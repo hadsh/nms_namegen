@@ -38,18 +38,11 @@ You can find them in save files under BaseContext -> PlayerStateData -> PlanetSe
 
 or try:
 
-    namegen.py planet portal_code galaxy_id n_planets
+    namegen.py planet portal_code galaxy_id 
 
 Where the *portal_code* is in the form PSSSYYZZZXXX where p is the planet number.
 The galaxy id is the galaxy number with Euclid starting at 0 and the last
-galaxy being 255. 
-*n_planets* is the total number of planets in the system. If left out this will
-default to 6 and the code may give incorrect results. 
-__The planet naming functionality is a work in progress and is known to fail on planets
-in systems that have moons.__
-
-I'm working on getting the n_planets correctly calculated by the code, but this is a 
-difficult task. 
+galaxy being 255. This now should work with the latest update.
 
 Examples: 
 
@@ -65,12 +58,12 @@ Examples:
 
 ```bash
 ./namegen.py planet 0xC911CCCD7395E842
- #output:Nutsvill
+ #output:Nutsvill Sigma
 ```
 
 ```bash
-./namegen.py planet 1001ff218345 4 4
-#output:Lirr XVIII
+./namegen.py planet 1001ff218345 4
+#output:Edershar K25
 ```
 
 ## Caveats 
