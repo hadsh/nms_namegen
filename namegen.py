@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 
 import sys
-from nms_namegen.system import systemName
+from nms_namegen.system import systemName, systemAttributes
 from nms_namegen.region import regionName
 from nms_namegen.planet import planetName
-
 
 def usage():
     print("Usage:")

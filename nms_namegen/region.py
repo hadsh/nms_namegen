@@ -25,7 +25,6 @@ region_name_adornments = [
     "{} Shallows",
 ]
 
-
 CONST_A = 0x64DD81482CBD31D7
 CONST_B = 0xE36AA5C613612997  # -0x1c955a39ec9ed669
 

@@ -8,17 +8,9 @@ class TestSystemAttributes(unittest.TestCase):
         self.assertDictEqual(
             system_attributes,
             {
-                "abandoned": False,
-                "conflict_level": "Low",
-                "name": "Ancest-Yadn",
-                "pirate": False,
                 "planet_count": 3,
                 "prime_planet_count": 1,
-                "race": "Gek",
                 "safe_start_planet": 1,
-                "star_type": "Yellow",
-                "trade_class": "Scientific",
-                "wealth": 0,
             },
         )
 
@@ -27,17 +19,9 @@ class TestSystemAttributes(unittest.TestCase):
         self.assertDictEqual(
             system_attributes,
             {
-                "abandoned": False,
-                "conflict_level": "High",
-                "name": "Itbyopar",
-                "pirate": False,
                 "planet_count": 3,
                 "prime_planet_count": 2,
-                "race": "Korvax",
                 "safe_start_planet": 1,
-                "star_type": "Yellow",
-                "trade_class": "Power Generation",
-                "wealth": 1,
             },
         )
 
@@ -46,17 +30,9 @@ class TestSystemAttributes(unittest.TestCase):
         self.assertDictEqual(
             system_attributes,
             {
-                "abandoned": False,
-                "conflict_level": "Default",
-                "name": "Xohille",
-                "pirate": False,
                 "planet_count": 6,
                 "prime_planet_count": 0,
-                "race": "Vy'keen",
                 "safe_start_planet": 5,
-                "star_type": "Yellow",
-                "trade_class": "Technology",
-                "wealth": 0,
             },
         )
 
@@ -65,17 +41,9 @@ class TestSystemAttributes(unittest.TestCase):
         self.assertDictEqual(
             system_attributes,
             {
-                "abandoned": False,
-                "conflict_level": "Low",
-                "name": "Harlando XII",
-                "pirate": False,
                 "planet_count": 4,
                 "prime_planet_count": 2,
-                "race": "Vy'keen",
                 "safe_start_planet": 2,
-                "star_type": "Yellow",
-                "trade_class": "Technology",
-                "wealth": 1,
             },
         )
 
@@ -84,17 +52,9 @@ class TestSystemAttributes(unittest.TestCase):
         self.assertDictEqual(
             system_attributes,
             {
-                "abandoned": False,
-                "conflict_level": "Default",
-                "name": "Toseycia",
-                "pirate": False,
                 "planet_count": 4,
                 "prime_planet_count": 1,
-                "race": "Gek",
                 "safe_start_planet": 3,
-                "star_type": "Yellow",
-                "trade_class": "Manufacturing",
-                "wealth": 1,
             },
         )
 
@@ -103,17 +63,9 @@ class TestSystemAttributes(unittest.TestCase):
         self.assertDictEqual(
             system_attributes,
             {
-                "abandoned": False,
-                "conflict_level": "Low",
-                "name": "Ritoni",
-                "pirate": False,
                 "planet_count": 1,
                 "prime_planet_count": 1,
-                "race": "Gek",
                 "safe_start_planet": 2,
-                "star_type": "Yellow",
-                "trade_class": "Trading",
-                "wealth": 2,
             },
         )
 
@@ -122,17 +74,9 @@ class TestSystemAttributes(unittest.TestCase):
         self.assertDictEqual(
             system_attributes,
             {
-                "abandoned": False,
-                "conflict_level": "Low",
-                "name": "Ineilad",
-                "pirate": False,
                 "planet_count": 4,
                 "prime_planet_count": 1,
-                "race": "Gek",
                 "safe_start_planet": 2,
-                "star_type": "Yellow",
-                "trade_class": "Trading",
-                "wealth": 1,
             },
         )
 
@@ -141,17 +85,9 @@ class TestSystemAttributes(unittest.TestCase):
         self.assertDictEqual(
             system_attributes,
             {
-                "abandoned": False,
-                "conflict_level": "Default",
-                "name": "Gamumu XIX",
-                "pirate": False,
                 "planet_count": 2,
                 "prime_planet_count": 1,
-                "race": "Vy'keen",
                 "safe_start_planet": 2,
-                "star_type": "Yellow",
-                "trade_class": "Technology",
-                "wealth": 2,
             },
         )
 
@@ -161,16 +97,8 @@ class TestSystemAttributes(unittest.TestCase):
         self.assertDictEqual(
             system_attributes,
             {
-                "abandoned": False,
-                "conflict_level": "None",
-                "name": "Ucsonvill",
-                "pirate": False,
                 "planet_count": 5,
                 "prime_planet_count": 1,
-                "race": "None",
                 "safe_start_planet": 0,
-                "star_type": "Red",
-                "trade_class": "None",
-                "wealth": 0,
             },
         )
