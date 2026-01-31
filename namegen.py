@@ -19,7 +19,6 @@ def usage():
     print(
         "planet_seed is a hexadecimal number of 16 digits. You can find them in save files."
     )
-    print("planet name generation from portal codes is not yet supported.")
 
 
 def main():
@@ -27,7 +26,7 @@ def main():
         usage()
         sys.exit(0)
 
-    if len(sys.argv) not in [3, 5] and sys.argv[1] == "planet":
+    if len(sys.argv) not in [3, 4] and sys.argv[1] == "planet":
         usage()
         sys.exit(0)
 
@@ -38,7 +37,9 @@ def main():
     command = sys.argv[1]
 
     if command not in ["system", "region", "planet"]:
-        print("Command must be either 'system' or 'region' or 'planet'", file=sys.stderr)
+        print(
+            "Command must be either 'system' or 'region' or 'planet'", file=sys.stderr
+        )
         sys.exit(2)
 
     if command in ["system", "region"] and len(sys.argv[2]) != 12:
@@ -61,8 +62,7 @@ def main():
             print("Galaxy value out of range 0-255", file=sys.stderr)
             sys.exit(2)
 
-   
-    if command == 'planet' and len(sys.argv) == 5:
+    if command == "planet" and len(sys.argv) == 4:
         try:
             galaxy = int(sys.argv[3])
         except ValueError:
@@ -71,15 +71,6 @@ def main():
         if galaxy < 0 or galaxy > 255:
             print("Galaxy value out of range 0-255", file=sys.stderr)
             sys.exit(2)
-        try:
-            n_planets = int(sys.argv[4])
-        except ValueError:
-            print("Invalid number of planets:", sys.argv[4], file=sys.stderr)
-            sys.exit(2)
-        if n_planets < 2 or n_planets > 6:
-            print("Number of planets out of range (2-6).")
-            sys.exit(2)
-        
 
     if command == "system":
         print(systemName(portal_code, galaxy))
@@ -89,7 +80,7 @@ def main():
         if len(sys.argv) == 3:
             print(planetName(portal_code))
         else:
-            print(planetName(portal_code, galaxy, n_planets))
+            print(planetName(portal_code, galaxy))
     sys.exit(0)
 
 

@@ -1,13 +1,15 @@
 # Pseudorandom number generator for NMS Namegen
 class PRNG:
     MULTIPLIER = 0x5A76F899
+    CONST_A = 0x64DD81482CBD31D7
+    CONST_B = 0xE36AA5C613612997
 
     def __init__(self, seed):
         self.seed = seed
 
     def _updateSeed(self):
         self.seed = ((self.seed & 0xFFFFFFFF) * self.MULTIPLIER) + (self.seed >> 32)
-        #print(f"PRNG seed: {hex(self.seed)}")
+        # print(f"PRNG seed: {hex(self.seed)}")
 
     # Returns a random integer from 0 to range-1
     def random(self, range):

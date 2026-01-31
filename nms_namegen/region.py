@@ -1,5 +1,6 @@
 from nms_namegen.generator import generateName
 from nms_namegen.prng import PRNG
+import math
 
 region_name_adornments = [
     "{} Adjunct",
@@ -76,3 +77,36 @@ def regionName(portal_code, galaxy):
         name = adornment.format(name)
 
     return name
+
+
+def voxelAttributes(portal_code):
+    voxelAttributes = {}
+    x = portal_code & 0xFFF
+    y = (portal_code & 0xFF000000) >> 24
+    z = (portal_code & 0xFFF000) >> 12
+    voxelAttributes["guide_star_count"] = 0x78
+    voxelAttributes["black_hole_count"] = 1
+    voxelAttributes["atlas_station_count"] = 1
+    voxelAttributes["inside_gap"] = 0
+    voxelAttributes["guide_star_renegade_count"] = 0
+
+    distance = math.sqrt(x * x + y * y + z * z)
+    # print(distance)
+    if distance < 8.0:
+        voxelAttributes["guide_star_count"] = 0
+        voxelAttributes["black_hole_count"] = 0
+        voxelAttributes["atlas_station_count"] = 0
+        voxelAttributes["inside_gap"] = 1
+
+    if (distance < 1440.0) and (distance > 8.0):
+        diff = distance - 8.0
+        diff *= 120.0
+        diff /= 1440.0
+
+        if diff < 0.0:
+            diff = 0.0
+        if diff > 0x78:
+            diff = 0x78
+        voxelAttributes["guide_star_renegade_count"] = 0x78 - diff
+
+    return voxelAttributes

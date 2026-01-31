@@ -1,5 +1,6 @@
 from nms_namegen.generator import generateName
 from nms_namegen.prng import PRNG
+from nms_namegen.system import systemAttributes
 import numpy as np
 import roman
 
@@ -16,7 +17,7 @@ adornments = [
     "Delta",
     "Omega",
     "Sigma",
-    "Tau"
+    "Tau",
 ]
 
 styles = [
@@ -35,11 +36,13 @@ styles = [
 
 TINY_DOUBLE = np.double(2.3283064370807974e-10)
 
-# Need to work out how to get n_planets and n_prime_planets from the 
-# generator. n_prime_planets is either 1 or 0. 
-def planetSeed(portal_code, galaxy, n_planets, n_prime_planets = 0):
+
+# Need to work out how to get n_planets and n_prime_planets from the
+# generator. n_prime_planets is either 1 or 0.
+def planetSeed(portal_code, galaxy):
+    system_attributes = systemAttributes(portal_code, galaxy)
+
     planet_seeds = []
-    result = 0
     galacticCoords = portal_code & 0xFFFFFFFF
     systemIndex = ((portal_code & 0x0FFF00000000) >> 24) | galaxy
     planet_id = (portal_code & 0xF00000000000) >> 44
@@ -61,44 +64,44 @@ def planetSeed(portal_code, galaxy, n_planets, n_prime_planets = 0):
         seed_h = 1
 
     seed = seed_h << 32 | seed_l
-    rng = PRNG(seed) 
+    rng = PRNG(seed)
 
     i = 0
-    r10_1 = 0
+    planet_count = 0
 
-    while(i < n_planets):
-        i_2 = i # index
+    while i < system_attributes["planet_count"]:
         i += 1  # next index
         size = rng.random(3)
-        #print(size)
-        r10_1 += 1 # count
+        # print(size)
+        planet_count += 1  # count
 
-        if(size == 0):
+        if size == 0:
             # This is a large planet
             # Add 1 or 2 moons.
-            r9_2 = 0
-            m = n_planets - i
-            if m < 0: m = 0
-            if m > 2: m = 2 
+            m = system_attributes["planet_count"] - i
+            if m < 0:
+                m = 0
+            if m > 2:
+                m = 2
 
             n_moons = rng.random(m + 1)
-            #print("moons", n_moons)
+            # print("moons", n_moons)
             if n_moons > 0:
-                #rcx_25 = &lOutput_1->maiPlanetParentIndices.maArray[r10_1];
-                while(i != 0):
-                    #print(3)
+                # rcx_25 = &lOutput_1->maiPlanetParentIndices.maArray[planet_count];
+                while i != system_attributes["safe_start_planet"] - 1:
+                    # print(3)
                     i += 1
-                    # set index to i_2 
-                    r10_1 += 1 # add one to count
+                    # set index to i_2
+                    planet_count += 1  # add one to count
                     n_moons -= 1
-                    if(n_moons <= 0):
+                    if n_moons <= 0:
                         break
 
     i = 0
-    while(i < n_planets):
+    while i < system_attributes["planet_count"]:
         low = rng.randi() & 0xFFFFFFFF
         high = rng.randi() & 0xFFFFFFFF
-        
+
         register = (high << 0x20) | low
         register = ((register >> 33) ^ register) * CONST_A
         register &= 0xFFFFFFFFFFFFFFFF
@@ -110,8 +113,10 @@ def planetSeed(portal_code, galaxy, n_planets, n_prime_planets = 0):
 
     # Extra planet
     rng._updateSeed()
-    #print(i, n_planets, n_prime_planets)
-    while(i < (n_planets + n_prime_planets) and n_planets < 5):   
+    # print(i, n_planets, n_prime_planets)
+    while i < (
+        system_attributes["planet_count"] + system_attributes["prime_planet_count"]
+    ):
         low = rng.randi() & 0xFFFFFFFF
         high = rng.randi() & 0xFFFFFFFF
         size = rng.random(3)
@@ -122,29 +127,30 @@ def planetSeed(portal_code, galaxy, n_planets, n_prime_planets = 0):
         register &= 0xFFFFFFFFFFFFFFFF
         p_seed = (register >> 33) ^ register
         planet_seeds.append(p_seed)
-        i+=1
-        if(size == 0):
+        i += 1
+        if size == 0:  # MassiveSolarSystems is true.
             # This is a large planet
             # Add 1 or 2 moons.
-            r9_2 = 0
-            m = n_planets - i
-            if m < 0: m = 0
-            if m > 2: m = 2 
+            m = system_attributes["planet_count"] - i
+            if m < 0:
+                m = 0
+            if m > 2:
+                m = 2
 
             n_moons = rng.random(m + 1)
-            #print("moons", n_moons)
+            # print("moons", n_moons)
             if n_moons > 0:
-                #rcx_25 = &lOutput_1->maiPlanetParentIndices.maArray[r10_1];
-                while(i != 0):
-                    #print(3)
+                # rcx_25 = &lOutput_1->maiPlanetParentIndices.maArray[planet_count];
+                while i != system_attributes["safe_start_planet"] - 1:
+                    # print(3)
                     i += 1
-                    # set index to i_2 
-                    r10_1 += 1 # add one to count
+                    # set index to i_2
+                    planet_count += 1  # add one to count
                     n_moons -= 1
-                    if(n_moons <= 0):
+                    if n_moons <= 0:
                         break
-    
-    #print(list(map(lambda x: hex(x), planet_seeds)))
+
+    # print(list(map(lambda x: hex(x), planet_seeds)))
     return planet_seeds[planet_id - 1]
 
 
@@ -158,10 +164,10 @@ def format_shortcode(alpha, num):
 
 
 # Returns a planet name given a planet seed.
-def planetName(planet_seed_or_code, galaxy = None, n_planets = None):
+def planetName(planet_seed_or_code, galaxy=None):
     planet_seed = planet_seed_or_code
-    if galaxy is not None and n_planets is not None:
-        planet_seed = planetSeed(planet_seed_or_code, galaxy, n_planets)
+    if galaxy is not None:
+        planet_seed = planetSeed(planet_seed_or_code, galaxy)
 
     lowword = planet_seed & 0xFFFFFFFF
     highword = planet_seed >> 32
@@ -177,7 +183,7 @@ def planetName(planet_seed_or_code, galaxy = None, n_planets = None):
 
     rng = PRNG(seed)
     adornment = ((rng.seed & 0xFFFFFFFF) * 10) >> 0x20
-    #print(f"adornment: {hex(adornment)}")
+    # print(f"adornment: {hex(adornment)}")
     code = rng.random(50) + 1
     shortcode = rng.random(0x1A) + 0x41
     # print(f"shortcode: ", bytes([shortcode]).decode("ascii"), hex(shortcode))

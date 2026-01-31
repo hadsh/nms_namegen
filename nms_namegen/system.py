@@ -1,6 +1,32 @@
 from nms_namegen.generator import generateName
 from nms_namegen.prng import PRNG
+from nms_namegen.iprng import indexPrimedPRNG
+from nms_namegen.region import voxelAttributes
 import roman
+import numpy as np
+
+TINY_DOUBLE = np.double(2.3283064370807974e-10)
+
+RACES = ["Gek", "Vy'keen", "Korvax", "Robots", "Atlas", "Diplomats", "Exotic", "None"]
+
+STAR_TYPES = ["Yellow", "Green", "Blue", "Red", "Purple"]
+
+TRADE_CLASSES = [
+    "Mining",
+    "Technology",
+    "Trading",
+    "Manufacturing",
+    "Fusion",
+    "Scientific",
+    "Power Generation",
+    "None",
+]
+
+CONFLICT_LEVELS = ["Low", "Default", "High", "Pirate", "None"]
+
+abandonedSystemProbability = [0.0, 0.1, 0.1, 0.0, 0.35]
+emptySystemProbability = [0.0, 0.4, 0.4, 0.95, 0.2]
+pirateSystemProbability = [0.25, 0.15, 0.15, 0.5, 0.05]
 
 
 # Returns a system name for No Man's Sky
@@ -75,3 +101,147 @@ def systemName(portal_code, galaxy):
 
         name = f"{name} {roman.toRoman(n)}"
     return name
+
+
+# Returns a dictionary containing system attributes.
+def systemAttributes(portal_code, galaxy):
+    portal_code = portal_code & 0xFFFFFFFFFFF
+    system_id = (portal_code & 0xFFF00000000) >> 32
+    universalAddress = (((system_id << 8) | (galaxy & 0xFF)) << 32) | (
+        portal_code & 0xFFFFFFFF
+    )
+    # print("UA:", hex(universalAddress))
+    va = voxelAttributes(portal_code)
+    system_seed = indexPrimedPRNG(universalAddress) & 0xFFFFFFFF
+    # print("system seed: ", hex(system_seed))
+    rol16 = ((system_seed & 0x0000FFFF) << 16) | ((system_seed & 0xFFFF0000) >> 16)
+    rol16 = (rol16 ^ system_seed) & 0xFFFFFFFF
+    seed = 0
+    if system_seed == 0:
+        seed = ((system_seed + 1) * PRNG.MULTIPLIER) + rol16
+    else:
+        seed = (system_seed * PRNG.MULTIPLIER) + rol16
+
+    rng = PRNG(seed)
+    star_type = 0
+    safe_start = 0
+    prime_planet_count = 2
+    planet_count = 1
+    anomaly = 0
+    pirate = False
+    system_id = system_id - 1
+    trading_class = 7
+    race = 7
+
+    if system_id < va["guide_star_count"]:
+        planet_count = (((seed & 0xFFFFFFFF) * 4) >> 0x20) + 3
+        safe_start = rng.random(planet_count) + 1
+    else:
+        star_type = 0
+
+        if (((seed & 0xFFFFFFFF) * 0x64) >> 0x20) < 0x1E:
+            star_type = rng.random(3) + 1
+
+        # Black hole
+        diff = system_id - va["guide_star_count"]
+        if va["black_hole_count"] > 0 and diff >= 0 and diff < va["black_hole_count"]:
+            anomaly = 2
+            star_type = 0
+
+        # ATLAS
+        if (
+            va["atlas_station_count"] > 0
+            and diff - va["black_hole_count"] >= 0
+            and diff - va["black_hole_count"] < va["atlas_station_count"]
+        ):
+            anomaly = 1
+            star_type = 0
+
+        planet_count = rng.random(6) + 1
+
+        if va["guide_star_renegade_count"] >= 10 or star_type != 0 or anomaly != 0:
+            safe_start = 0
+        else:
+            safe_start = rng.random(planet_count + 2)
+
+    trading_class = rng.random(7)
+
+    wealth = 1
+    wealth_check_l = rng.randi() * TINY_DOUBLE
+    if wealth_check_l < 0.1:
+        wealth = 2
+    elif wealth_check_l < 0.3:
+        wealth = 0
+
+    # 4 times loop does what? Adjusts wealth for something.
+
+    conflict_level = rng.random(3)
+    race = rng.random(3)
+
+    if (
+        system_id < va["guide_star_renegade_count"]
+    ):  # miGuideStarRenegadeCount check this
+        star_type = rng.random(3) + 1
+
+    if system_id > 0x3E9 and system_id < 0x429:  # Purple
+        star_type = 4
+
+    abandoned = (rng.randi() * 100) < abandonedSystemProbability[star_type]
+    # Unsure of this logic
+    if abandoned:
+        wealth = 0
+    else:
+        mpstate = False
+        if mpstate:
+            pass
+            # rcx40 = mpState->mID + 0
+            # rax44 = mpState->mID + 8
+        else:
+            pass
+
+    if (rng.randi() * TINY_DOUBLE) < emptySystemProbability[star_type]:
+        race = 7
+        trading_class = 7
+        conflict_level = 4
+        wealth = 0
+
+    diff = 6 - planet_count
+    if diff < 1:
+        prime_planet_count = 0
+    elif (rng.random(100) >= 33) or diff < 2:
+        prime_planet_count = 1
+
+    # unknown_attribute = 0
+    unknown_attribute2 = 0
+    if star_type == 4:
+        planet_count = 0
+
+        if rng.random(100) > 0xF:
+            # unknown_attribute = 1
+            if rng.random(100) < 0x42 or unknown_attribute2:
+                unknown_attribute2 = 1
+
+    if unknown_attribute2:
+        planet_count = 0
+        star_type = 4
+        prime_planet_count = 6
+
+    if (star_type != 0 or safe_start < star_type) and not abandoned and race != 7:
+        if (rng.randi() * TINY_DOUBLE) < pirateSystemProbability[star_type]:
+            pirate = True
+            wealth = 3
+            conflict_level = 3
+
+    return {
+        "planet_count": planet_count,
+        "prime_planet_count": prime_planet_count,
+        "safe_start_planet": safe_start,
+        "wealth": wealth,
+        "conflict_level": CONFLICT_LEVELS[conflict_level],
+        "star_type": STAR_TYPES[star_type],
+        "trade_class": TRADE_CLASSES[trading_class],
+        "race": RACES[race],
+        "abandoned": abandoned,
+        "pirate": pirate,
+        "name": systemName(portal_code, galaxy),
+    }
