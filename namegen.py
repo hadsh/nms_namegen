@@ -5,6 +5,7 @@ from nms_namegen.system import systemName, systemAttributes
 from nms_namegen.region import regionName
 from nms_namegen.planet import planetName
 
+
 def usage():
     print("Usage:")
     print("\tnms_namegen.py command portal_code galaxy")

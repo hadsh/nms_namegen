@@ -7,6 +7,7 @@ import numpy as np
 
 TINY_DOUBLE = np.double(2.3283064370807974e-10)
 
+
 # Returns a system name for No Man's Sky
 #
 # Parameters:
@@ -81,7 +82,7 @@ def systemName(portal_code, galaxy):
     return name
 
 
-# Returns a dictionary containing system attributes.
+# Returns a dictionary containing planet counts for a system.
 def systemAttributes(portal_code, galaxy):
     portal_code = portal_code & 0xFFFFFFFFFFF
     system_id = (portal_code & 0xFFF00000000) >> 32
@@ -126,10 +127,8 @@ def systemAttributes(portal_code, galaxy):
     rng._updateSeed()
     rng._updateSeed()
     rng._updateSeed()
-   
-    if (
-        system_id < va["guide_star_renegade_count"]
-    ):  
+
+    if system_id < va["guide_star_renegade_count"]:
         star_type = rng.random(3) + 1
 
     if system_id > 0x3E9 and system_id < 0x429:  # Purple
@@ -144,14 +143,12 @@ def systemAttributes(portal_code, galaxy):
     elif (rng.random(100) >= 33) or diff < 2:
         prime_planet_count = 1
 
-    # unknown_attribute = 0
     unknown_attribute2 = 0
     if star_type == 4:
         planet_count = 0
 
         if rng.random(100) > 0xF:
-            # unknown_attribute = 1
-            if rng.random(100) < 0x42 or unknown_attribute2:
+            if rng.random(100) < 0x42:
                 unknown_attribute2 = 1
 
     if unknown_attribute2:
@@ -162,5 +159,5 @@ def systemAttributes(portal_code, galaxy):
     return {
         "planet_count": planet_count,
         "prime_planet_count": prime_planet_count,
-        "safe_start_planet": safe_start
+        "safe_start_planet": safe_start,
     }
