@@ -19,6 +19,9 @@ def usage():
     print(
         "planet_seed is a hexadecimal number of 16 digits. You can find them in save files."
     )
+    print("")
+    print("\tnms_namegen.py planet portal_code galaxy")
+    print("Prints the planet name give a full portal code and galaxy.")
 
 
 def main():
