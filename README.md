@@ -28,20 +28,25 @@ positional arguments:
                         The type of object to get the name of.
 
 options:
-  -h, --help            show help message and exit
-  -p, --portal_code PSSSYYZZZXXX
+
+  *-h, --help*           Show help message and exit
+
+  *-p, --portal_code* PSSSYYZZZXXX
+
                         The portal code of the region, system or planet. A 12 digit hexadecimal
                         number, format: PSSSYYZZZXXX. For regions the planet and system parts are
                         ignored, for systems the planet id is ignored.
-  -g, --galaxy GALAXY   The galaxy id for the object to be named. Must be in the range 0-255.
+
+  *-g, --galaxy* GALAXY 
+
+                        The galaxy id for the object to be named. Must be in the range 0-255.
                         Defaults to 0 (Euclid).
-  -s, --seed SEED       This is the seed of a planet. Must be a hexidecimal number. It can be
+
+  *-s, --seed* SEED       
+  
+                        This is the seed of a planet. Must be a hexidecimal number. It can be
                         found in save game files. Using this overrides portal_code and galaxy
                         options. Has no effect for regions or systems.
-
-Where the *portal_code* is in the form PSSSYYZZZXXX where p is the planet number.
-The galaxy id is the galaxy number with Euclid starting at 0 and the last
-galaxy being 255. This now should work with the latest update.
 
 Examples: 
 
