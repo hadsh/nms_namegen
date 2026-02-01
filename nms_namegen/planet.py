@@ -27,11 +27,11 @@ styles = [
     "%PROCNORM% %SHORTCODE%",
     "%PROCLONG% %PROCSHORT%",
     "%PROCSHORT% %LONGCODE%",
-    "New %PROCNORM%",
+    "%PROCNORM%",
     "%PROCNORM% %ADORNMENT%",
     "%PROCNORM% %NUMERAL%",
     "Style 9",
-    "New %PROCNORM%",  # Check this
+    "New %PROCNORM%"
 ]
 
 TINY_DOUBLE = np.double(2.3283064370807974e-10)
