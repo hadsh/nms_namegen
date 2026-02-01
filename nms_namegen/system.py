@@ -2,7 +2,7 @@ from nms_namegen.generator import generateName
 from nms_namegen.prng import PRNG
 from nms_namegen.iprng import indexPrimedPRNG
 from nms_namegen.region import voxelAttributes
-import roman
+from nms_namegen.roman import toRoman
 import numpy as np
 
 TINY_DOUBLE = np.double(2.3283064370807974e-10)
@@ -78,7 +78,7 @@ def systemName(portal_code, galaxy):
         if n > 19:
             n == 19
 
-        name = f"{name} {roman.toRoman(n)}"
+        name = f"{name} {toRoman(n)}"
     return name
 
 

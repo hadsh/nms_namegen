@@ -1,8 +1,8 @@
 from nms_namegen.generator import generateName
 from nms_namegen.prng import PRNG
 from nms_namegen.system import systemAttributes
+from nms_namegen.roman import toRoman
 import numpy as np
-import roman
 
 CONST_A = 0x64DD81482CBD31D7
 CONST_B = 0xE36AA5C613612997
@@ -37,8 +37,6 @@ styles = [
 TINY_DOUBLE = np.double(2.3283064370807974e-10)
 
 
-# Need to work out how to get n_planets and n_prime_planets from the
-# generator. n_prime_planets is either 1 or 0.
 def planetSeed(portal_code, galaxy):
     system_attributes = systemAttributes(portal_code, galaxy)
 
@@ -70,10 +68,9 @@ def planetSeed(portal_code, galaxy):
     planet_count = 0
 
     while i < system_attributes["planet_count"]:
-        i += 1  # next index
+        i += 1 
         size = rng.random(3)
-        # print(size)
-        planet_count += 1  # count
+        planet_count += 1
 
         if size == 0:
             # This is a large planet
@@ -85,14 +82,10 @@ def planetSeed(portal_code, galaxy):
                 m = 2
 
             n_moons = rng.random(m + 1)
-            # print("moons", n_moons)
             if n_moons > 0:
-                # rcx_25 = &lOutput_1->maiPlanetParentIndices.maArray[planet_count];
                 while i != system_attributes["safe_start_planet"] - 1:
-                    # print(3)
                     i += 1
-                    # set index to i_2
-                    planet_count += 1  # add one to count
+                    planet_count += 1
                     n_moons -= 1
                     if n_moons <= 0:
                         break
@@ -111,9 +104,8 @@ def planetSeed(portal_code, galaxy):
         planet_seeds.append(p_seed)
         i += 1
 
-    # Extra planet
+    # Extra planet(s)
     rng._updateSeed()
-    # print(i, n_planets, n_prime_planets)
     while i < (
         system_attributes["planet_count"] + system_attributes["prime_planet_count"]
     ):
@@ -128,27 +120,6 @@ def planetSeed(portal_code, galaxy):
         p_seed = (register >> 33) ^ register
         planet_seeds.append(p_seed)
         i += 1
-        if size == 0:  # MassiveSolarSystems is true.
-            # This is a large planet
-            # Add 1 or 2 moons.
-            m = system_attributes["planet_count"] - i
-            if m < 0:
-                m = 0
-            if m > 2:
-                m = 2
-
-            n_moons = rng.random(m + 1)
-            # print("moons", n_moons)
-            if n_moons > 0:
-                # rcx_25 = &lOutput_1->maiPlanetParentIndices.maArray[planet_count];
-                while i != system_attributes["safe_start_planet"] - 1:
-                    # print(3)
-                    i += 1
-                    # set index to i_2
-                    planet_count += 1  # add one to count
-                    n_moons -= 1
-                    if n_moons <= 0:
-                        break
 
     # print(list(map(lambda x: hex(x), planet_seeds)))
     return planet_seeds[planet_id - 1]
@@ -159,7 +130,6 @@ def format_longcode(longcode, digit, alpha):
 
 
 def format_shortcode(alpha, num):
-    # Shortcodes do not quite work yet. Cant work out where the numeral comes from.
     return f"{bytes([alpha]).decode('ascii')}{num}"
 
 
@@ -206,7 +176,6 @@ def planetName(planet_seed_or_code, galaxy=None):
 
     target = np.double(rng.randi()) * TINY_DOUBLE
     if not (np.double(0.0350000001) <= target):
-        # print("TARGET > 0.035")
         namegen_style = 10
         # Do something?
 
@@ -217,8 +186,7 @@ def planetName(planet_seed_or_code, galaxy=None):
     name = name.replace("%PROCLONG%", proclong.capitalize())
     name = name.replace("%ADORNMENT%", adornments[adornment])
     name = name.replace("%SHORTCODE%", format_shortcode(shortcode, code % 0x50))
-    name = name.replace("%NUMERAL%", roman.toRoman(numeral))
+    name = name.replace("%NUMERAL%", toRoman(numeral))
     name = name.replace("%LONGCODE%", format_longcode(longcode, digit, alpha))
-    # print(name)
-    # print("========================================\n\n")
+
     return name

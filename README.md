@@ -13,9 +13,8 @@ You can install dependecies with ```pipenv update```
 Or just use pip.
 
 ## Dependencies
-This code requires only two dependencies:
+This code requires only one dependencies:
     - numpy ~=2.4
-    - roman ~=5.2
 
 ## Usage 
 *Note that the argument format has changed recently and is not backward compatible*
