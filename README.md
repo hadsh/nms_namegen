@@ -23,32 +23,29 @@ This code requires only one dependencies:
 
 Generates names for regions, systems and planets in the game No Man's Sky.
 
-positional arguments:
-  {region,system,planet}
-                        The type of object to get the name of.
 
-options:
+* {region,system,planet} : The type of object to get the name of.
 
-  *-h, --help*           Show help message and exit
+### Options:
 
-  *-p, --portal_code* PSSSYYZZZXXX
+* *-h, --help*  
+Show help message and exit
 
-                        The portal code of the region, system or planet. A 12 digit hexadecimal
-                        number, format: PSSSYYZZZXXX. For regions the planet and system parts are
-                        ignored, for systems the planet id is ignored.
+* *-p, --portal_code* PSSSYYZZZXXX  
+The portal code of the region, system or planet. A 12 digit hexadecimal
+number, format: PSSSYYZZZXXX. For regions the planet and system parts are
+ignored, for systems the planet id is ignored.
 
-  *-g, --galaxy* GALAXY 
+* *-g, --galaxy* GALAXY  
+The galaxy id for the object to be named. Must be in the range 0-255.
+Defaults to 0 (Euclid).
 
-                        The galaxy id for the object to be named. Must be in the range 0-255.
-                        Defaults to 0 (Euclid).
+*  *-s, --seed* SEED        
+This is the seed of a planet. Must be a hexidecimal number. It can be
+found in save game files. Using this overrides portal_code and galaxy
+options. Has no effect for regions or systems.
 
-  *-s, --seed* SEED       
-  
-                        This is the seed of a planet. Must be a hexidecimal number. It can be
-                        found in save game files. Using this overrides portal_code and galaxy
-                        options. Has no effect for regions or systems.
-
-Examples: 
+## Examples: 
 
 Galaxy defaults to 0.
 ```bash
