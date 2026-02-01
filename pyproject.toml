@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "nms-namegen"
-version = "1.0.0"
+version = "2.0.0"
 authors = [
   { name="Stuart Coyle", email="stuart.coyle@proton.me" },
 ]

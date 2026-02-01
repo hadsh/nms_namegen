@@ -1,6 +1,6 @@
 # NMS NAMEGEN
 
-nms_namegen.py is a python program that generates names for 
+namegen.py is a python program that generates names for 
 regions, systems and planets in the game No Man's Sky. 
 
 It generates them in the same way that the game does.
@@ -18,27 +18,27 @@ This code requires only two dependencies:
     - roman ~=5.2
 
 ## Usage 
+*Note that the argument format has changed recently and is not backward compatible*
 
-    namegen.py command portal_code galaxy_id
+    namegen.py [-h] [-p PSSSYYZZZXXX] [-g GALAXY] [-s SEED] {region,system,planet}
 
-command is one of: *system*, *region*, *planet* or *help* 
+Generates names for regions, systems and planets in the game No Man's Sky.
 
-Portal code must be the 12 hexadecimal (0-F) digit portal code. For systems the first digit (planet id) is ignored, just set it to 0 if you want. For regions the first four digits are ignored (planet and system id) 
-Portal code format is PSSSYYZZZXXX.
+positional arguments:
+  {region,system,planet}
+                        The type of object to get the name of.
 
-The galaxy id is the galaxy number with Euclid starting at 0 and the last
-galaxy being 255.
-
-For planet names the command is: 
-
-    namegen.py planet planet_seed 
-
-The *planet_seed* is a 16 digit hexadecimal seed. 
-You can find them in save files under BaseContext -> PlayerStateData -> PlanetSeeds
-
-or try:
-
-    namegen.py planet portal_code galaxy_id 
+options:
+  -h, --help            show help message and exit
+  -p, --portal_code PSSSYYZZZXXX
+                        The portal code of the region, system or planet. A 12 digit hexadecimal
+                        number, format: PSSSYYZZZXXX. For regions the planet and system parts are
+                        ignored, for systems the planet id is ignored.
+  -g, --galaxy GALAXY   The galaxy id for the object to be named. Must be in the range 0-255.
+                        Defaults to 0 (Euclid).
+  -s, --seed SEED       This is the seed of a planet. Must be a hexidecimal number. It can be
+                        found in save game files. Using this overrides portal_code and galaxy
+                        options. Has no effect for regions or systems.
 
 Where the *portal_code* is in the form PSSSYYZZZXXX where p is the planet number.
 The galaxy id is the galaxy number with Euclid starting at 0 and the last
@@ -46,23 +46,27 @@ galaxy being 255. This now should work with the latest update.
 
 Examples: 
 
+Galaxy defaults to 0.
 ```bash
- ./namegen.py system 03E9F3545C3E 0
+ ./namegen.py system -p 03E9F3545C3E
  #output: Abarof-Dulin
 ```
 
+Region name generation.
 ```bash
- ./namegen.py region 03E9F3545C3E 0
+ ./namegen.py region -p 03E9F3545C3E -g 0
  #output:Yihelli Quadrant
 ```
 
+Planet name from save seed.
 ```bash
-./namegen.py planet 0xC911CCCD7395E842
+./namegen.py planet -s 0xC911CCCD7395E842
  #output:Nutsvill Sigma
 ```
 
+Planet name from portal code and galaxy.
 ```bash
-./namegen.py planet 1001ff218345 4
+./namegen.py planet -p 1001ff218345 -g 4
 #output:Edershar K25
 ```
 

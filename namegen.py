@@ -1,89 +1,86 @@
 #!/usr/bin/env python3
 
 import sys
-from nms_namegen.system import systemName, systemAttributes
+import argparse
+
+from nms_namegen.system import systemName
 from nms_namegen.region import regionName
 from nms_namegen.planet import planetName
 
 
-def usage():
-    print("Usage:")
-    print("\tnms_namegen.py command portal_code galaxy")
-    print("")
-    print("command - either region or system.")
-    print("portal_code must be a string of 12 hexadecimal digits.")
-    print("galaxy is the galaxy id. These start from 0 - Euclid up to 255.")
-    print("")
-    print("\tnms_namegen.py planet planet_code")
-    print("")
-    print(
-        "planet_seed is a hexadecimal number of 16 digits. You can find them in save files."
-    )
-    print("")
-    print("\tnms_namegen.py planet portal_code galaxy")
-    print("Prints the planet name give a full portal code and galaxy.")
-
-
 def main():
-    if len(sys.argv) > 1 and sys.argv[1] == "help":
-        usage()
-        sys.exit(0)
+    parser = argparse.ArgumentParser(
+        prog="namegen.py",
+        description="Generates names for regions, systems and planets in the game No Man's Sky.",
+        epilog="",
+    )
 
-    if len(sys.argv) not in [3, 4] and sys.argv[1] == "planet":
-        usage()
-        sys.exit(0)
+    parser.add_argument(
+        "command",
+        choices=["region", "system", "planet"],
+        help="The type of object to get the name of.",
+    )
 
-    if len(sys.argv) != 4 and sys.argv[1] in ["system", "region"]:
-        usage()
-        sys.exit(1)
+    parser.add_argument(
+        "-p",
+        "--portal_code",
+        metavar="PSSSYYZZZXXX",
+        help="""
+    The portal code of the region, system or planet. A 12 digit hexadecimal number, format: PSSSYYZZZXXX. For regions the planet and system parts are
+    ignored, for systems the planet id is ignored.
+""",
+        default=None,
+    )
 
-    command = sys.argv[1]
+    parser.add_argument(
+        "-g",
+        "--galaxy",
+        type=int,
+        help="""
+        The galaxy id for the object to be named. 
+        Must be in the range 0-255.
+        Defaults to 0 (Euclid).
+""",
+        default=0,
+    )
 
-    if command not in ["system", "region", "planet"]:
-        print(
-            "Command must be either 'system' or 'region' or 'planet'", file=sys.stderr
-        )
-        sys.exit(2)
+    parser.add_argument(
+        "-s",
+        "--seed",
+        help="""
+        This is the seed of a planet. Must be a hexidecimal number. It can be found in save game files.
+        Using this overrides portal_code and galaxy options. Has no effect for regions or systems.
+""",
+        default=0,
+    )
+    args = parser.parse_args()
 
-    if command in ["system", "region"] and len(sys.argv[2]) != 12:
-        print("Portal code must be 12 hexadecimal digits", file=sys.stderr)
-        sys.exit(2)
-
-    try:
-        portal_code = int(sys.argv[2], 16)
-    except ValueError:
-        print("Invalid portal code or planet_seed", sys.argv[2], file=sys.stderr)
-        sys.exit(2)
-
-    if command in ["system", "region"]:
+    if args.portal_code:
         try:
-            galaxy = int(sys.argv[3])
+            portal_code = int(args.portal_code, 16)
         except ValueError:
-            print("Invalid galaxy id", sys.argv[3], file=sys.stderr)
-            sys.exit(2)
-        if galaxy < 0 or galaxy > 255:
-            print("Galaxy value out of range 0-255", file=sys.stderr)
+            print("Invalid portal code.")
             sys.exit(2)
 
-    if command == "planet" and len(sys.argv) == 4:
+    if args.galaxy < 0 or args.galaxy > 255:
+        print("Invalid galaxy id. Must be in range 0-255.")
+        sys.exit(2)
+
+    if args.seed:
         try:
-            galaxy = int(sys.argv[3])
+            seed = int(args.seed, 16)
         except ValueError:
-            print("Invalid galaxy id", sys.argv[3], file=sys.stderr)
-            sys.exit(2)
-        if galaxy < 0 or galaxy > 255:
-            print("Galaxy value out of range 0-255", file=sys.stderr)
-            sys.exit(2)
+            print("Invalid seed. Must be a hexidecimal number.")
 
-    if command == "system":
-        print(systemName(portal_code, galaxy))
-    if command == "region":
-        print(regionName(portal_code, galaxy))
-    if command == "planet":
-        if len(sys.argv) == 3:
-            print(planetName(portal_code))
+    if args.command == "system":
+        print(systemName(portal_code, args.galaxy))
+    if args.command == "region":
+        print(regionName(portal_code, args.galaxy))
+    if args.command == "planet":
+        if args.seed:
+            print(planetName(seed))
         else:
-            print(planetName(portal_code, galaxy))
+            print(planetName(portal_code, args.galaxy))
     sys.exit(0)
 
 
