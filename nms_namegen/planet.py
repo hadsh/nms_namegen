@@ -1,11 +1,8 @@
 from nms_namegen.generator import generateName
 from nms_namegen.prng import PRNG
-from nms_namegen.system import systemAttributes
+from nms_namegen.system import planetSeeds
 from nms_namegen.roman import toRoman
 import numpy as np
-
-CONST_A = 0x64DD81482CBD31D7
-CONST_B = 0xE36AA5C613612997
 
 adornments = [
     "Prime",
@@ -38,91 +35,8 @@ TINY_DOUBLE = np.double(2.3283064370807974e-10)
 
 
 def planetSeed(portal_code, galaxy):
-    system_attributes = systemAttributes(portal_code, galaxy)
-
-    planet_seeds = []
-    galacticCoords = portal_code & 0xFFFFFFFF
-    systemIndex = ((portal_code & 0x0FFF00000000) >> 24) | galaxy
     planet_id = (portal_code & 0xF00000000000) >> 44
-
-    register = (systemIndex << 0x20) | galacticCoords
-    register = ((register >> 33) ^ register) * CONST_A
-    register &= 0xFFFFFFFFFFFFFFFF
-    register = ((register >> 33) ^ register) * CONST_B
-    register &= 0xFFFFFFFFFFFFFFFF
-    register = (register >> 33) ^ register
-
-    seed_h = (
-        (((register & 0xFFFF0000) >> 16) | ((register & 0x0000FFFF) << 16))
-        ^ (register & 0xFFFFFFFF)
-        ^ (register >> 32)
-    )
-    seed_l = register & 0xFFFFFFFF
-    if seed_h == 0:
-        seed_h = 1
-
-    seed = seed_h << 32 | seed_l
-    rng = PRNG(seed)
-
-    i = 0
-    planet_count = 0
-
-    while i < system_attributes["planet_count"]:
-        i += 1 
-        size = rng.random(3)
-        planet_count += 1
-
-        if size == 0:
-            # This is a large planet
-            # Add 1 or 2 moons.
-            m = system_attributes["planet_count"] - i
-            if m < 0:
-                m = 0
-            if m > 2:
-                m = 2
-
-            n_moons = rng.random(m + 1)
-            if n_moons > 0:
-                while i != system_attributes["safe_start_planet"] - 1:
-                    i += 1
-                    planet_count += 1
-                    n_moons -= 1
-                    if n_moons <= 0:
-                        break
-
-    i = 0
-    while i < system_attributes["planet_count"]:
-        low = rng.randi() & 0xFFFFFFFF
-        high = rng.randi() & 0xFFFFFFFF
-
-        register = (high << 0x20) | low
-        register = ((register >> 33) ^ register) * CONST_A
-        register &= 0xFFFFFFFFFFFFFFFF
-        register = ((register >> 33) ^ register) * CONST_B
-        register &= 0xFFFFFFFFFFFFFFFF
-        p_seed = (register >> 33) ^ register
-        planet_seeds.append(p_seed)
-        i += 1
-
-    # Extra planet(s)
-    rng._updateSeed()
-    while i < (
-        system_attributes["planet_count"] + system_attributes["prime_planet_count"]
-    ):
-        low = rng.randi() & 0xFFFFFFFF
-        high = rng.randi() & 0xFFFFFFFF
-        size = rng.random(3)
-        register = (high << 0x20) | low
-        register = ((register >> 33) ^ register) * CONST_A
-        register &= 0xFFFFFFFFFFFFFFFF
-        register = ((register >> 33) ^ register) * CONST_B
-        register &= 0xFFFFFFFFFFFFFFFF
-        p_seed = (register >> 33) ^ register
-        planet_seeds.append(p_seed)
-        i += 1
-
-    # print(list(map(lambda x: hex(x), planet_seeds)))
-    return planet_seeds[planet_id - 1]
+    return planetSeeds(portal_code, galaxy)[planet_id - 1]
 
 
 def format_longcode(longcode, digit, alpha):
