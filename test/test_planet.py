@@ -145,7 +145,6 @@ class TestPlanet(unittest.TestCase):
         self.assertEqual(name, "Lewaukee Megu")
 
     def test_planet_name_from_portal_code_2(self):
-        # name = planetName(0x1001FF285671, 9, 2)
         seed = planetSeed(0x1002FF285671, 9)
         name = planetName(seed)
         self.assertEqual(name, "New Uxbrigo")
@@ -161,3 +160,12 @@ class TestPlanet(unittest.TestCase):
         seed = planetSeed(0x5002FF285671, 9)
         name = planetName(seed)
         self.assertEqual(name, "Ovianus XVI")
+    
+    def test_planet_name_from_portal_code_blue(self):
+        name = planetName(0x51BCFF285671, 9)
+        # Getting wrong seed here...should be 0xE5B208A031298B80
+        self.assertEqual(name, "Bishoru XIII")
+
+    def test_broken_seeds(self):
+        seed = planetSeed(0x51BCFF285671, 9)
+        self.assertEqual(0xE5B208A031298B80, seed)

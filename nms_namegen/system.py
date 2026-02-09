@@ -171,7 +171,7 @@ def planetSeeds(portal_code, galaxy):
     planet_seeds = []
     galacticCoords = portal_code & 0xFFFFFFFF
     systemIndex = ((portal_code & 0x0FFF00000000) >> 24) | galaxy
-
+    moon_count = 0
 
     register = (systemIndex << 0x20) | galacticCoords
     register = ((register >> 33) ^ register) * CONST_A
@@ -210,6 +210,7 @@ def planetSeeds(portal_code, galaxy):
                 m = 2
 
             n_moons = rng.random(m + 1)
+            moon_count = n_moons
             if n_moons > 0:
                 while i != system_attributes["safe_start_planet"] - 1:
                     i += 1
@@ -234,12 +235,13 @@ def planetSeeds(portal_code, galaxy):
 
     # Extra planet(s)
     rng._updateSeed()
+
     while i < (
         system_attributes["planet_count"] + system_attributes["prime_planet_count"]
     ):
+        
         low = rng.randi() & 0xFFFFFFFF
         high = rng.randi() & 0xFFFFFFFF
-        size = rng.random(3)
         register = (high << 0x20) | low
         register = ((register >> 33) ^ register) * CONST_A
         register &= 0xFFFFFFFFFFFFFFFF
@@ -247,7 +249,12 @@ def planetSeeds(portal_code, galaxy):
         register &= 0xFFFFFFFFFFFFFFFF
         p_seed = (register >> 33) ^ register
         planet_seeds.append(p_seed)
+
+        size = rng.random(3)
+        if(size != 0):
+            rng._updateSeed()
         i += 1
 
+    planet_count = system_attributes["planet_count"] + system_attributes["prime_planet_count"] - moon_count
     # print(list(map(lambda x: hex(x), planet_seeds)))
-    return planet_seeds  
+    return {"planet_seeds": planet_seeds, "planet_count": planet_count, "moon_count": moon_count} 

@@ -36,7 +36,7 @@ TINY_DOUBLE = np.double(2.3283064370807974e-10)
 
 def planetSeed(portal_code, galaxy):
     planet_id = (portal_code & 0xF00000000000) >> 44
-    return planetSeeds(portal_code, galaxy)[planet_id - 1]
+    return planetSeeds(portal_code, galaxy)["planet_seeds"][planet_id - 1]
 
 
 def format_longcode(longcode, digit, alpha):

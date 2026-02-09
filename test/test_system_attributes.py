@@ -102,3 +102,26 @@ class TestSystemAttributes(unittest.TestCase):
                 "safe_start_planet": 0,
             },
         )
+    def test_system_attributes_empty(self):
+        self.maxDiff = None
+        system_attributes = systemAttributes(0x1ACFF285671, 9)
+        self.assertDictEqual(
+            system_attributes,
+            {
+                "planet_count": 5,
+                "prime_planet_count": 1,
+                "safe_start_planet": 0,
+            },
+        )
+        
+    def test_system_attributes_blue(self):
+        self.maxDiff = None
+        system_attributes = systemAttributes(0x51BCFF285671, 9)
+        self.assertDictEqual(
+            system_attributes,
+            {
+                "planet_count": 3,
+                "prime_planet_count": 2,
+                "safe_start_planet": 0,
+            },
+        )
