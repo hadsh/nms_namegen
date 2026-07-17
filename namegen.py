@@ -1,11 +1,28 @@
 #!/usr/bin/env python3
 
 import sys
+import json
 import argparse
 
-from nms_namegen.system import systemName
+from nms_namegen.system import systemName, systemAttributes, planetSeeds
 from nms_namegen.region import regionName
 from nms_namegen.planet import planetName
+
+
+# Returns the composition attributes of a system as a plain dict, combining
+# systemAttributes (planet/prime counts, safe start, gas giant) with the
+# planet-vs-moon split derived from planetSeeds.
+def systemComposition(portal_code, galaxy):
+    attributes = systemAttributes(portal_code, galaxy)
+    seeds = planetSeeds(portal_code, galaxy)
+    return {
+        "planet_count": attributes["planet_count"],
+        "prime_planet_count": attributes["prime_planet_count"],
+        "safe_start_planet": attributes["safe_start_planet"],
+        "gas_giant": attributes["gas_giant"],
+        "planets": seeds["planet_count"],
+        "moons": seeds["moon_count"],
+    }
 
 
 def main():
@@ -17,7 +34,7 @@ def main():
 
     parser.add_argument(
         "command",
-        choices=["region", "system", "planet"],
+        choices=["region", "system", "planet", "attributes"],
         help="The type of object to get the name of.",
     )
 
@@ -81,6 +98,8 @@ def main():
             print(planetName(seed))
         else:
             print(planetName(portal_code, args.galaxy))
+    if args.command == "attributes":
+        print(json.dumps(systemComposition(portal_code, args.galaxy)))
     sys.exit(0)
 
 

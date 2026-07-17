@@ -20,12 +20,14 @@ This code requires only one dependencies:
 ## Usage 
 *Note that the argument format has changed recently and is not backward compatible*
 
-    namegen.py [-h] [-p PSSSYYZZZXXX] [-g GALAXY] [-s SEED] {region,system,planet}
+    namegen.py [-h] [-p PSSSYYZZZXXX] [-g GALAXY] [-s SEED] {region,system,planet,attributes}
 
 Generates names for regions, systems and planets in the game No Man's Sky.
 
 
-* {region,system,planet} : The type of object to get the name of.
+* {region,system,planet,attributes} : The type of object to get the name of.
+  The `attributes` command prints the composition of a system (planet counts,
+  safe start planet, gas giant flag and the planet/moon split) as JSON.
 
 ### Options:
 
@@ -70,6 +72,12 @@ Planet name from portal code and galaxy.
 ```bash
 ./namegen.py planet -p 1001ff218345 -g 4
 #output:Edershar K25
+```
+
+System composition attributes as JSON.
+```bash
+./namegen.py attributes -p 003df8f87945 -g 0
+#output:{"planet_count": 3, "prime_planet_count": 1, "safe_start_planet": 3, "gas_giant": false, "planets": 3, "moons": 1}
 ```
 
 ## Caveats 
