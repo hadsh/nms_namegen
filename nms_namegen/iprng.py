@@ -24,41 +24,47 @@ def hash_round(a, b, c, d, rota, rotb):
 
 
 def do_hash(a, b, c, d, key, seed):
+    # This is Threefish/Skein-style mixing (see the C240 key-schedule constant
+    # 0x1BD11BDAA9FC1A22 in indexPrimedPRNG), where every addition is defined
+    # modulo 2**64. Python ints are unbounded, so each add must be masked back
+    # to 64 bits; otherwise stray high bits survive into the next round's
+    # ror64() rotation and corrupt the result. Without these masks ~10% of
+    # universal addresses hash differently from the fixed-width reference.
     o = [0, 0, 0, 0]
 
     a, b, c, d = hash_round(a, b, c, d, -0x17, 0x18)
     a, b, c, d = hash_round(a, b, c, d, -0x5, 0x1B)
-    a += key + 1
-    d += key + 1
+    a = (a + key + 1) & MASK64
+    d = (d + key + 1) & MASK64
     a, b, c, d = hash_round(a, b, c, d, -0x19, 0x1F)
     a, b, c, d = hash_round(a, b, c, d, 0x12, -0xC)
     a, b, c, d = hash_round(a, b, c, d, 0x6, -0x16)
     a, b, c, d = hash_round(a, b, c, d, -0x20, -0x20)
-    a += seed + 2
-    d += key + seed + 2
+    a = (a + seed + 2) & MASK64
+    d = (d + key + seed + 2) & MASK64
     a, b, c, d = hash_round(a, b, c, d, -0xE, -0x10)
     a, b, c, d = hash_round(b, a, d, c, 0x7, 0xC)
     a, b, c, d = hash_round(b, a, d, c, -0x17, 0x18)
     a, b, c, d = hash_round(a, b, c, d, -0x5, 0x1B)
-    a += 3
-    b += key
-    c += key
-    d += 3 + seed
+    a = (a + 3) & MASK64
+    b = (b + key) & MASK64
+    c = (c + key) & MASK64
+    d = (d + 3 + seed) & MASK64
     a, b, c, d = hash_round(a, b, c, d, -0x19, 0x1F)
     a, b, c, d = hash_round(a, b, c, d, 0x12, -0xC)
     a, b, c, d = hash_round(a, b, c, d, 0x6, -0x16)
     a, b, c, d = hash_round(a, b, c, d, -0x20, -0x20)
-    a += 4
-    b += seed
-    c += seed + key
-    d += 4
+    a = (a + 4) & MASK64
+    b = (b + seed) & MASK64
+    c = (c + seed + key) & MASK64
+    d = (d + 4) & MASK64
     a, b, c, d = hash_round(a, b, c, d, -0xE, -0x10)
     a, b, c, d = hash_round(a, b, c, d, 0xC, 0x7)
     a, b, c, d = hash_round(a, b, c, d, -0x17, 0x18)
-    o[0] = c + seed
+    o[0] = (c + seed) & MASK64
     o[1] = ror64(a, 0x1B) ^ d
     o[2] = d
-    o[3] = (ror64(b, -0x5) ^ c) + 5
+    o[3] = ((ror64(b, -0x5) ^ c) + 5) & MASK64
     return o
 
 
