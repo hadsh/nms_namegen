@@ -1,3 +1,4 @@
+# fork of
 # NMS NAMEGEN
 
 namegen.py is a python program that generates names for 
