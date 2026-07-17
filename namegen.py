@@ -12,6 +12,15 @@ from nms_namegen.planet import planetName
 # Returns the composition attributes of a system as a plain dict, combining
 # systemAttributes (planet/prime counts, safe start, gas giant) with the
 # planet-vs-moon split derived from planetSeeds.
+#
+# The two sources use different notions of "planet count", so the keys are
+# named to keep them distinct:
+#   * planet_count / prime_planet_count come from systemAttributes and describe
+#     the logical bodies the game assigns to the system.
+#   * rendered_planets / rendered_moons come from planetSeeds and describe how
+#     those bodies are actually split into planets vs moons. For gas giants
+#     planetSeeds overrides this to 1 planet + 5 moons, so the rendered split
+#     deliberately does NOT equal planet_count + prime_planet_count.
 def systemComposition(portal_code, galaxy):
     attributes = systemAttributes(portal_code, galaxy)
     seeds = planetSeeds(portal_code, galaxy)
@@ -20,8 +29,8 @@ def systemComposition(portal_code, galaxy):
         "prime_planet_count": attributes["prime_planet_count"],
         "safe_start_planet": attributes["safe_start_planet"],
         "gas_giant": attributes["gas_giant"],
-        "planets": seeds["planet_count"],
-        "moons": seeds["moon_count"],
+        "rendered_planets": seeds["planet_count"],
+        "rendered_moons": seeds["moon_count"],
     }
 
 
@@ -99,6 +108,9 @@ def main():
         else:
             print(planetName(portal_code, args.galaxy))
     if args.command == "attributes":
+        if not args.portal_code:
+            print("A portal code (-p) is required for the attributes command.")
+            sys.exit(2)
         print(json.dumps(systemComposition(portal_code, args.galaxy)))
     sys.exit(0)
 

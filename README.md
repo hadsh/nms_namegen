@@ -27,7 +27,11 @@ Generates names for regions, systems and planets in the game No Man's Sky.
 
 * {region,system,planet,attributes} : The type of object to get the name of.
   The `attributes` command prints the composition of a system (planet counts,
-  safe start planet, gas giant flag and the planet/moon split) as JSON.
+  safe start planet, gas giant flag and the rendered planet/moon split) as JSON.
+  Note that `planet_count`/`prime_planet_count` are the logical bodies the game
+  assigns, while `rendered_planets`/`rendered_moons` are how those bodies are
+  split for display. The two differ for gas giants, which planetSeeds fixes at
+  1 planet + 5 moons.
 
 ### Options:
 
@@ -77,7 +81,7 @@ Planet name from portal code and galaxy.
 System composition attributes as JSON.
 ```bash
 ./namegen.py attributes -p 003df8f87945 -g 0
-#output:{"planet_count": 3, "prime_planet_count": 1, "safe_start_planet": 3, "gas_giant": false, "planets": 3, "moons": 1}
+#output:{"planet_count": 3, "prime_planet_count": 1, "safe_start_planet": 3, "gas_giant": false, "rendered_planets": 3, "rendered_moons": 1}
 ```
 
 ## Caveats 
