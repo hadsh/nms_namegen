@@ -11,6 +11,7 @@ class TestSystemAttributes(unittest.TestCase):
                 "planet_count": 3,
                 "prime_planet_count": 1,
                 "safe_start_planet": 1,
+                "gas_giant": False,
             },
         )
 
@@ -22,6 +23,7 @@ class TestSystemAttributes(unittest.TestCase):
                 "planet_count": 3,
                 "prime_planet_count": 2,
                 "safe_start_planet": 1,
+                "gas_giant": False,
             },
         )
 
@@ -33,6 +35,7 @@ class TestSystemAttributes(unittest.TestCase):
                 "planet_count": 6,
                 "prime_planet_count": 0,
                 "safe_start_planet": 5,
+                "gas_giant": False,
             },
         )
 
@@ -44,6 +47,7 @@ class TestSystemAttributes(unittest.TestCase):
                 "planet_count": 4,
                 "prime_planet_count": 2,
                 "safe_start_planet": 2,
+                "gas_giant": False,
             },
         )
 
@@ -55,6 +59,7 @@ class TestSystemAttributes(unittest.TestCase):
                 "planet_count": 4,
                 "prime_planet_count": 1,
                 "safe_start_planet": 3,
+                "gas_giant": False,
             },
         )
 
@@ -66,6 +71,7 @@ class TestSystemAttributes(unittest.TestCase):
                 "planet_count": 1,
                 "prime_planet_count": 1,
                 "safe_start_planet": 2,
+                "gas_giant": False,
             },
         )
 
@@ -77,6 +83,7 @@ class TestSystemAttributes(unittest.TestCase):
                 "planet_count": 4,
                 "prime_planet_count": 1,
                 "safe_start_planet": 2,
+                "gas_giant": False,
             },
         )
 
@@ -88,6 +95,7 @@ class TestSystemAttributes(unittest.TestCase):
                 "planet_count": 2,
                 "prime_planet_count": 1,
                 "safe_start_planet": 2,
+                "gas_giant": False,
             },
         )
 
@@ -100,6 +108,7 @@ class TestSystemAttributes(unittest.TestCase):
                 "planet_count": 5,
                 "prime_planet_count": 1,
                 "safe_start_planet": 0,
+                "gas_giant": False,
             },
         )
     def test_system_attributes_empty(self):
@@ -111,6 +120,7 @@ class TestSystemAttributes(unittest.TestCase):
                 "planet_count": 5,
                 "prime_planet_count": 1,
                 "safe_start_planet": 0,
+                "gas_giant": False,
             },
         )
         
@@ -123,5 +133,6 @@ class TestSystemAttributes(unittest.TestCase):
                 "planet_count": 3,
                 "prime_planet_count": 2,
                 "safe_start_planet": 0,
+                "gas_giant": False,
             },
         )
