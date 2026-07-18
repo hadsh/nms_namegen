@@ -29,6 +29,7 @@ def systemComposition(portal_code, galaxy):
         "prime_planet_count": attributes["prime_planet_count"],
         "safe_start_planet": attributes["safe_start_planet"],
         "gas_giant": attributes["gas_giant"],
+        "star_type": attributes["star_type"],
         "rendered_planets": seeds["planet_count"],
         "rendered_moons": seeds["moon_count"],
     }
