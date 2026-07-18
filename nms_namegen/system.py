@@ -206,6 +206,12 @@ def systemAttributes(portal_code, galaxy):
         "prime_planet_count": prime_planet_count,
         "safe_start_planet": safe_start,
         "gas_giant": gas_giant,
+        # Star colour class, validated empirically against data/001 spectral
+        # classes (rich corpus, >=3 chars, non-synthetic; 80-99% agreement):
+        # 0 -> yellow/white (F/G, base), 1 -> green (E, Emeril),
+        # 2 -> blue (B/O, Indium), 3 -> red (K/M, Cadmium),
+        # 4 -> purple/exotic (X/Y, system_id 0x3E8-0x428).
+        "star_type": star_type,
     }
 
 def planetSeeds(portal_code, galaxy):

@@ -20,18 +20,24 @@ This code requires only one dependencies:
 ## Usage 
 *Note that the argument format has changed recently and is not backward compatible*
 
-    namegen.py [-h] [-p PSSSYYZZZXXX] [-g GALAXY] [-s SEED] {region,system,planet,attributes}
+    namegen.py [-h] [-p PSSSYYZZZXXX] [-g GALAXY] [-s SEED] {region,system,planet,attributes,system-attributes,planet-seeds,voxel}
 
 Generates names for regions, systems and planets in the game No Man's Sky.
 
 
-* {region,system,planet,attributes} : The type of object to get the name of.
+* {region,system,planet,attributes,system-attributes,planet-seeds,voxel} :
+  The type of object to get the name of, or which raw library function to
+  call and print as JSON.
   The `attributes` command prints the composition of a system (planet counts,
   safe start planet, gas giant flag and the rendered planet/moon split) as JSON.
   Note that `planet_count`/`prime_planet_count` are the logical bodies the game
   assigns, while `rendered_planets`/`rendered_moons` are how those bodies are
   split for display. The two differ for gas giants, which planetSeeds fixes at
   1 planet + 5 moons.
+  `system-attributes`, `planet-seeds` and `voxel` print the raw dict returned
+  by `systemAttributes()`, `planetSeeds()` and `voxelAttributes()`
+  respectively (see the Library section below); `voxel` only needs `-p`, it
+  ignores `-g`.
 
 ### Options:
 
@@ -83,6 +89,37 @@ System composition attributes as JSON.
 ./namegen.py attributes -p 003df8f87945 -g 0
 #output:{"planet_count": 3, "prime_planet_count": 1, "safe_start_planet": 3, "gas_giant": false, "rendered_planets": 3, "rendered_moons": 1}
 ```
+
+Raw system attributes (includes star_type).
+```bash
+./namegen.py system-attributes -p 003df8f87945 -g 0
+#output:{"planet_count": 3, "prime_planet_count": 1, "safe_start_planet": 3, "gas_giant": false, "star_type": 0}
+```
+
+Raw planet seeds for a system.
+```bash
+./namegen.py planet-seeds -p 003df8f87945 -g 0
+#output:{"planet_seeds": [6957366409789192041, 11872164497817189863, 12193988597400712801, 6531008701629202253], "planet_count": 3, "moon_count": 1}
+```
+
+Voxel flags (black hole / Atlas station / central gap) for a portal code.
+```bash
+./namegen.py voxel -p 003df8f87945
+#output:{"guide_star_count": 120, "black_hole_count": 1, "atlas_station_count": 1, "inside_gap": 0, "guide_star_renegade_count": 0}
+```
+
+## Library
+
+`nms_namegen.system.systemAttributes(portal_code, galaxy)` returns a dict with:
+
+* `planet_count`, `prime_planet_count`, `safe_start_planet` : logical body counts
+  and the safe-start planet index, as rolled by the game's RNG.
+* `gas_giant` : True if the purple gas-giant gate collapsed the system to a
+  single gas giant with five moons (see `planetSeeds`).
+* `star_type` : star colour class, 0-4 (yellow/white, green, blue, red,
+  purple/exotic). Not exposed by the `attributes` CLI command or
+  `systemComposition()`, but available to library consumers that import
+  `systemAttributes` directly.
 
 ## Caveats 
 As far as I can tell this generates the correct names for regions and 

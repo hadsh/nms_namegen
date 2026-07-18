@@ -5,7 +5,7 @@ import json
 import argparse
 
 from nms_namegen.system import systemName, systemAttributes, planetSeeds
-from nms_namegen.region import regionName
+from nms_namegen.region import regionName, voxelAttributes
 from nms_namegen.planet import planetName
 
 
@@ -43,7 +43,15 @@ def main():
 
     parser.add_argument(
         "command",
-        choices=["region", "system", "planet", "attributes"],
+        choices=[
+            "region",
+            "system",
+            "planet",
+            "attributes",
+            "system-attributes",
+            "planet-seeds",
+            "voxel",
+        ],
         help="The type of object to get the name of.",
     )
 
@@ -112,6 +120,21 @@ def main():
             print("A portal code (-p) is required for the attributes command.")
             sys.exit(2)
         print(json.dumps(systemComposition(portal_code, args.galaxy)))
+    if args.command == "system-attributes":
+        if not args.portal_code:
+            print("A portal code (-p) is required for the system-attributes command.")
+            sys.exit(2)
+        print(json.dumps(systemAttributes(portal_code, args.galaxy)))
+    if args.command == "planet-seeds":
+        if not args.portal_code:
+            print("A portal code (-p) is required for the planet-seeds command.")
+            sys.exit(2)
+        print(json.dumps(planetSeeds(portal_code, args.galaxy)))
+    if args.command == "voxel":
+        if not args.portal_code:
+            print("A portal code (-p) is required for the voxel command.")
+            sys.exit(2)
+        print(json.dumps(voxelAttributes(portal_code)))
     sys.exit(0)
 
 

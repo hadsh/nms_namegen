@@ -75,5 +75,95 @@ class TestAttributesCLI(unittest.TestCase):
         self.assertIn("portal code", result.stderr + result.stdout)
 
 
+class TestSystemAttributesCLI(unittest.TestCase):
+    def test_system_attributes_command_outputs_json(self):
+        result = subprocess.run(
+            [sys.executable, "namegen.py", "system-attributes", "-p", "003df8f87945", "-g", "0"],
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0)
+        self.assertEqual(
+            json.loads(result.stdout),
+            {
+                "planet_count": 3,
+                "prime_planet_count": 1,
+                "safe_start_planet": 3,
+                "gas_giant": False,
+                "star_type": 0,
+            },
+        )
+
+    def test_system_attributes_command_requires_portal_code(self):
+        result = subprocess.run(
+            [sys.executable, "namegen.py", "system-attributes", "-g", "0"],
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("portal code", result.stderr + result.stdout)
+
+
+class TestPlanetSeedsCLI(unittest.TestCase):
+    def test_planet_seeds_command_outputs_json(self):
+        result = subprocess.run(
+            [sys.executable, "namegen.py", "planet-seeds", "-p", "003df8f87945", "-g", "0"],
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0)
+        self.assertEqual(
+            json.loads(result.stdout),
+            {
+                "planet_seeds": [
+                    6957366409789192041,
+                    11872164497817189863,
+                    12193988597400712801,
+                    6531008701629202253,
+                ],
+                "planet_count": 3,
+                "moon_count": 1,
+            },
+        )
+
+    def test_planet_seeds_command_requires_portal_code(self):
+        result = subprocess.run(
+            [sys.executable, "namegen.py", "planet-seeds", "-g", "0"],
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("portal code", result.stderr + result.stdout)
+
+
+class TestVoxelCLI(unittest.TestCase):
+    def test_voxel_command_outputs_json(self):
+        result = subprocess.run(
+            [sys.executable, "namegen.py", "voxel", "-p", "003df8f87945"],
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0)
+        self.assertEqual(
+            json.loads(result.stdout),
+            {
+                "guide_star_count": 120,
+                "black_hole_count": 1,
+                "atlas_station_count": 1,
+                "inside_gap": 0,
+                "guide_star_renegade_count": 0,
+            },
+        )
+
+    def test_voxel_command_requires_portal_code(self):
+        result = subprocess.run(
+            [sys.executable, "namegen.py", "voxel"],
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("portal code", result.stderr + result.stdout)
+
+
 if __name__ == "__main__":
     unittest.main()
