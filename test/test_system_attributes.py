@@ -13,6 +13,10 @@ class TestSystemAttributes(unittest.TestCase):
                 "safe_start_planet": 1,
                 "gas_giant": False,
                 "star_type": 0,
+                "economy_type": 3,
+                "wealth": 1,
+                "conflict_level": 1,
+                "dominant_race": 1,
             },
         )
 
@@ -26,6 +30,10 @@ class TestSystemAttributes(unittest.TestCase):
                 "safe_start_planet": 1,
                 "gas_giant": False,
                 "star_type": 0,
+                "economy_type": 7,
+                "wealth": 2,
+                "conflict_level": 3,
+                "dominant_race": 2,
             },
         )
 
@@ -39,6 +47,10 @@ class TestSystemAttributes(unittest.TestCase):
                 "safe_start_planet": 5,
                 "gas_giant": False,
                 "star_type": 0,
+                "economy_type": 6,
+                "wealth": 1,
+                "conflict_level": 2,
+                "dominant_race": 3,
             },
         )
 
@@ -52,6 +64,10 @@ class TestSystemAttributes(unittest.TestCase):
                 "safe_start_planet": 2,
                 "gas_giant": False,
                 "star_type": 0,
+                "economy_type": 6,
+                "wealth": 2,
+                "conflict_level": 1,
+                "dominant_race": 3,
             },
         )
 
@@ -65,6 +81,10 @@ class TestSystemAttributes(unittest.TestCase):
                 "safe_start_planet": 3,
                 "gas_giant": False,
                 "star_type": 0,
+                "economy_type": 5,
+                "wealth": 2,
+                "conflict_level": 2,
+                "dominant_race": 1,
             },
         )
 
@@ -78,6 +98,10 @@ class TestSystemAttributes(unittest.TestCase):
                 "safe_start_planet": 2,
                 "gas_giant": False,
                 "star_type": 0,
+                "economy_type": 1,
+                "wealth": 3,
+                "conflict_level": 1,
+                "dominant_race": 1,
             },
         )
 
@@ -91,6 +115,10 @@ class TestSystemAttributes(unittest.TestCase):
                 "safe_start_planet": 2,
                 "gas_giant": False,
                 "star_type": 0,
+                "economy_type": 1,
+                "wealth": 2,
+                "conflict_level": 1,
+                "dominant_race": 1,
             },
         )
 
@@ -104,6 +132,10 @@ class TestSystemAttributes(unittest.TestCase):
                 "safe_start_planet": 2,
                 "gas_giant": False,
                 "star_type": 0,
+                "economy_type": 6,
+                "wealth": 3,
+                "conflict_level": 2,
+                "dominant_race": 3,
             },
         )
 
@@ -118,22 +150,13 @@ class TestSystemAttributes(unittest.TestCase):
                 "safe_start_planet": 0,
                 "gas_giant": False,
                 "star_type": 3,
+                "economy_type": 3,
+                "wealth": 1,
+                "conflict_level": 2,
+                "dominant_race": 2,
             },
         )
-    def test_system_attributes_empty(self):
-        self.maxDiff = None
-        system_attributes = systemAttributes(0x1ACFF285671, 9)
-        self.assertDictEqual(
-            system_attributes,
-            {
-                "planet_count": 5,
-                "prime_planet_count": 1,
-                "safe_start_planet": 0,
-                "gas_giant": False,
-                "star_type": 3,
-            },
-        )
-        
+
     def test_system_attributes_blue(self):
         self.maxDiff = None
         system_attributes = systemAttributes(0x51BCFF285671, 9)
@@ -145,5 +168,9 @@ class TestSystemAttributes(unittest.TestCase):
                 "safe_start_planet": 0,
                 "gas_giant": False,
                 "star_type": 2,
+                "economy_type": 1,
+                "wealth": 2,
+                "conflict_level": 2,
+                "dominant_race": 3,
             },
         )

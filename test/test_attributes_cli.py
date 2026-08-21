@@ -93,6 +93,10 @@ class TestSystemAttributesCLI(unittest.TestCase):
                 "safe_start_planet": 3,
                 "gas_giant": False,
                 "star_type": 0,
+                "economy_type": 6,
+                "wealth": 2,
+                "conflict_level": 2,
+                "dominant_race": 3,
             },
         )
 
@@ -125,6 +129,7 @@ class TestPlanetSeedsCLI(unittest.TestCase):
                 ],
                 "planet_count": 3,
                 "moon_count": 1,
+                "sizes": [0, 0, 1],
             },
         )
 

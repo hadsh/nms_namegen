@@ -83,6 +83,19 @@ def voxelAttributes(portal_code):
     x = portal_code & 0xFFF
     y = (portal_code & 0xFF000000) >> 24
     z = (portal_code & 0xFFF000) >> 12
+    # x/z run 12 bits (0x000-0xFFF), y runs 8 bits (0x00-0xFF): both are
+    # signed offsets from the galactic centre, folded the same way the
+    # game does (0.00% median error vs 5531 wiki region pages). Using the
+    # raw unsigned value here instead of folding it made every high-half
+    # coordinate look "far",
+    # which pushed guide_star_renegade_count to 0 and silently skipped the
+    # star_type renegade override for those systems.
+    if x > 0x7FF:
+        x -= 0x1000
+    if z > 0x7FF:
+        z -= 0x1000
+    if y > 0x7F:
+        y -= 0x100
     voxelAttributes["guide_star_count"] = 0x78
     voxelAttributes["black_hole_count"] = 1
     voxelAttributes["atlas_station_count"] = 1

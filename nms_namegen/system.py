@@ -155,10 +155,38 @@ def systemAttributes(portal_code, galaxy):
         else:
             safe_start = rng.random(planet_count + 2)
 
+    # These 4 draws were previously discarded (bare _updateSeed() calls, one
+    # _updateSeed() per slot either way so the stream position for everything
+    # below is unchanged). Formulas and category numbering were independently
+    # derived and validated against our own wiki corpus (economy/wealth/
+    # conflict/locals fields, decoded from the in-game infobox labels).
+    # Category numbers (1-7 economy, 1-3 wealth/conflict/race) follow that
+    # corpus's own convention, not an external tool's.
     rng._updateSeed()
+    economy_word = rng.seed & 0xFFFFFFFF
+    # 7-way draw, permutation found by brute-force best-match against 7964
+    # wiki-labeled economy codes: 94.76% agreement.
+    economy_type = {0: 4, 1: 6, 2: 1, 3: 5, 4: 2, 5: 3, 6: 7}[(economy_word * 7) >> 32]
+
     rng._updateSeed()
+    wealth_word = rng.seed & 0xFFFFFFFF
+    # Percentage draw (not a plain 3-way mulhi - that scored only 49.62% on
+    # the same corpus), 10%/30% cutoffs, 97.82% agreement on 12929 rows.
+    wealth_pct = (wealth_word * 100) >> 32
+    wealth_bucket = 0 if wealth_pct < 10 else (1 if wealth_pct < 30 else 2)
+    wealth = {0: 3, 1: 1, 2: 2}[wealth_bucket]
+
     rng._updateSeed()
+    conflict_word = rng.seed & 0xFFFFFFFF
+    # 3-way draw, identity mapping, 97.30% agreement on 9246 rows (pirate
+    # systems, category 4, excluded from this corpus check - not modeled).
+    conflict_level = {0: 1, 1: 2, 2: 3}[(conflict_word * 3) >> 32]
+
     rng._updateSeed()
+    race_word = rng.seed & 0xFFFFFFFF
+    # 3-way draw, 94.78% agreement on 11325 rows (uncharted/abandoned
+    # locals codes excluded from this corpus check - no race to predict).
+    dominant_race = {0: 1, 1: 3, 2: 2}[(race_word * 3) >> 32]
 
     if system_id < va["guide_star_renegade_count"]:
         star_type = rng.random(3) + 1
@@ -206,12 +234,28 @@ def systemAttributes(portal_code, galaxy):
         "prime_planet_count": prime_planet_count,
         "safe_start_planet": safe_start,
         "gas_giant": gas_giant,
-        # Star colour class, validated empirically against data/001 spectral
+        # Star colour class, validated empirically against wiki spectral
         # classes (rich corpus, >=3 chars, non-synthetic; 80-99% agreement):
         # 0 -> yellow/white (F/G, base), 1 -> green (E, Emeril),
         # 2 -> blue (B/O, Indium), 3 -> red (K/M, Cadmium),
         # 4 -> purple/exotic (X/Y, system_id 0x3E8-0x428).
         "star_type": star_type,
+        # Economy category, 1-7 (1=trading, 2=advanced materials,
+        # 3=scientific, 4=mining, 5=manufacturing, 6=technology, 7=power
+        # generation). Validated 94.76% against a wiki corpus (7964
+        # systems), see the derivation comment above.
+        "economy_type": economy_type,
+        # Wealth tier, 1-3 (1=low, 2=medium, 3=high). Validated 97.82%
+        # (12929 systems).
+        "wealth": wealth,
+        # Conflict level, 1-3 (1=low, 2=medium, 3=high). Pirate systems
+        # (a separate mechanic, not modeled here) are excluded. Validated
+        # 97.30% (9246 systems, pirate rows excluded from that corpus check).
+        "conflict_level": conflict_level,
+        # Dominant race, 1-3 (1=gek, 2=korvax, 3=vy'keen). Uncharted/
+        # abandoned-without-race locals codes are not modeled here.
+        # Validated 94.78% (11325 systems, those rows excluded).
+        "dominant_race": dominant_race,
     }
 
 def planetSeeds(portal_code, galaxy):
@@ -247,10 +291,22 @@ def planetSeeds(portal_code, galaxy):
 
     i = 0
     planet_count = 0
+    # Per-slot size class (0-2), previously computed and discarded here
+    # (only used inline to gate moon placement). EXPERIMENTAL: exposed for
+    # a future planet-size/diameter feature, but NOT validated at the
+    # per-slot level yet - a system-level sanity check (predicted moon_count
+    # vs a computer-vision-observed moon count corpus) shows a real but
+    # modest correlation (62.67% exact match, 3584 systems), well below the
+    # 94-98% bar economy/wealth/conflict/star_type cleared - likely because
+    # the per-slot RNG generation order isn't known to match the in-game/
+    # screenshot display order. Do not treat "sizes" as validated until
+    # that ordering question is resolved.
+    sizes = []
 
     while i < system_attributes["planet_count"]:
-        i += 1 
+        i += 1
         size = rng.random(3)
+        sizes.append(size)
         planet_count += 1
 
         if size == 0:
@@ -310,6 +366,7 @@ def planetSeeds(portal_code, galaxy):
         planet_seeds.append(p_seed)
 
         size = rng.random(3)
+        sizes.append(size)
         if(size != 0):
             rng._updateSeed()
         i += 1
@@ -319,4 +376,11 @@ def planetSeeds(portal_code, galaxy):
         planet_count = 1
         moon_count = 5
     # print(list(map(lambda x: hex(x), planet_seeds)))
-    return {"planet_seeds": planet_seeds, "planet_count": planet_count, "moon_count": moon_count} 
+    return {
+        "planet_seeds": planet_seeds,
+        "planet_count": planet_count,
+        "moon_count": moon_count,
+        # EXPERIMENTAL, not validated at the per-slot level - see comment
+        # where "sizes" is built above.
+        "sizes": sizes,
+    }

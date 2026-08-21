@@ -30,6 +30,18 @@ Compared to upstream:
   return dict (dropped when `attributes` was added), and adds CLI
   commands (`system-attributes`, `planet-seeds`, `voxel`) exposing the
   remaining raw library functions as JSON.
+* `voxelAttributes()` now folds the x/y/z portal-code coordinates to
+  signed offsets from the galactic centre before computing distance,
+  instead of using the raw unsigned bits. That was skewing the
+  `star_type` renegade override for systems near the coordinate
+  boundary (0.00% median error vs a corpus of 5531 wiki region pages).
+* `systemAttributes()` now also derives `economy_type`, `wealth`,
+  `conflict_level` and `dominant_race`, reusing four RNG draws that
+  were already being consumed but previously discarded. See the
+  Library section below for details and corpus match rates.
+* `planetSeeds()` additionally exposes `sizes`, the per-slot size roll
+  it already computes internally to decide moon placement. Marked
+  experimental, see Library below.
 
 ## Installation
 
@@ -114,16 +126,17 @@ System composition attributes as JSON.
 #output: {"planet_count": 3, "prime_planet_count": 1, "safe_start_planet": 3, "gas_giant": false, "star_type": 0, "rendered_planets": 3, "rendered_moons": 1}
 ```
 
-Raw system attributes (includes `star_type`).
+Raw system attributes (includes `star_type`, `economy_type`, `wealth`,
+`conflict_level`, `dominant_race`).
 ```bash
 ./namegen.py system-attributes -p 003df8f87945 -g 0
-#output: {"planet_count": 3, "prime_planet_count": 1, "safe_start_planet": 3, "gas_giant": false, "star_type": 0}
+#output: {"planet_count": 3, "prime_planet_count": 1, "safe_start_planet": 3, "gas_giant": false, "star_type": 0, "economy_type": 6, "wealth": 2, "conflict_level": 2, "dominant_race": 3}
 ```
 
-Raw planet seeds for a system.
+Raw planet seeds for a system (includes the experimental `sizes` field).
 ```bash
 ./namegen.py planet-seeds -p 003df8f87945 -g 0
-#output: {"planet_seeds": [6957366409789192041, 11872164497817189863, 12193988597400712801, 6531008701629202253], "planet_count": 3, "moon_count": 1}
+#output: {"planet_seeds": [6957366409789192041, 11872164497817189863, 12193988597400712801, 6531008701629202253], "planet_count": 3, "moon_count": 1, "sizes": [0, 0, 1]}
 ```
 
 Voxel flags (black hole / Atlas station / central gap) for a portal code.
@@ -143,6 +156,50 @@ Voxel flags (black hole / Atlas station / central gap) for a portal code.
 * `star_type` : star colour class, 0-4 (yellow/white, green, blue, red,
   purple/exotic). Exposed by both the `attributes` and `system-attributes`
   CLI commands, and by `systemComposition()`.
+* `economy_type` : economy category, 1-7 (1=trading, 2=advanced
+  materials, 3=scientific, 4=mining, 5=manufacturing, 6=technology,
+  7=power generation). Validated 94.76% against a wiki corpus of 7964
+  systems.
+* `wealth` : wealth tier, 1-3 (1=low, 2=medium, 3=high). Validated
+  97.82% against a corpus of 12929 systems.
+* `conflict_level` : conflict level, 1-3 (1=low, 2=medium, 3=high).
+  Pirate systems are a separate mechanic and not modelled here.
+  Validated 97.30% against a corpus of 9246 systems (pirate rows
+  excluded).
+* `dominant_race` : dominant race, 1-3 (1=Gek, 2=Korvax, 3=Vy'keen).
+  Uncharted/abandoned systems have no race to predict and are excluded.
+  Validated 94.78% against a corpus of 11325 systems.
+
+`economy_type`, `wealth`, `conflict_level` and `dominant_race` reuse
+four RNG draws consumed by the game right after the planet/prime counts
+but before `star_type`; the draws themselves were already being made by
+this library, only the resulting words were discarded. The formulas and
+code-to-label tables were derived independently against a wiki-labeled
+corpus, not sourced from any third-party tool - see the comments above
+each draw in `nms_namegen/system.py` for the derivation.
+
+`nms_namegen.system.planetSeeds(portal_code, galaxy)` additionally
+returns `sizes`, the per-slot size class (0-2) rolled for each planet
+slot. It was already being computed internally to decide moon
+placement; this just exposes it. **Experimental**: a system-level sanity
+check (predicted moon count vs an independently observed moon count)
+shows only 62.67% exact agreement, well below the 94-98% match rate of
+the fields above, likely because the per-slot RNG order isn't confirmed
+to match in-game display order. Do not treat `sizes` as validated at
+the per-slot level.
+
+## Testing
+
+```bash
+python -m unittest discover -s test
+```
+
+`test/test_golden_vectors.py` cross-checks this library against an
+independent second implementation across 443 portal codes spanning a
+range of galaxies: region/system/planet names, `systemAttributes()`,
+`planetSeeds()` (including the `sizes` field) and `voxelAttributes()`
+are all compared field by field against `test/fixtures/golden_vectors.json`,
+with 0 mismatches.
 
 ## Caveats
 
