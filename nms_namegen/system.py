@@ -11,7 +11,7 @@ CONST_A = 0x64DD81482CBD31D7
 CONST_B = 0xE36AA5C613612997
 
 # abandonedSystemProbability * 100, indexed by star type (yellow, green, blue,
-# red, purple) — from the original disassembly transcription (upstream 160de15).
+# red, purple), from the original disassembly transcription (upstream 160de15).
 ABANDONED_SYSTEM_PCT = [0, 10, 10, 0, 35]
 
 
@@ -103,7 +103,7 @@ def systemAttributes(portal_code, galaxy):
     # decrements the system id before every branch comparison below (the
     # universal address above uses the raw id). Corpus-verified: with the
     # anomaly restoration this fixes 12 mispredicted boundary systems and
-    # breaks none (McNemar p=0.0002, wiki-Euclid corpus n=1676).
+    # breaks none (McNemar p=0.0002, n=1676 labelled systems).
     system_id = system_id - 1
     system_seed = indexPrimedPRNG(universalAddress) & 0xFFFFFFFF
     # print("system seed: ", hex(system_seed))
@@ -153,19 +153,25 @@ def systemAttributes(portal_code, galaxy):
         if va["guide_star_renegade_count"] >= 10 or star_type != 0 or anomaly != 0:
             safe_start = 0
         else:
-            safe_start = rng.random(planet_count + 2)
+            # The draw spans 0..planet_count, not 0..planet_count+1: this is
+            # the internal class limit that bounds moon insertion below, and
+            # it can never exceed the number of primary bodies. Corpus-
+            # verified on records discovered in 2025 or later (see the note
+            # above planetSeeds): +5.0 pt on 1,041 purple systems, -0.1 pt on
+            # 7,314 Euclid systems (8 records, noise).
+            safe_start = rng.random(planet_count + 1)
 
     # These 4 draws were previously discarded (bare _updateSeed() calls, one
     # _updateSeed() per slot either way so the stream position for everything
-    # below is unchanged). Formulas and category numbering were independently
-    # derived and validated against our own wiki corpus (economy/wealth/
-    # conflict/locals fields, decoded from the in-game infobox labels).
-    # Category numbers (1-7 economy, 1-3 wealth/conflict/race) follow that
-    # corpus's own convention, not an external tool's.
+    # below is unchanged). Formulas and category numbering were derived by
+    # brute-force search against a corpus of community-labelled systems
+    # (economy, wealth, conflict and race, read off the in-game infobox).
+    # The category numbers below (1-7 economy, 1-3 wealth/conflict/race) are
+    # this library's own convention.
     rng._updateSeed()
     economy_word = rng.seed & 0xFFFFFFFF
     # 7-way draw, permutation found by brute-force best-match against 7964
-    # wiki-labeled economy codes: 94.76% agreement.
+    # labelled economy codes: 94.76% agreement.
     economy_type = {0: 4, 1: 6, 2: 1, 3: 5, 4: 2, 5: 3, 6: 7}[(economy_word * 7) >> 32]
 
     rng._updateSeed()
@@ -205,7 +211,7 @@ def systemAttributes(portal_code, galaxy):
     # the gas-giant gate below only aligns across the corpus under this
     # conditional skip (precision 79%/recall 97% vs 65%/70% without it), and
     # it also lifts green/red (star types 1/2) planet accuracy 92.9->93.9%
-    # on the wiki corpus.
+    # across the rest of the corpus.
     abandoned = rng.random(100) < ABANDONED_SYSTEM_PCT[star_type]
     if not abandoned:
         rng._updateSeed()  # empty-system check
@@ -216,34 +222,48 @@ def systemAttributes(portal_code, galaxy):
     elif (rng.random(100) >= 33) or diff < 2:
         prime_planet_count = 1
 
-    # Purple gas-giant gate: first purple draw < 0xF collapses the system to
-    # a single gas giant with five moons (planets=1, moons=5), regardless of
-    # the rolled counts. Otherwise the rolled counts stand (the historic
-    # unknown_attribute2 draw is kept for stream fidelity only). Verified on
-    # 1,091 labeled purple systems: (1,5) recall 97.4% under this gate.
+    # Purple systems take a separate route. Every body is re-labelled as an
+    # extra body (prime_planet_count carries the whole count, planet_count
+    # drops to 0), so planetSeeds() classifies them all through its extra
+    # loop instead of the primary one. Then two nested draws: the first, at
+    # 15%, switches the system to the gas-giant layout (one giant plus moons,
+    # see planetSeeds); the second, at 66% of those, forces the body count to
+    # the maximum of six, which is where the (1 planet, 5 moons) systems come
+    # from. The second draw is nested, not mutually exclusive: reading it as
+    # an alternative branch consumed a draw on the wrong systems and desynced
+    # the stream. This route and the extra-body loop in planetSeeds carry
+    # essentially the whole purple fix between them; neither is worth much
+    # alone. Corpus-verified on 1,041 purple systems discovered in 2025 or
+    # later: planet counts 58.1% -> 94.1%, gas-giant precision 80.3% ->
+    # 94.7% (recall 98.4% -> 95.7%).
     gas_giant = False
     if star_type == 4:
-        g1 = rng.random(100)
-        if g1 < 0xF:
+        prime_planet_count += planet_count
+        planet_count = 0
+        if rng.random(100) < 15:
             gas_giant = True
-        if g1 > 0xF:
-            rng.random(100)  # unknown_attribute2 draw
+            if rng.random(100) < 66:
+                planet_count = 0
+                prime_planet_count = 6
 
     return {
         "planet_count": planet_count,
         "prime_planet_count": prime_planet_count,
         "safe_start_planet": safe_start,
+        # Gas-giant layout: the system renders as a single giant planet
+        # orbited by every other body as a moon (see planetSeeds). Purple
+        # systems only.
         "gas_giant": gas_giant,
-        # Star colour class, validated empirically against wiki spectral
-        # classes (rich corpus, >=3 chars, non-synthetic; 80-99% agreement):
+        # Star colour class, validated empirically against labelled
+        # spectral classes (80-99% agreement):
         # 0 -> yellow/white (F/G, base), 1 -> green (E, Emeril),
         # 2 -> blue (B/O, Indium), 3 -> red (K/M, Cadmium),
         # 4 -> purple/exotic (X/Y, system_id 0x3E8-0x428).
         "star_type": star_type,
         # Economy category, 1-7 (1=trading, 2=advanced materials,
         # 3=scientific, 4=mining, 5=manufacturing, 6=technology, 7=power
-        # generation). Validated 94.76% against a wiki corpus (7964
-        # systems), see the derivation comment above.
+        # generation). Validated 94.76% (7964 systems), see the derivation
+        # comment above.
         "economy_type": economy_type,
         # Wealth tier, 1-3 (1=low, 2=medium, 3=high). Validated 97.82%
         # (12929 systems).
@@ -258,11 +278,19 @@ def systemAttributes(portal_code, galaxy):
         "dominant_race": dominant_race,
     }
 
+# Corpus figures quoted in this module are measured only against community
+# records discovered in 2025 or later. The game has regenerated its universe
+# several times, most visibly at the Origins update, and older records
+# describe a universe this generator no longer produces: single-body systems
+# are 7.1% of pre-2021 records and 0.2% of 2025+ ones, and body counts match
+# at 59% on pre-2021 records against 95% on recent ones. Measuring against
+# the whole corpus therefore scores the archive, not the generator.
 def planetSeeds(portal_code, galaxy):
     system_attributes = systemAttributes(portal_code, galaxy)
 
-    # Purple gas-giant system: exactly one planet with five moons. Seeds are
-    # still generated below so per-index name lookups keep working.
+    # Gas-giant layout: one giant plus moons. Every record still gets a seed
+    # so per-index name lookups keep working, but no class is drawn - the
+    # layout is fixed, so the class draws are not in the stream either.
     gas_giant = system_attributes.get("gas_giant", False)
 
     planet_seeds = []
@@ -289,30 +317,46 @@ def planetSeeds(portal_code, galaxy):
     seed = seed_h << 32 | seed_l
     rng = PRNG(seed)
 
-    i = 0
-    planet_count = 0
-    # Per-slot size class (0-2), previously computed and discarded here
-    # (only used inline to gate moon placement). EXPERIMENTAL: exposed for
-    # a future planet-size/diameter feature, but NOT validated at the
-    # per-slot level yet - a system-level sanity check (predicted moon_count
-    # vs a computer-vision-observed moon count corpus) shows a real but
-    # modest correlation (62.67% exact match, 3584 systems), well below the
-    # 94-98% bar economy/wealth/conflict/star_type cleared - likely because
-    # the per-slot RNG generation order isn't known to match the in-game/
-    # screenshot display order. Do not treat "sizes" as validated until
-    # that ordering question is resolved.
+    primary_count = system_attributes["planet_count"]
+    total_count = primary_count + system_attributes["prime_planet_count"]
+    # The system holds total_count bodies, no more: every moon placed below
+    # takes one of those slots away from the planets. safe_start_planet is
+    # the internal class limit, and placement stops one slot before it.
+    stop = system_attributes["safe_start_planet"] - 1
+
+    # Per-slot size class (0-2), one draw per classified body. EXPERIMENTAL:
+    # exposed for a future planet-size/diameter feature, but NOT validated at
+    # the per-slot level yet - a system-level sanity check (predicted
+    # moon_count vs an independently observed moon count) shows a
+    # real but modest correlation (62.67% exact match, 3584 systems), well
+    # below the 94-98% bar economy/wealth/conflict/star_type cleared - likely
+    # because the per-slot generation order here is not known to match the
+    # order the game displays bodies in. Do not treat "sizes" as validated
+    # until that ordering question is resolved. Inserted moons carry no draw
+    # of their own, so they contribute no entry here.
     sizes = []
 
-    while i < system_attributes["planet_count"]:
+    if gas_giant:
+        for _ in range(total_count):
+            planet_seeds.append(_bodySeed(rng))
+        return {
+            "planet_seeds": planet_seeds,
+            "planet_count": 1,
+            "moon_count": total_count - 1,
+            "sizes": sizes,
+        }
+
+    # Primary bodies: all classes first, then all seeds. A size-0 body is a
+    # large planet and pulls 0-2 moons in behind it, each taking the next
+    # slot.
+    i = 0
+    while i < primary_count:
         i += 1
         size = rng.random(3)
         sizes.append(size)
-        planet_count += 1
 
         if size == 0:
-            # This is a large planet
-            # Add 1 or 2 moons.
-            m = system_attributes["planet_count"] - i
+            m = primary_count - i
             if m < 0:
                 m = 0
             if m > 2:
@@ -322,65 +366,68 @@ def planetSeeds(portal_code, galaxy):
             # Accumulate: each large planet rolls its own moons, a plain
             # assignment here let the last roll erase the previous ones.
             # Only count moons actually placed: the placement loop can exit
-            # immediately (i already on the safe-start slot) without placing
-            # any, and crediting the raw roll skewed the planet/moon split
-            # (AGT/001 corpus, 2490 systems: pair-match 68.9% -> 73.0%).
+            # immediately (i already on the stop slot) without placing any,
+            # and crediting the raw roll skewed the planet/moon split
+            # (2490 labelled systems: pair-match 68.9% -> 73.0%).
             if n_moons > 0:
-                while i != system_attributes["safe_start_planet"] - 1:
+                while i != stop:
                     i += 1
-                    planet_count += 1
                     n_moons -= 1
                     moon_count += 1
                     if n_moons <= 0:
                         break
 
     i = 0
-    while i < system_attributes["planet_count"]:
-        low = rng.randi() & 0xFFFFFFFF
-        high = rng.randi() & 0xFFFFFFFF
-
-        register = (high << 0x20) | low
-        register = ((register >> 33) ^ register) * CONST_A
-        register &= 0xFFFFFFFFFFFFFFFF
-        register = ((register >> 33) ^ register) * CONST_B
-        register &= 0xFFFFFFFFFFFFFFFF
-        p_seed = (register >> 33) ^ register
-        planet_seeds.append(p_seed)
+    while i < primary_count:
+        planet_seeds.append(_bodySeed(rng))
         i += 1
 
-    # Extra planet(s)
-    rng._updateSeed()
-
-    while i < (
-        system_attributes["planet_count"] + system_attributes["prime_planet_count"]
-    ):
-        
-        low = rng.randi() & 0xFFFFFFFF
-        high = rng.randi() & 0xFFFFFFFF
-        register = (high << 0x20) | low
-        register = ((register >> 33) ^ register) * CONST_A
-        register &= 0xFFFFFFFFFFFFFFFF
-        register = ((register >> 33) ^ register) * CONST_B
-        register &= 0xFFFFFFFFFFFFFFFF
-        p_seed = (register >> 33) ^ register
-        planet_seeds.append(p_seed)
-
+    # Extra bodies. Unlike the primary bodies above, these interleave class
+    # and seed per record, and each of them can pull its own moons in: the
+    # earlier version drew the seed first, then a class it only used to burn
+    # a draw, and never converted an extra body into a moon at all. Corpus-
+    # verified: +0.6 pt on 7,314 Euclid systems, and on purple systems -
+    # where this loop now classifies every body - planet counts go from
+    # 59.8% to 94.1% (1,041 systems). Both figures are on records discovered
+    # in 2025 or later, see the note above planetSeeds.
+    while i < total_count:
         size = rng.random(3)
         sizes.append(size)
-        if(size != 0):
-            rng._updateSeed()
+        planet_seeds.append(_bodySeed(rng))
         i += 1
 
-    planet_count = system_attributes["planet_count"] + system_attributes["prime_planet_count"] - moon_count
-    if gas_giant:
-        planet_count = 1
-        moon_count = 5
-    # print(list(map(lambda x: hex(x), planet_seeds)))
+        if size == 0:
+            m = total_count - i
+            if m < 0:
+                m = 0
+            if m > 2:
+                m = 2
+
+            n_moons = rng.random(m + 1)
+            while n_moons > 0 and i != stop:
+                planet_seeds.append(_bodySeed(rng))
+                moon_count += 1
+                n_moons -= 1
+                i += 1
+
     return {
         "planet_seeds": planet_seeds,
-        "planet_count": planet_count,
+        "planet_count": total_count - moon_count,
         "moon_count": moon_count,
         # EXPERIMENTAL, not validated at the per-slot level - see comment
         # where "sizes" is built above.
         "sizes": sizes,
     }
+
+
+# Mixes the next two PRNG words into one body seed.
+def _bodySeed(rng):
+    low = rng.randi() & 0xFFFFFFFF
+    high = rng.randi() & 0xFFFFFFFF
+
+    register = (high << 0x20) | low
+    register = ((register >> 33) ^ register) * CONST_A
+    register &= 0xFFFFFFFFFFFFFFFF
+    register = ((register >> 33) ^ register) * CONST_B
+    register &= 0xFFFFFFFFFFFFFFFF
+    return (register >> 33) ^ register

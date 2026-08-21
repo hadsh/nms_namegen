@@ -8,7 +8,7 @@
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -69,14 +69,14 @@
    1,
    1,
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 100.9638397403373
+   "guide_star_renegade_count": 101
   }
  },
  {
@@ -168,7 +168,7 @@
   "galaxy": 0,
   "region": "Twalande Shallows",
   "system": "Aytonh XIV",
-  "planet": "Ramout",
+  "planet": "Seanoo O46",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -183,21 +183,20 @@
   "seeds": [
    3396306335894084980,
    -8473542551403295812,
-   4803518881144710396
+   -6983673052623005538
   ],
-  "planet_count": 3,
-  "moon_count": 0,
+  "planet_count": 2,
+  "moon_count": 1,
   "sizes": [
    2,
-   2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 15.72005325457667
+   "guide_star_renegade_count": 16
   }
  },
  {
@@ -232,7 +231,7 @@
    2,
    0,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -247,7 +246,7 @@
   "galaxy": 0,
   "region": "Osztikuru",
   "system": "Mukosi-Sitif II",
-  "planet": "Apple VIII",
+  "planet": "Olataean",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
@@ -264,7 +263,7 @@
    7612489513849299333,
    -862113972704468236,
    -6685527903319254685,
-   -1797859774152435925
+   3194542468803170615
   ],
   "planet_count": 4,
   "moon_count": 1,
@@ -272,14 +271,14 @@
    0,
    0,
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 4.65553214358161
+   "guide_star_renegade_count": 5
   }
  },
  {
@@ -331,7 +330,7 @@
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 1,
-   "safe_start_planet": 1,
+   "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -353,7 +352,7 @@
    1,
    2,
    0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -388,7 +387,7 @@
   "moon_count": 0,
   "sizes": [
    0,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -429,7 +428,7 @@
    0,
    1,
    2,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -444,7 +443,7 @@
   "galaxy": 0,
   "region": "Almenim Void",
   "system": "Nokawa-Iogra VI",
-  "planet": "Kiniu XIV",
+  "planet": "Oneza 36/Q6",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
@@ -462,7 +461,7 @@
    -4487600034493549492,
    -8751944444653946017,
    3803336519534556962,
-   93928559934378033
+   -4489270205363861044
   ],
   "planet_count": 6,
   "moon_count": 0,
@@ -471,7 +470,7 @@
    0,
    0,
    1,
-   1,
+   2,
    1
   ],
   "voxel": {
@@ -569,7 +568,7 @@
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -605,7 +604,7 @@
   "galaxy": 0,
   "region": "Neclainan Shallows",
   "system": "Upidaem-Adh",
-  "planet": "Nozon X47",
+  "planet": "Yama 95/D7",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -620,14 +619,14 @@
   "seeds": [
    -86422986226154356,
    6773477416136437239,
-   4120384260315271432
+   -3214064948750641410
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    2,
-   1,
-   0
+   2,
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -664,7 +663,7 @@
   "sizes": [
    1,
    2,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -683,7 +682,7 @@
   "sysattr": {
    "planet_count": 5,
    "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -705,14 +704,14 @@
    0,
    2,
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 6.7767649096529965
+   "guide_star_renegade_count": 7
   }
  },
  {
@@ -742,14 +741,14 @@
   "sizes": [
    2,
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 47.06196044635914
+   "guide_star_renegade_count": 48
   }
  },
  {
@@ -785,14 +784,14 @@
    1,
    0,
    1,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 16.224464415320455
+   "guide_star_renegade_count": 17
   }
  },
  {
@@ -827,7 +826,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 26.844139165715887
+   "guide_star_renegade_count": 27
   }
  },
  {
@@ -839,7 +838,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -859,14 +858,14 @@
    1,
    0,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 2.1408548974340675
+   "guide_star_renegade_count": 3
   }
  },
  {
@@ -899,14 +898,14 @@
    0,
    1,
    1,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 12.830692974107919
+   "guide_star_renegade_count": 13
   }
  },
  {
@@ -989,7 +988,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 14.307082655111259
+   "guide_star_renegade_count": 15
   }
  },
  {
@@ -1001,7 +1000,7 @@
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 1,
-   "safe_start_planet": 1,
+   "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 1,
@@ -1017,7 +1016,7 @@
   "moon_count": 0,
   "sizes": [
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -1036,7 +1035,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 6,
+   "safe_start_planet": 5,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -1099,7 +1098,7 @@
    0,
    2,
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -1134,7 +1133,7 @@
   "moon_count": 0,
   "sizes": [
    2,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -1169,7 +1168,7 @@
   "moon_count": 0,
   "sizes": [
    2,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -1188,7 +1187,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -1262,11 +1261,11 @@
   "galaxy": 0,
   "region": "Embalesen",
   "system": "Awolaga",
-  "planet": "Himonat III",
+  "planet": "Urgamid Major",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -1279,7 +1278,7 @@
    -237119393381166347,
    -280077566166197900,
    -5358644968086906882,
-   8705498386385578547
+   7242587067282429776
   ],
   "planet_count": 5,
   "moon_count": 0,
@@ -1288,7 +1287,7 @@
    0,
    2,
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -1307,7 +1306,7 @@
   "sysattr": {
    "planet_count": 5,
    "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -1331,7 +1330,7 @@
    1,
    1,
    2,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -1350,7 +1349,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 6,
+   "safe_start_planet": 5,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -1414,7 +1413,7 @@
    1,
    2,
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -1433,7 +1432,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 7,
+   "safe_start_planet": 6,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 2,
@@ -1463,7 +1462,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 2.065268417461084
+   "guide_star_renegade_count": 3
   }
  },
  {
@@ -1471,7 +1470,7 @@
   "galaxy": 0,
   "region": "Yatuslo Mass",
   "system": "Glunbo-Goten XII",
-  "planet": "Nikko 24/P3",
+  "planet": "Joet 23/N5",
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 2,
@@ -1487,21 +1486,21 @@
    2902048788535600444,
    -3591423949321690317,
    6848123697255194149,
-   6439270751288544963
+   4547502638272121099
   ],
   "planet_count": 3,
   "moon_count": 1,
   "sizes": [
    0,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 59.18852014288149
+   "guide_star_renegade_count": 60
   }
  },
  {
@@ -1509,7 +1508,7 @@
   "galaxy": 0,
   "region": "Teenet Fringe",
   "system": "Prolevk-Send III",
-  "planet": "Naamos Major",
+  "planet": "Preumas Minor",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
@@ -1527,15 +1526,14 @@
    2195595418205103020,
    -2533694448035119268,
    7320045443117669349,
-   2026193796607050693
+   2045334023342227620
   ],
-  "planet_count": 6,
-  "moon_count": 0,
+  "planet_count": 5,
+  "moon_count": 1,
   "sizes": [
    2,
    2,
    1,
-   2,
    2,
    0
   ],
@@ -1544,7 +1542,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 41.14631637121644
+   "guide_star_renegade_count": 42
   }
  },
  {
@@ -1587,7 +1585,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 47.922537464831194
+   "guide_star_renegade_count": 48
   }
  },
  {
@@ -1599,7 +1597,7 @@
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -1621,7 +1619,7 @@
    1,
    2,
    1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -1678,7 +1676,7 @@
   "galaxy": 0,
   "region": "Sea of Naksmir",
   "system": "Rumreri",
-  "planet": "Irosh 66/L8",
+  "planet": "Sains XIV",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -1693,14 +1691,13 @@
   "seeds": [
    -7091752064043200156,
    509938788627841594,
-   -5555511034755922975
+   -2179738848579457777
   ],
-  "planet_count": 3,
-  "moon_count": 0,
+  "planet_count": 2,
+  "moon_count": 1,
   "sizes": [
    0,
-   2,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -1741,7 +1738,7 @@
    1,
    0,
    0,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -1783,7 +1780,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 15.750231665598648
+   "guide_star_renegade_count": 16
   }
  },
  {
@@ -1818,7 +1815,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 34.30803941958729
+   "guide_star_renegade_count": 35
   }
  },
  {
@@ -1852,14 +1849,14 @@
    1,
    1,
    0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 79.79449126307185
+   "guide_star_renegade_count": 80
   }
  },
  {
@@ -1891,7 +1888,7 @@
   "sizes": [
    2,
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -1910,7 +1907,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -1975,7 +1972,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 15.29322361767069
+   "guide_star_renegade_count": 16
   }
  },
  {
@@ -2061,7 +2058,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -2122,7 +2119,7 @@
   "sizes": [
    1,
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -2141,7 +2138,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 2,
@@ -2161,7 +2158,7 @@
    2,
    1,
    2,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -2198,14 +2195,14 @@
   "sizes": [
    1,
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 7.849028664249488
+   "guide_star_renegade_count": 8
   }
  },
  {
@@ -2278,14 +2275,14 @@
   "sizes": [
    1,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 16.599314010375423
+   "guide_star_renegade_count": 17
   }
  },
  {
@@ -2320,14 +2317,14 @@
    0,
    0,
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 27.16544118450163
+   "guide_star_renegade_count": 28
   }
  },
  {
@@ -2409,7 +2406,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 18.45973468823165
+   "guide_star_renegade_count": 19
   }
  },
  {
@@ -2480,7 +2477,7 @@
   "moon_count": 1,
   "sizes": [
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -2538,11 +2535,11 @@
   "galaxy": 1,
   "region": "Laoday Band",
   "system": "Kuchinsky VIII",
-  "planet": "Amworleisa Pipor",
+  "planet": "Prudho XV",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -2551,18 +2548,17 @@
    "dominant_race": 1
   },
   "seeds": [
+   2125941301046312897,
    3808179409892254114,
    4677695507519785091,
-   -5096476574378371550,
-   -2358968471980937078
+   5507451448085320889
   ],
-  "planet_count": 4,
-  "moon_count": 0,
+  "planet_count": 3,
+  "moon_count": 1,
   "sizes": [
    2,
    0,
-   0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -2577,10 +2573,10 @@
   "galaxy": 1,
   "region": "Kedekij Spur",
   "system": "Evdarkcoo III",
-  "planet": "Okkin",
+  "planet": "Duninki Ubame",
   "sysattr": {
-   "planet_count": 2,
-   "prime_planet_count": 2,
+   "planet_count": 0,
+   "prime_planet_count": 4,
    "safe_start_planet": 0,
    "gas_giant": true,
    "star_type": 4,
@@ -2590,25 +2586,20 @@
    "dominant_race": 1
   },
   "seeds": [
-   6393441801899719996,
-   1283566271686235975,
-   6410160666593151423,
-   4330699464170112359
+   26787695845693755,
+   919838821850138047,
+   -3436702663990007863,
+   -5563121044336864016
   ],
   "planet_count": 1,
-  "moon_count": 5,
-  "sizes": [
-   2,
-   0,
-   0,
-   0
-  ],
+  "moon_count": 3,
+  "sizes": [],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 20.544206926384376
+   "guide_star_renegade_count": 21
   }
  },
  {
@@ -2641,14 +2632,14 @@
    1,
    0,
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 15.255665501386645
+   "guide_star_renegade_count": 16
   }
  },
  {
@@ -2689,7 +2680,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 60.06092803115826
+   "guide_star_renegade_count": 61
   }
  },
  {
@@ -2722,7 +2713,7 @@
    1,
    2,
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -2764,7 +2755,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 1.1071452279009861
+   "guide_star_renegade_count": 2
   }
  },
  {
@@ -2793,14 +2784,14 @@
   "moon_count": 1,
   "sizes": [
    0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 20.01528123711141
+   "guide_star_renegade_count": 21
   }
  },
  {
@@ -2855,7 +2846,7 @@
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -2871,7 +2862,7 @@
   "moon_count": 0,
   "sizes": [
    2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -2917,7 +2908,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 4.697501703637698
+   "guide_star_renegade_count": 5
   }
  },
  {
@@ -2929,7 +2920,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -2968,11 +2959,11 @@
   "galaxy": 1,
   "region": "Yonyam Shallows",
   "system": "Thuseter IV",
-  "planet": "Woleyci",
+  "planet": "Lesbonic",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -2985,7 +2976,7 @@
    2605191998485509606,
    4798064885692935179,
    -9040806910381250362,
-   -8183762328749551478
+   -8187071904370884532
   ],
   "planet_count": 4,
   "moon_count": 1,
@@ -3074,7 +3065,7 @@
    1,
    0,
    2,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -3116,14 +3107,14 @@
    1,
    0,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 99.8238354983462
+   "guide_star_renegade_count": 100
   }
  },
  {
@@ -3131,7 +3122,7 @@
   "galaxy": 1,
   "region": "Newmooria Conflux",
   "system": "Usarga",
-  "planet": "Slin Delta",
+  "planet": "Full XV",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -3146,21 +3137,21 @@
   "seeds": [
    1392364017372854150,
    5599941317132446532,
-   -3368438780147203609
+   -5758664850821670220
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    2,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 43.02177522707055
+   "guide_star_renegade_count": 44
   }
  },
  {
@@ -3201,7 +3192,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 9.023198927219909
+   "guide_star_renegade_count": 10
   }
  },
  {
@@ -3213,7 +3204,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -3233,7 +3224,7 @@
    2,
    2,
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -3252,7 +3243,7 @@
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -3279,7 +3270,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 5.754320845069998
+   "guide_star_renegade_count": 6
   }
  },
  {
@@ -3287,7 +3278,7 @@
   "galaxy": 1,
   "region": "Oebato Sector",
   "system": "Ealiumf II",
-  "planet": "Gladelen XIV",
+  "planet": "Muelyn XVIII",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
@@ -3304,7 +3295,7 @@
    -8894602786377001227,
    -435468861650805107,
    4737256417954080659,
-   1858588425748694779
+   -6315533985815307209
   ],
   "planet_count": 4,
   "moon_count": 1,
@@ -3312,7 +3303,7 @@
    2,
    0,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -3331,7 +3322,7 @@
   "sysattr": {
    "planet_count": 5,
    "prime_planet_count": 1,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -3355,14 +3346,14 @@
    0,
    0,
    1,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 8.405624151167686
+   "guide_star_renegade_count": 9
   }
  },
  {
@@ -3374,7 +3365,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 2,
@@ -3394,7 +3385,7 @@
    1,
    2,
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -3478,7 +3469,7 @@
    1,
    2,
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -3518,15 +3509,15 @@
    1,
    2,
    2,
-   0,
-   2
+   1,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 27.917565143615064
+   "guide_star_renegade_count": 28
   }
  },
  {
@@ -3555,15 +3546,15 @@
   "moon_count": 0,
   "sizes": [
    2,
-   0,
-   1
+   1,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 44.12777858427492
+   "guide_star_renegade_count": 45
   }
  },
  {
@@ -3599,14 +3590,14 @@
    1,
    1,
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 43.92517238590325
+   "guide_star_renegade_count": 44
   }
  },
  {
@@ -3649,7 +3640,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 14.944513779435354
+   "guide_star_renegade_count": 15
   }
  },
  {
@@ -3685,7 +3676,7 @@
    1,
    2,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -3732,7 +3723,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 38.215629007270834
+   "guide_star_renegade_count": 39
   }
  },
  {
@@ -3768,14 +3759,14 @@
    1,
    0,
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 62.5019699473985
+   "guide_star_renegade_count": 63
   }
  },
  {
@@ -3808,8 +3799,8 @@
   "sizes": [
    0,
    0,
-   0,
-   1
+   1,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -3847,15 +3838,15 @@
   "sizes": [
    1,
    1,
-   1,
-   2
+   0,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 57.434730291305065
+   "guide_star_renegade_count": 58
   }
  },
  {
@@ -3890,14 +3881,14 @@
    1,
    1,
    2,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 47.63447247199052
+   "guide_star_renegade_count": 48
   }
  },
  {
@@ -3909,7 +3900,7 @@
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -3967,7 +3958,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 51.25065026314974
+   "guide_star_renegade_count": 52
   }
  },
  {
@@ -3979,7 +3970,7 @@
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -3995,7 +3986,7 @@
   "moon_count": 0,
   "sizes": [
    0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4038,7 +4029,7 @@
    1,
    2,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4087,7 +4078,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 24.575925408439517
+   "guide_star_renegade_count": 25
   }
  },
  {
@@ -4128,7 +4119,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 21.37885550918145
+   "guide_star_renegade_count": 22
   }
  },
  {
@@ -4170,7 +4161,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 1.07259049415903
+   "guide_star_renegade_count": 2
   }
  },
  {
@@ -4178,11 +4169,11 @@
   "galaxy": 1,
   "region": "Yilwin Mass",
   "system": "Onawat",
-  "planet": "New Guhtonyan",
+  "planet": "Dioneh J49",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -4196,7 +4187,7 @@
    -2007419381955238116,
    -8818528822643336894,
    -5088388125514584438,
-   5342717403150412289
+   8039815571307861184
   ],
   "planet_count": 5,
   "moon_count": 1,
@@ -4204,7 +4195,7 @@
    0,
    2,
    1,
-   2,
+   1,
    2
   ],
   "voxel": {
@@ -4249,7 +4240,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 42.166401274333964
+   "guide_star_renegade_count": 43
   }
  },
  {
@@ -4257,7 +4248,7 @@
   "galaxy": 1,
   "region": "Wodaim Mass",
   "system": "Udamamo-Ucran",
-  "planet": "Teoskaj Uttsu",
+  "planet": "Kidsonya U32",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
@@ -4274,7 +4265,7 @@
    -7744769439722080646,
    7250008116096138735,
    -2149563876615687426,
-   8698942436224906485
+   -6699436666345295918
   ],
   "planet_count": 5,
   "moon_count": 0,
@@ -4282,8 +4273,8 @@
    2,
    1,
    0,
-   2,
-   0
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4361,7 +4352,7 @@
   "sizes": [
    2,
    0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4376,7 +4367,7 @@
   "galaxy": 1,
   "region": "Ipedist",
   "system": "Amiawate",
-  "planet": "Ahok 85/Q9",
+  "planet": "Notpaule VIII",
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 2,
@@ -4392,13 +4383,13 @@
    1880493479911278257,
    -7579025820463228182,
    -3176000095971129369,
-   3847496961165377706
+   -5504133386057626731
   ],
   "planet_count": 3,
   "moon_count": 1,
   "sizes": [
    0,
-   2,
+   1,
    2
   ],
   "voxel": {
@@ -4406,7 +4397,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 45.15135365003407
+   "guide_star_renegade_count": 46
   }
  },
  {
@@ -4439,8 +4430,8 @@
    2,
    2,
    0,
-   1,
-   2
+   0,
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4455,11 +4446,11 @@
   "galaxy": 1,
   "region": "Acdowlin Sector",
   "system": "Liibal-Glon",
-  "planet": "Wimexisrod Gojo",
+  "planet": "Gidongrin",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -4468,16 +4459,17 @@
    "dominant_race": 1
   },
   "seeds": [
-   2263334349990580948,
    -5916566479948018583,
    -6821694049488976470,
-   4356940191830290800
+   7477174577425838560,
+   9016374025953173202
   ],
-  "planet_count": 2,
-  "moon_count": 2,
+  "planet_count": 3,
+  "moon_count": 1,
   "sizes": [
    0,
-   0
+   0,
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4496,7 +4488,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -4516,7 +4508,7 @@
    2,
    0,
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4557,7 +4549,7 @@
    1,
    0,
    1,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4576,7 +4568,7 @@
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -4640,7 +4632,7 @@
    0,
    1,
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4684,7 +4676,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 19.986997252562347
+   "guide_star_renegade_count": 20
   }
  },
  {
@@ -4696,7 +4688,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -4716,7 +4708,7 @@
    2,
    0,
    1,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4756,7 +4748,7 @@
    0,
    0,
    0,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4838,14 +4830,14 @@
    1,
    1,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 70.38206000949307
+   "guide_star_renegade_count": 71
   }
  },
  {
@@ -4857,7 +4849,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -4883,7 +4875,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 6.677814872584051
+   "guide_star_renegade_count": 7
   }
  },
  {
@@ -4935,7 +4927,7 @@
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 2,
@@ -4956,7 +4948,7 @@
    0,
    2,
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -4971,7 +4963,7 @@
   "galaxy": 5,
   "region": "Diywalir",
   "system": "Iwonju XVIII",
-  "planet": "Ashim 30/J7",
+  "planet": "Ofiassf E30",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
@@ -4989,23 +4981,22 @@
    7618803922427716482,
    -6488935942020697656,
    1593109735607593236,
-   -1848680484629138650
+   4915983741664167052
   ],
-  "planet_count": 5,
-  "moon_count": 1,
+  "planet_count": 4,
+  "moon_count": 2,
   "sizes": [
    0,
    2,
    0,
-   2,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 93.48109042566057
+   "guide_star_renegade_count": 94
   }
  },
  {
@@ -5038,15 +5029,15 @@
    2,
    2,
    2,
-   1,
-   0
+   0,
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 10.960461787959417
+   "guide_star_renegade_count": 11
   }
  },
  {
@@ -5085,7 +5076,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 4.947388286230449
+   "guide_star_renegade_count": 5
   }
  },
  {
@@ -5119,7 +5110,7 @@
    0,
    0,
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -5164,7 +5155,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 46.19104612171547
+   "guide_star_renegade_count": 47
   }
  },
  {
@@ -5204,7 +5195,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 8.49464475389199
+   "guide_star_renegade_count": 9
   }
  },
  {
@@ -5247,7 +5238,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 85.97166622632143
+   "guide_star_renegade_count": 86
   }
  },
  {
@@ -5284,7 +5275,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 85.9570578465655
+   "guide_star_renegade_count": 86
   }
  },
  {
@@ -5296,7 +5287,7 @@
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 1,
-   "safe_start_planet": 1,
+   "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -5327,11 +5318,11 @@
   "galaxy": 5,
   "region": "Rilaumo Shallows",
   "system": "Popavna-Unbo",
-  "planet": "Provero XI",
+  "planet": "Aijo 92/D4",
   "sysattr": {
    "planet_count": 5,
    "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -5340,22 +5331,21 @@
    "dominant_race": 2
   },
   "seeds": [
-   -6736388701760148603,
-   8448531264224654013,
-   164439231970511363,
-   -3176829550392379070,
-   5035734236147067069,
-   7287849597137104959
+   5977928350850902038,
+   -5533504792134892419,
+   -1943373188985974115,
+   5820358783050726235,
+   -2441782704719814337,
+   4680885985402924047
   ],
-  "planet_count": 6,
-  "moon_count": 0,
+  "planet_count": 5,
+  "moon_count": 1,
   "sizes": [
    1,
    0,
    0,
    0,
-   2,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -5390,14 +5380,14 @@
   "moon_count": 0,
   "sizes": [
    0,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 22.50827708918611
+   "guide_star_renegade_count": 23
   }
  },
  {
@@ -5433,14 +5423,14 @@
    2,
    0,
    1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 66.59129488492731
+   "guide_star_renegade_count": 67
   }
  },
  {
@@ -5448,11 +5438,11 @@
   "galaxy": 5,
   "region": "Krulikhor Instability",
   "system": "Didocker",
-  "planet": "Rushampto E9",
+  "planet": "Ireno Alpha",
   "sysattr": {
    "planet_count": 5,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 1,
@@ -5461,22 +5451,21 @@
    "dominant_race": 2
   },
   "seeds": [
+   5600329532642154999,
    -2852715344698734474,
    -135598873830131014,
    -1054429958125599018,
    -7013192912972447855,
-   8467843920272898892,
-   -6578894043133395018
+   -4726168532337145686
   ],
-  "planet_count": 6,
-  "moon_count": 0,
+  "planet_count": 5,
+  "moon_count": 1,
   "sizes": [
    0,
    1,
    1,
    1,
-   0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -5513,7 +5502,7 @@
   "sizes": [
    1,
    0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -5548,14 +5537,14 @@
   "moon_count": 0,
   "sizes": [
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 59.0637153484781
+   "guide_star_renegade_count": 60
   }
  },
  {
@@ -5585,7 +5574,7 @@
   "sizes": [
    2,
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -5708,14 +5697,14 @@
    1,
    0,
    2,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 12.48250655068665
+   "guide_star_renegade_count": 13
   }
  },
  {
@@ -5796,7 +5785,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 3.4211680560827062
+   "guide_star_renegade_count": 4
   }
  },
  {
@@ -5831,7 +5820,7 @@
    2,
    1,
    0,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -5846,7 +5835,7 @@
   "galaxy": 5,
   "region": "Aabiev",
   "system": "Amqukanna",
-  "planet": "Eisabez Yukih",
+  "planet": "Londhur XVI",
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 2,
@@ -5862,12 +5851,11 @@
    -7106864696807785683,
    7047248629627837552,
    -6963723890687615827,
-   -3970893592897283469
+   -1208764113561753271
   ],
-  "planet_count": 4,
-  "moon_count": 0,
+  "planet_count": 3,
+  "moon_count": 1,
   "sizes": [
-   2,
    2,
    2,
    0
@@ -5889,7 +5877,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -5910,8 +5898,8 @@
    2,
    2,
    2,
-   0,
-   1
+   2,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -5930,7 +5918,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -6034,7 +6022,7 @@
    2,
    1,
    1,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -6081,7 +6069,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 35.19570831108123
+   "guide_star_renegade_count": 36
   }
  },
  {
@@ -6172,7 +6160,7 @@
   "galaxy": 5,
   "region": "Rujimoes Conflux",
   "system": "Aspenia-Koh",
-  "planet": "Hugatal Beta",
+  "planet": "Raylesf Prime",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
@@ -6190,7 +6178,7 @@
    -227550363725089683,
    876278077816657818,
    -5402406300173553473,
-   -6291293576805558158
+   1733912308696224424
   ],
   "planet_count": 5,
   "moon_count": 1,
@@ -6198,15 +6186,15 @@
    0,
    0,
    1,
-   1,
-   2
+   2,
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 15.062945930447654
+   "guide_star_renegade_count": 16
   }
  },
  {
@@ -6218,7 +6206,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 6,
+   "safe_start_planet": 5,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -6283,7 +6271,7 @@
    1,
    1,
    2,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -6318,14 +6306,14 @@
   "moon_count": 0,
   "sizes": [
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 95.79882152032916
+   "guide_star_renegade_count": 96
   }
  },
  {
@@ -6412,7 +6400,7 @@
   "galaxy": 5,
   "region": "Matovic Quadrant",
   "system": "Chforai",
-  "planet": "Koka 51/L6",
+  "planet": "Veseycit W27",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -6427,14 +6415,14 @@
   "seeds": [
    -91614783350630261,
    -8690609115480700766,
-   -3359358787962426249
+   -1126509320852954307
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    0,
-   2,
-   1
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -6483,7 +6471,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 32.88027028950074
+   "guide_star_renegade_count": 33
   }
  },
  {
@@ -6513,14 +6501,14 @@
   "sizes": [
    1,
    2,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 32.66090612288811
+   "guide_star_renegade_count": 33
   }
  },
  {
@@ -6554,14 +6542,14 @@
    0,
    2,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 8.673208276356107
+   "guide_star_renegade_count": 9
   }
  },
  {
@@ -6569,7 +6557,7 @@
   "galaxy": 5,
   "region": "Segathe Adjunct",
   "system": "Akitakaha",
-  "planet": "Gittl XI",
+  "planet": "Juliaq XVI",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
@@ -6586,7 +6574,7 @@
    6887729718579459653,
    5061473891469623881,
    1017998221503161293,
-   -3136178888428955236
+   -3456611732788789280
   ],
   "planet_count": 4,
   "moon_count": 1,
@@ -6594,7 +6582,7 @@
    0,
    0,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -6609,7 +6597,7 @@
   "galaxy": 5,
   "region": "Plinic Fringe",
   "system": "Iksairt-Bog",
-  "planet": "Rakimbe",
+  "planet": "Osso V",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
@@ -6626,7 +6614,7 @@
    4450569336647738961,
    -3607304700580765127,
    964375684754196053,
-   -7759843602053851834
+   6942026436046490922
   ],
   "planet_count": 5,
   "moon_count": 0,
@@ -6634,7 +6622,7 @@
    1,
    0,
    2,
-   2,
+   1,
    2
   ],
   "voxel": {
@@ -6677,7 +6665,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 98.80790285085229
+   "guide_star_renegade_count": 99
   }
  },
  {
@@ -6710,7 +6698,7 @@
    0,
    2,
    1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -6747,7 +6735,7 @@
   "sizes": [
    1,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -6794,7 +6782,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 96.44130690554948
+   "guide_star_renegade_count": 97
   }
  },
  {
@@ -6846,7 +6834,7 @@
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -6855,21 +6843,22 @@
    "dominant_race": 2
   },
   "seeds": [
-   -223428660317803222,
-   -6467074380384675581,
-   4205074976797706759,
-   -1980438937291116187,
-   -1929648398059938419,
+   2927917454384695739,
+   -6585541568846680460,
+   3990935732932070990,
+   4465450485514230102,
+   913134235943584581,
    -5531902009678394184
   ],
-  "planet_count": 5,
-  "moon_count": 1,
+  "planet_count": 6,
+  "moon_count": 0,
   "sizes": [
    0,
    2,
    1,
-   2,
-   1
+   1,
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -6909,7 +6898,7 @@
    0,
    2,
    2,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -6947,7 +6936,7 @@
   "sizes": [
    0,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -6989,7 +6978,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 62.950045721454245
+   "guide_star_renegade_count": 63
   }
  },
  {
@@ -7030,7 +7019,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 5.665881645191462
+   "guide_star_renegade_count": 6
   }
  },
  {
@@ -7042,7 +7031,7 @@
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -7058,7 +7047,7 @@
   "moon_count": 0,
   "sizes": [
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -7100,7 +7089,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 19.48236013206177
+   "guide_star_renegade_count": 20
   }
  },
  {
@@ -7131,15 +7120,15 @@
   "sizes": [
    2,
    2,
-   0,
-   2
+   2,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 57.73515627640192
+   "guide_star_renegade_count": 58
   }
  },
  {
@@ -7191,7 +7180,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -7261,7 +7250,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 51.436876194003176
+   "guide_star_renegade_count": 52
   }
  },
  {
@@ -7269,38 +7258,37 @@
   "galaxy": 9,
   "region": "Bitsin Expanse",
   "system": "Clungni",
-  "planet": "Uozu 15/C7",
+  "planet": "Rata XI",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 3,
+   "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 0,
-   "economy_type": 5,
+   "economy_type": 3,
    "wealth": 2,
-   "conflict_level": 1,
+   "conflict_level": 2,
    "dominant_race": 1
   },
   "seeds": [
+   -4643619066466377728,
    -2723982420155019112,
    -6558243627493025665,
-   -8561642230394715162,
-   8017584822118602043
+   -4679523249302295446
   ],
-  "planet_count": 4,
-  "moon_count": 0,
+  "planet_count": 3,
+  "moon_count": 1,
   "sizes": [
    0,
    0,
-   0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 9.457498129775473
+   "guide_star_renegade_count": 10
   }
  },
  {
@@ -7331,7 +7319,7 @@
   "sizes": [
    0,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -7379,7 +7367,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 66.5056413194055
+   "guide_star_renegade_count": 67
   }
  },
  {
@@ -7391,7 +7379,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 7,
+   "safe_start_planet": 6,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -7455,15 +7443,15 @@
    2,
    1,
    1,
-   0,
-   1
+   2,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 65.49232178307668
+   "guide_star_renegade_count": 66
   }
  },
  {
@@ -7499,7 +7487,7 @@
    0,
    2,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -7534,14 +7522,14 @@
   "moon_count": 0,
   "sizes": [
    1,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 27.06749169404442
+   "guide_star_renegade_count": 28
   }
  },
  {
@@ -7572,8 +7560,8 @@
   "sizes": [
    2,
    1,
-   0,
-   2
+   2,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -7611,7 +7599,7 @@
   "sizes": [
    2,
    1,
-   1,
+   0,
    2
   ],
   "voxel": {
@@ -7619,7 +7607,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 11.746046998539128
+   "guide_star_renegade_count": 12
   }
  },
  {
@@ -7631,7 +7619,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -7650,7 +7638,7 @@
   "sizes": [
    1,
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -7665,11 +7653,11 @@
   "galaxy": 9,
   "region": "The Arm of Elmouc",
   "system": "Gorigu-Suo",
-  "planet": "Gree X",
+  "planet": "Aura 88/R9",
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 2,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -7678,17 +7666,18 @@
    "dominant_race": 2
   },
   "seeds": [
-   3724881857973387645,
    -3769009928561684534,
-   -3470929608103059339,
-   7317360374270521633
+   -1374536423499255949,
+   1917122108483578673,
+   6989098923906182909
   ],
-  "planet_count": 3,
-  "moon_count": 1,
+  "planet_count": 4,
+  "moon_count": 0,
   "sizes": [
    0,
+   0,
    2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -7730,7 +7719,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 76.92968447640678
+   "guide_star_renegade_count": 77
   }
  },
  {
@@ -7803,7 +7792,7 @@
    2,
    1,
    0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -7838,14 +7827,14 @@
   "moon_count": 0,
   "sizes": [
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 101.38710783123454
+   "guide_star_renegade_count": 102
   }
  },
  {
@@ -7853,11 +7842,11 @@
   "galaxy": 9,
   "region": "Hicoch",
   "system": "Egauran",
-  "planet": "Vivia",
+  "planet": "Riusiao Minor",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -7868,14 +7857,13 @@
   "seeds": [
    -777904181016020901,
    718057400273700420,
-   -4708860750346375997
+   6063986171446026686
   ],
-  "planet_count": 3,
-  "moon_count": 0,
+  "planet_count": 2,
+  "moon_count": 1,
   "sizes": [
    1,
-   2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -7894,7 +7882,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -7959,7 +7947,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 37.03362229357745
+   "guide_star_renegade_count": 38
   }
  },
  {
@@ -7988,14 +7976,14 @@
   "moon_count": 1,
   "sizes": [
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 23.711995127161487
+   "guide_star_renegade_count": 24
   }
  },
  {
@@ -8005,8 +7993,8 @@
   "system": "Nardal-Iogr",
   "planet": "Midaliche Uresh",
   "sysattr": {
-   "planet_count": 6,
-   "prime_planet_count": 0,
+   "planet_count": 0,
+   "prime_planet_count": 6,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -8016,28 +8004,29 @@
    "dominant_race": 3
   },
   "seeds": [
-   -912107866070645644,
-   -5975830202060540520,
+   -5293743419947316124,
+   -172546409335273163,
+   -7348310272311463144,
    376700392499743545,
-   5847461475489255148,
-   5900479562569623980,
+   -6989067626742521686,
    -7998247732163136229
   ],
-  "planet_count": 5,
-  "moon_count": 1,
+  "planet_count": 6,
+  "moon_count": 0,
   "sizes": [
    2,
-   0,
    1,
    2,
-   1
+   2,
+   2,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 20.30544407546863
+   "guide_star_renegade_count": 21
   }
  },
  {
@@ -8148,15 +8137,15 @@
   "moon_count": 0,
   "sizes": [
    2,
-   1,
-   1
+   0,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 6.303605662589732
+   "guide_star_renegade_count": 7
   }
  },
  {
@@ -8235,7 +8224,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 23.49656952882401
+   "guide_star_renegade_count": 24
   }
  },
  {
@@ -8263,7 +8252,7 @@
   "moon_count": 0,
   "sizes": [
    2,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -8310,7 +8299,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 45.54685495822912
+   "guide_star_renegade_count": 46
   }
  },
  {
@@ -8383,14 +8372,14 @@
    1,
    2,
    1,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 1.8012841254630843
+   "guide_star_renegade_count": 2
   }
  },
  {
@@ -8432,7 +8421,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 15.800051652905296
+   "guide_star_renegade_count": 16
   }
  },
  {
@@ -8468,14 +8457,14 @@
    2,
    0,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 58.79241021771116
+   "guide_star_renegade_count": 59
   }
  },
  {
@@ -8530,7 +8519,7 @@
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 2,
@@ -8546,7 +8535,7 @@
   "moon_count": 0,
   "sizes": [
    1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -8581,14 +8570,14 @@
   "moon_count": 0,
   "sizes": [
    1,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 65.07102834853958
+   "guide_star_renegade_count": 66
   }
  },
  {
@@ -8624,7 +8613,7 @@
    1,
    0,
    1,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -8708,14 +8697,14 @@
    0,
    0,
    0,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 59.84697641571075
+   "guide_star_renegade_count": 60
   }
  },
  {
@@ -8748,14 +8737,14 @@
    1,
    1,
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 15.602466716773591
+   "guide_star_renegade_count": 16
   }
  },
  {
@@ -8786,7 +8775,7 @@
   "sizes": [
    0,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -8801,7 +8790,7 @@
   "galaxy": 9,
   "region": "Zateiae Boundary",
   "system": "Glichn",
-  "planet": "Hifna B32",
+  "planet": "Hoben Minor",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -8816,7 +8805,7 @@
   "seeds": [
    8407568930699814984,
    6692764318858358182,
-   -2587543328302423087
+   -2289389812269977550
   ],
   "planet_count": 3,
   "moon_count": 0,
@@ -8838,11 +8827,11 @@
   "galaxy": 9,
   "region": "Kienwaya Conflux",
   "system": "Ibilit-Gase",
-  "planet": "Omyazak XVIII",
+  "planet": "Terryuh Beta",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
-   "safe_start_planet": 1,
+   "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -8856,7 +8845,7 @@
    -6948494956046689336,
    6328040161314167125,
    3569583966987063463,
-   8705563078126521810
+   2944704193486886051
   ],
   "planet_count": 5,
   "moon_count": 1,
@@ -8864,8 +8853,8 @@
    0,
    2,
    1,
-   2,
-   0
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -8902,7 +8891,7 @@
   "sizes": [
    1,
    1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -8919,9 +8908,9 @@
   "system": "Rafhenre",
   "planet": "Shyast XVIII",
   "sysattr": {
-   "planet_count": 1,
-   "prime_planet_count": 1,
-   "safe_start_planet": 1,
+   "planet_count": 0,
+   "prime_planet_count": 2,
+   "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 4,
@@ -8937,7 +8926,7 @@
   "moon_count": 0,
   "sizes": [
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -8980,14 +8969,14 @@
    2,
    0,
    1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 27.023542401068724
+   "guide_star_renegade_count": 28
   }
  },
  {
@@ -8999,7 +8988,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 7,
+   "safe_start_planet": 6,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -9068,7 +9057,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 2.270791175443023
+   "guide_star_renegade_count": 3
   }
  },
  {
@@ -9076,11 +9065,11 @@
   "galaxy": 9,
   "region": "Dohinnd Boundary",
   "system": "Okaifeng",
-  "planet": "Naga 87/X2",
+  "planet": "Heleet Major",
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 1,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -9089,15 +9078,16 @@
    "dominant_race": 3
   },
   "seeds": [
-   4679808827593745929,
-   -4423803094014972108,
-   828662929462195725
+   -7090718395072635741,
+   3762509937164277563,
+   -3826735012252078039
   ],
-  "planet_count": 2,
-  "moon_count": 1,
+  "planet_count": 3,
+  "moon_count": 0,
   "sizes": [
    0,
-   2
+   2,
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -9112,7 +9102,7 @@
   "galaxy": 9,
   "region": "Tekenda Nebula",
   "system": "Sabara-Tive",
-  "planet": "Fohami",
+  "planet": "Joso 77/T2",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -9127,21 +9117,21 @@
   "seeds": [
    553762898939164459,
    4985780572883833967,
-   5460299770291505773
+   2724052439533854362
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    2,
-   1,
-   2
+   2,
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 100.49604033363806
+   "guide_star_renegade_count": 101
   }
  },
  {
@@ -9191,7 +9181,7 @@
   "galaxy": 9,
   "region": "Duysool",
   "system": "Shtympi-Mout",
-  "planet": "Etaji 35/J8",
+  "planet": "Iburydos III",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
@@ -9209,17 +9199,16 @@
    3348633220924245681,
    8495633263358695925,
    1428685814758231705,
-   7755606312275721244
+   -5076642128481404391
   ],
-  "planet_count": 6,
-  "moon_count": 0,
+  "planet_count": 5,
+  "moon_count": 1,
   "sizes": [
    1,
    2,
    0,
    1,
-   2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -9234,7 +9223,7 @@
   "galaxy": 9,
   "region": "Megalv Sector",
   "system": "Azlich-Dek",
-  "planet": "Roshorp Beta",
+  "planet": "Reolo",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
@@ -9251,7 +9240,7 @@
    3266721791230340716,
    -6086922152148144881,
    1819947656959552855,
-   -1303923983662644879
+   6273088653099863235
   ],
   "planet_count": 4,
   "moon_count": 1,
@@ -9259,7 +9248,7 @@
    2,
    0,
    1,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -9296,14 +9285,14 @@
   "sizes": [
    0,
    0,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 25.838349576136054
+   "guide_star_renegade_count": 26
   }
  },
  {
@@ -9315,7 +9304,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 7,
+   "safe_start_planet": 6,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -9357,7 +9346,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -9378,8 +9367,8 @@
    1,
    2,
    1,
-   1,
-   1
+   0,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -9414,14 +9403,14 @@
   "moon_count": 0,
   "sizes": [
    1,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 72.55820991412563
+   "guide_star_renegade_count": 73
   }
  },
  {
@@ -9468,11 +9457,11 @@
   "galaxy": 9,
   "region": "Sacayllia Void",
   "system": "Laltone",
-  "planet": "Kopetso Tau",
+  "planet": "Pusacus VI",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -9483,14 +9472,14 @@
   "seeds": [
    -3317456413128651176,
    -7874522828707547815,
-   -2825700472631586305
+   -5015694302710793070
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    0,
-   2,
-   1
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -9509,7 +9498,7 @@
   "sysattr": {
    "planet_count": 5,
    "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 1,
@@ -9533,7 +9522,7 @@
    1,
    2,
    2,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -9552,7 +9541,7 @@
   "sysattr": {
    "planet_count": 5,
    "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -9576,7 +9565,7 @@
    2,
    1,
    1,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -9591,7 +9580,7 @@
   "galaxy": 42,
   "region": "Fehuass Nebula",
   "system": "Hunabella XI",
-  "planet": "Ezaki 23/W4",
+  "planet": "Eckaych",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -9606,14 +9595,14 @@
   "seeds": [
    4413193600298272014,
    4334969489018936489,
-   -7601000458973135227
+   1531791897111500740
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    1,
-   1,
-   2
+   2,
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -9693,7 +9682,7 @@
    2,
    0,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -9733,14 +9722,14 @@
    0,
    1,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 27.981641506779653
+   "guide_star_renegade_count": 28
   }
  },
  {
@@ -9772,14 +9761,14 @@
   "sizes": [
    2,
    0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 30.300974430435033
+   "guide_star_renegade_count": 31
   }
  },
  {
@@ -9809,14 +9798,14 @@
   "sizes": [
    1,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 6.276647919885761
+   "guide_star_renegade_count": 7
   }
  },
  {
@@ -9850,8 +9839,8 @@
    1,
    0,
    2,
-   1,
-   2
+   0,
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -9899,7 +9888,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 13.793689102956321
+   "guide_star_renegade_count": 14
   }
  },
  {
@@ -9931,14 +9920,14 @@
   "sizes": [
    0,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 12.813339050974719
+   "guide_star_renegade_count": 13
   }
  },
  {
@@ -10012,7 +10001,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 22.52288750115416
+   "guide_star_renegade_count": 23
   }
  },
  {
@@ -10042,14 +10031,14 @@
   "sizes": [
    2,
    1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 9.951002312731035
+   "guide_star_renegade_count": 10
   }
  },
  {
@@ -10078,14 +10067,14 @@
   "moon_count": 1,
   "sizes": [
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 55.42001924321663
+   "guide_star_renegade_count": 56
   }
  },
  {
@@ -10120,7 +10109,7 @@
    1,
    2,
    0,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -10198,14 +10187,14 @@
   "sizes": [
    0,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 66.15411714313441
+   "guide_star_renegade_count": 67
   }
  },
  {
@@ -10217,7 +10206,7 @@
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 1,
@@ -10233,7 +10222,7 @@
   "moon_count": 0,
   "sizes": [
    1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -10248,7 +10237,7 @@
   "galaxy": 42,
   "region": "Breener Shallows",
   "system": "Satkalak XVIII",
-  "planet": "Wamih 71/C6",
+  "planet": "Tuwan Delta",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
@@ -10265,7 +10254,7 @@
    -2582564199778417533,
    3719251118144994879,
    -4750065166400000945,
-   -2993252532305614405
+   -4279799213517406208
   ],
   "planet_count": 5,
   "moon_count": 0,
@@ -10274,14 +10263,14 @@
    1,
    1,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 42.633999006114266
+   "guide_star_renegade_count": 43
   }
  },
  {
@@ -10289,7 +10278,7 @@
   "galaxy": 42,
   "region": "Daluzhan Cloud",
   "system": "Nofleeke",
-  "planet": "Erberi",
+  "planet": "Nuker Z26",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
@@ -10306,7 +10295,7 @@
    -8849882751590720459,
    -6496606696988034340,
    -5595888607959234045,
-   4308761966846102688
+   -5757102861825447498
   ],
   "planet_count": 5,
   "moon_count": 0,
@@ -10315,14 +10304,14 @@
    1,
    2,
    2,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 60.768952928067996
+   "guide_star_renegade_count": 61
   }
  },
  {
@@ -10395,14 +10384,14 @@
   "sizes": [
    0,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 108.04036035361094
+   "guide_star_renegade_count": 109
   }
  },
  {
@@ -10439,7 +10428,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 47.079464050390456
+   "guide_star_renegade_count": 48
   }
  },
  {
@@ -10475,14 +10464,14 @@
    0,
    2,
    1,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 79.58747485377921
+   "guide_star_renegade_count": 80
   }
  },
  {
@@ -10490,10 +10479,10 @@
   "galaxy": 42,
   "region": "Cuyourtz",
   "system": "Zaifung",
-  "planet": "Tocoln XI",
+  "planet": "Aassauri Sigma",
   "sysattr": {
-   "planet_count": 5,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 6,
    "safe_start_planet": 4,
    "gas_giant": true,
    "star_type": 4,
@@ -10503,29 +10492,22 @@
    "dominant_race": 1
   },
   "seeds": [
-   8990382157084320758,
-   -5003303883578464974,
-   -51518371218944019,
-   4407482457572465475,
-   454618711917693596,
-   797922906704713933
+   -1007977157872630826,
+   -6158603336101431342,
+   -4459637955271594261,
+   6142227760164510762,
+   -6410920521007028316,
+   -523643910423052411
   ],
   "planet_count": 1,
   "moon_count": 5,
-  "sizes": [
-   2,
-   2,
-   0,
-   0,
-   1,
-   2
-  ],
+  "sizes": [],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 2.5665149591716556
+   "guide_star_renegade_count": 3
   }
  },
  {
@@ -10561,7 +10543,7 @@
    1,
    2,
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -10600,7 +10582,7 @@
    2,
    0,
    1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -10661,7 +10643,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -10725,14 +10707,14 @@
    0,
    2,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 66.65207244539265
+   "guide_star_renegade_count": 67
   }
  },
  {
@@ -10766,14 +10748,14 @@
    1,
    0,
    2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 45.07561597649274
+   "guide_star_renegade_count": 46
   }
  },
  {
@@ -10785,7 +10767,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 7,
+   "safe_start_planet": 6,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 1,
@@ -10824,7 +10806,7 @@
   "galaxy": 42,
   "region": "Twoods Cluster",
   "system": "Arkhangb",
-  "planet": "Aruto 26/K1",
+  "planet": "New Fielde",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -10839,21 +10821,21 @@
   "seeds": [
    -6969184711045843658,
    -4385820406481950510,
-   -7649433063126856682
+   -2361076204211927973
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    0,
-   1,
-   0
+   2,
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 79.12518806461827
+   "guide_star_renegade_count": 80
   }
  },
  {
@@ -10930,7 +10912,7 @@
    2,
    2,
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -10967,7 +10949,7 @@
   "sizes": [
    0,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -10982,11 +10964,11 @@
   "galaxy": 42,
   "region": "Jubaranc",
   "system": "Aspeksf-Katas",
-  "planet": "Zuzukaji Tau",
+  "planet": "Kimboja",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
-   "safe_start_planet": 1,
+   "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -10997,14 +10979,14 @@
   "seeds": [
    4267214420244599271,
    -7424500205329107421,
-   -1691278849765862615
+   -9069817228568900753
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    2,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -11079,7 +11061,7 @@
    2,
    1,
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -11115,14 +11097,14 @@
   "moon_count": 1,
   "sizes": [
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 47.81455238330797
+   "guide_star_renegade_count": 48
   }
  },
  {
@@ -11194,14 +11176,14 @@
   "sizes": [
    1,
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 18.999931694012005
+   "guide_star_renegade_count": 19
   }
  },
  {
@@ -11209,11 +11191,11 @@
   "galaxy": 42,
   "region": "The Arm of Edshan",
   "system": "Erustu",
-  "planet": "Afut",
+  "planet": "Mitis VIII",
   "sysattr": {
-   "planet_count": 1,
-   "prime_planet_count": 2,
-   "safe_start_planet": 1,
+   "planet_count": 0,
+   "prime_planet_count": 3,
+   "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 3,
@@ -11224,14 +11206,14 @@
   "seeds": [
    2910646656467727565,
    -2026538420351709815,
-   -2629298124189691127
+   1530097264100022463
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    1,
-   2,
-   0
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -11246,11 +11228,11 @@
   "galaxy": 42,
   "region": "Eobarber Shallows",
   "system": "Yibirsk",
-  "planet": "Cupiene X",
+  "planet": "Pupenwo X",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 2,
@@ -11261,14 +11243,14 @@
   "seeds": [
    3756459292490301842,
    7647122881150198918,
-   2411234247957361662
+   3104488593140019351
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    1,
-   2,
-   1
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -11315,7 +11297,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 7.893880104974883
+   "guide_star_renegade_count": 8
   }
  },
  {
@@ -11360,11 +11342,11 @@
   "galaxy": 42,
   "region": "Eoncagn Quadrant",
   "system": "Nisrevj",
-  "planet": "Masey IX",
+  "planet": "Aenu",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 1,
@@ -11375,13 +11357,13 @@
   "seeds": [
    8805161692200498077,
    5475886436839884107,
-   -7222333780432252580
+   6985073550264014566
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    2,
-   2,
+   1,
    2
   ],
   "voxel": {
@@ -11457,7 +11439,7 @@
   "moon_count": 0,
   "sizes": [
    2,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -11476,7 +11458,7 @@
   "sysattr": {
    "planet_count": 5,
    "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -11500,7 +11482,7 @@
    2,
    2,
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -11585,14 +11567,14 @@
    1,
    1,
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 0.7096720579505131
+   "guide_star_renegade_count": 1
   }
  },
  {
@@ -11635,7 +11617,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 61.38151534977563
+   "guide_star_renegade_count": 62
   }
  },
  {
@@ -11674,7 +11656,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 25.450902915769475
+   "guide_star_renegade_count": 26
   }
  },
  {
@@ -11704,14 +11686,14 @@
   "sizes": [
    2,
    2,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 67.70933321164208
+   "guide_star_renegade_count": 68
   }
  },
  {
@@ -11785,15 +11767,15 @@
   "sizes": [
    1,
    2,
-   0,
-   2
+   1,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 22.162154643669012
+   "guide_star_renegade_count": 23
   }
  },
  {
@@ -11836,7 +11818,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 41.25467834696214
+   "guide_star_renegade_count": 42
   }
  },
  {
@@ -11873,7 +11855,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 36.02112304176249
+   "guide_star_renegade_count": 37
   }
  },
  {
@@ -11885,7 +11867,7 @@
   "sysattr": {
    "planet_count": 5,
    "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 1,
@@ -11907,7 +11889,7 @@
    0,
    0,
    2,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -11926,7 +11908,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 6,
+   "safe_start_planet": 5,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -11964,11 +11946,11 @@
   "galaxy": 255,
   "region": "Oching Spur",
   "system": "Igwonju-Ikul XII",
-  "planet": "Ances",
+  "planet": "Kohargy V34",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 1,
@@ -11979,14 +11961,14 @@
   "seeds": [
    -6892232042553642501,
    -8810846022314477721,
-   -9145973203086959120
+   3428618922474188170
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    0,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -12078,7 +12060,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 56.20985511384817
+   "guide_star_renegade_count": 57
   }
  },
  {
@@ -12120,7 +12102,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 73.26281661205613
+   "guide_star_renegade_count": 74
   }
  },
  {
@@ -12152,7 +12134,7 @@
    1,
    2,
    0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -12189,14 +12171,14 @@
   "sizes": [
    1,
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 29.058617226553466
+   "guide_star_renegade_count": 30
   }
  },
  {
@@ -12231,7 +12213,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 48.060327029169756
+   "guide_star_renegade_count": 49
   }
  },
  {
@@ -12265,14 +12247,14 @@
    2,
    2,
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 14.435753348346552
+   "guide_star_renegade_count": 15
   }
  },
  {
@@ -12280,7 +12262,7 @@
   "galaxy": 255,
   "region": "Nosingwaa Band",
   "system": "Gukanbe",
-  "planet": "Pioscunt",
+  "planet": "Kievedos N49",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -12295,21 +12277,21 @@
   "seeds": [
    -1352888056097445300,
    -9065273310842548127,
-   -3890372022203502063
+   -4602662301719617877
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    2,
-   1,
-   2
+   2,
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 23.187288505608066
+   "guide_star_renegade_count": 24
   }
  },
  {
@@ -12340,8 +12322,8 @@
   "sizes": [
    0,
    2,
-   0,
-   2
+   1,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -12360,7 +12342,7 @@
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -12376,7 +12358,7 @@
   "moon_count": 0,
   "sizes": [
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -12414,7 +12396,7 @@
   "sizes": [
    0,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -12433,7 +12415,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -12453,7 +12435,7 @@
    1,
    1,
    2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -12488,7 +12470,7 @@
   "moon_count": 0,
   "sizes": [
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -12573,7 +12555,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 16.41889823864601
+   "guide_star_renegade_count": 17
   }
  },
  {
@@ -12603,7 +12585,7 @@
   "sizes": [
    2,
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -12645,8 +12627,8 @@
    2,
    1,
    1,
-   0,
-   1
+   1,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -12687,14 +12669,14 @@
    1,
    1,
    1,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 23.268215275829178
+   "guide_star_renegade_count": 24
   }
  },
  {
@@ -12736,7 +12718,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 25.18361116000156
+   "guide_star_renegade_count": 26
   }
  },
  {
@@ -12769,7 +12751,7 @@
    0,
    2,
    2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -12784,7 +12766,7 @@
   "galaxy": 255,
   "region": "The Arm of Fargue",
   "system": "Wasebo",
-  "planet": "Olata",
+  "planet": "Elliet Alpha",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -12799,7 +12781,7 @@
   "seeds": [
    5291432597715002033,
    6897219989625779394,
-   5297914847734417265
+   -995513044493376376
   ],
   "planet_count": 3,
   "moon_count": 0,
@@ -12821,10 +12803,10 @@
   "galaxy": 255,
   "region": "Jepagoo Shallows",
   "system": "Degawan-Dehato",
-  "planet": "New Oenoeli",
+  "planet": "Take 45/O1",
   "sysattr": {
-   "planet_count": 6,
-   "prime_planet_count": 0,
+   "planet_count": 0,
+   "prime_planet_count": 6,
    "safe_start_planet": 1,
    "gas_giant": true,
    "star_type": 4,
@@ -12834,27 +12816,22 @@
    "dominant_race": 3
   },
   "seeds": [
+   77526934369907515,
+   -2819703669751323822,
+   4126615502034901382,
    289712013264950048,
    -6907083089879870869,
-   4467121111240070956,
-   7342690287125116893,
-   6115432508600059482,
-   3420698132812599349
+   4467121111240070956
   ],
   "planet_count": 1,
   "moon_count": 5,
-  "sizes": [
-   2,
-   0,
-   1,
-   0
-  ],
+  "sizes": [],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 5.317287965840251
+   "guide_star_renegade_count": 6
   }
  },
  {
@@ -12928,7 +12905,7 @@
    1,
    2,
    2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -12970,14 +12947,14 @@
    2,
    1,
    0,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 12.98755231914491
+   "guide_star_renegade_count": 13
   }
  },
  {
@@ -13016,7 +12993,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 46.517932879620645
+   "guide_star_renegade_count": 47
   }
  },
  {
@@ -13059,7 +13036,7 @@
   "galaxy": 255,
   "region": "Awforch Band",
   "system": "Lavirgo",
-  "planet": "Rosiss K7",
+  "planet": "New Rieldea",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
@@ -13076,21 +13053,21 @@
    8974484204607333192,
    4602641651426732458,
    4928078008078556130,
-   -1303436792719496857
+   -1626238466390284036
   ],
   "planet_count": 3,
   "moon_count": 2,
   "sizes": [
    0,
-   1,
-   2
+   2,
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 35.61321125315759
+   "guide_star_renegade_count": 36
   }
  },
  {
@@ -13098,7 +13075,7 @@
   "galaxy": 255,
   "region": "Owforng Anomaly",
   "system": "Iigasa",
-  "planet": "Iboso 66/K1",
+  "planet": "Muko 57/Q2",
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 2,
@@ -13114,7 +13091,7 @@
    -6790923057496241221,
    -7545320252015601721,
    -94553494503276526,
-   -9156511523384061851
+   3215433552334985691
   ],
   "planet_count": 4,
   "moon_count": 0,
@@ -13129,7 +13106,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 70.14645618940652
+   "guide_star_renegade_count": 71
   }
  },
  {
@@ -13171,7 +13148,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 36.599646445364144
+   "guide_star_renegade_count": 37
   }
  },
  {
@@ -13208,7 +13185,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 27.16997183500726
+   "guide_star_renegade_count": 28
   }
  },
  {
@@ -13249,7 +13226,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 14.643935875366793
+   "guide_star_renegade_count": 15
   }
  },
  {
@@ -13277,7 +13254,7 @@
   "moon_count": 0,
   "sizes": [
    1,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -13335,7 +13312,7 @@
   "galaxy": 255,
   "region": "Sardmul Cluster",
   "system": "Gistun-Onbet",
-  "planet": "Stminna Prime",
+  "planet": "Zoavitus Sigma",
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 2,
@@ -13351,15 +13328,14 @@
    2870562065342649777,
    -6097065712641647741,
    4087298495283932211,
-   -4395456258110735951
+   2500492542075053027
   ],
-  "planet_count": 4,
-  "moon_count": 0,
+  "planet_count": 3,
+  "moon_count": 1,
   "sizes": [
    1,
    1,
-   1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -13402,7 +13378,7 @@
    2,
    2,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -13417,7 +13393,7 @@
   "galaxy": 255,
   "region": "Mipetera Spur",
   "system": "Xandal II",
-  "planet": "Omuro 83/N3",
+  "planet": "Dodorax",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -13432,7 +13408,7 @@
   "seeds": [
    -382665076916582602,
    -9171295716943212491,
-   5704024860628057309
+   5499372012599336937
   ],
   "planet_count": 3,
   "moon_count": 0,
@@ -13446,7 +13422,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 23.360984235817185
+   "guide_star_renegade_count": 24
   }
  },
  {
@@ -13458,7 +13434,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -13539,7 +13515,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -13604,7 +13580,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 34.945947662060405
+   "guide_star_renegade_count": 35
   }
  },
  {
@@ -13646,7 +13622,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 65.8304838632982
+   "guide_star_renegade_count": 66
   }
  },
  {
@@ -13658,7 +13634,7 @@
   "sysattr": {
    "planet_count": 5,
    "prime_planet_count": 1,
-   "safe_start_planet": 6,
+   "safe_start_planet": 5,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -13681,7 +13657,7 @@
    0,
    1,
    0,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -13809,7 +13785,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 4.276249678554322
+   "guide_star_renegade_count": 5
   }
  },
  {
@@ -13921,7 +13897,7 @@
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 24.771143367146138
+   "guide_star_renegade_count": 25
   }
  },
  {
@@ -13933,7 +13909,7 @@
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -13949,7 +13925,7 @@
   "moon_count": 0,
   "sizes": [
    0,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -13984,14 +13960,14 @@
   "moon_count": 0,
   "sizes": [
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 16.683628519946694
+   "guide_star_renegade_count": 17
   }
  },
  {
@@ -14003,7 +13979,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -14023,7 +13999,7 @@
    1,
    2,
    1,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -14038,7 +14014,7 @@
   "galaxy": 255,
   "region": "Yonasar Band",
   "system": "Jolfur",
-  "planet": "Anrongy XIX",
+  "planet": "Ocle VII",
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 2,
@@ -14054,7 +14030,7 @@
    -6937557323332688410,
    -2966003425594933708,
    8642572215648916015,
-   -8081090402283933865
+   -8243906196187920321
   ],
   "planet_count": 4,
   "moon_count": 0,
@@ -14062,14 +14038,14 @@
    2,
    1,
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 26.295575871986458
+   "guide_star_renegade_count": 27
   }
  },
  {
@@ -14081,7 +14057,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 7,
+   "safe_start_planet": 6,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 4,
@@ -14120,11 +14096,11 @@
   "galaxy": 255,
   "region": "Hognotr",
   "system": "Sicher",
-  "planet": "Ebor XVIII",
+  "planet": "Wansharr M42",
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 2,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 7,
@@ -14136,7 +14112,7 @@
    9189841483280584737,
    -8475168425193067621,
    3655101711136719034,
-   -8098438763130697583
+   4617584344104568949
   ],
   "planet_count": 4,
   "moon_count": 0,
@@ -14198,7 +14174,7 @@
   "galaxy": 255,
   "region": "Ihewski Fringe",
   "system": "Ookaya-Eont",
-  "planet": "Abudl XII",
+  "planet": "Agonique Prime",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
@@ -14216,7 +14192,7 @@
    -4417744776348320320,
    1412135176067086511,
    5366941414767622373,
-   5297528139523803448
+   -6994952391192825744
   ],
   "planet_count": 5,
   "moon_count": 1,
@@ -14224,15 +14200,15 @@
    1,
    1,
    0,
-   2,
-   1
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
    "atlas_station_count": 1,
    "inside_gap": 0,
-   "guide_star_renegade_count": 32.364234964904085
+   "guide_star_renegade_count": 33
   }
  },
  {
@@ -14240,7 +14216,7 @@
   "galaxy": 0,
   "region": "Icroco Boundary",
   "system": "Likholu",
-  "planet": "Ferryil J42",
+  "planet": "Girutah",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
@@ -14258,7 +14234,7 @@
    9074544588520296907,
    6438367752910750077,
    -2177326222987122846,
-   -3833947821724084414
+   802469522627470770
   ],
   "planet_count": 5,
   "moon_count": 1,
@@ -14267,7 +14243,7 @@
    2,
    1,
    2,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -14307,7 +14283,7 @@
    2,
    1,
    2,
-   0,
+   1,
    0
   ],
   "voxel": {
@@ -14351,7 +14327,7 @@
    1,
    2,
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -14392,7 +14368,7 @@
    0,
    1,
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -14433,7 +14409,7 @@
    2,
    2,
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -14471,7 +14447,7 @@
   "sizes": [
    0,
    1,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -14513,7 +14489,7 @@
    0,
    1,
    1,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -14679,7 +14655,7 @@
    1,
    0,
    2,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -14781,7 +14757,7 @@
   "sysattr": {
    "planet_count": 5,
    "prime_planet_count": 1,
-   "safe_start_planet": 6,
+   "safe_start_planet": 5,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 1,
@@ -14820,11 +14796,11 @@
   "galaxy": 0,
   "region": "Icroco Boundary",
   "system": "Esenskiye",
-  "planet": "Cukburnin T17",
+  "planet": "Henise XIX",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -14838,7 +14814,7 @@
    1680238718066166552,
    2666558192637031995,
    -6533314514323379827,
-   822665851901034635
+   8271901733815393950
   ],
   "planet_count": 6,
   "moon_count": 0,
@@ -14848,7 +14824,7 @@
    1,
    1,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -14900,11 +14876,11 @@
   "galaxy": 0,
   "region": "The Arm of Uedennit",
   "system": "Hiobanasu XIX",
-  "planet": "Yucityasa VIII",
+  "planet": "Uitonster Zumid",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -14913,18 +14889,19 @@
    "dominant_race": 1
   },
   "seeds": [
-   -1738786518339687578,
-   6521112143963900843,
-   5696428720709395374,
-   -8921707880981285022,
-   -4899152618559307030
+   -3991677464220559193,
+   3057856423705187446,
+   -9159005070733571725,
+   8591735544573675711,
+   -6915095636639109279
   ],
-  "planet_count": 3,
-  "moon_count": 2,
+  "planet_count": 4,
+  "moon_count": 1,
   "sizes": [
    1,
    0,
-   1
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -14943,7 +14920,7 @@
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -14982,7 +14959,7 @@
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 1,
-   "safe_start_planet": 3,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -15000,7 +14977,7 @@
   "sizes": [
    1,
    2,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -15062,7 +15039,7 @@
   "sysattr": {
    "planet_count": 2,
    "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -15080,7 +15057,7 @@
   "sizes": [
    2,
    2,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -15099,7 +15076,7 @@
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 1,
-   "safe_start_planet": 1,
+   "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 5,
@@ -15115,7 +15092,7 @@
   "moon_count": 0,
   "sizes": [
    0,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -15214,7 +15191,7 @@
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 3,
@@ -15275,7 +15252,7 @@
    2,
    1,
    2,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -15316,7 +15293,7 @@
    2,
    1,
    2,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -15331,7 +15308,7 @@
   "galaxy": 0,
   "region": "Gemaki Spur",
   "system": "Zuphla-Eade",
-  "planet": "Raterle XIX",
+  "planet": "Sesto",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
@@ -15349,7 +15326,7 @@
    4644374253081075301,
    -8182036872868713214,
    7385559797767655026,
-   1132463255477795299
+   -1138728940458079196
   ],
   "planet_count": 6,
   "moon_count": 0,
@@ -15359,7 +15336,7 @@
    2,
    0,
    2,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -15376,8 +15353,8 @@
   "system": "Chitel XIII",
   "planet": "Wutono",
   "sysattr": {
-   "planet_count": 3,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 4,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -15387,16 +15364,16 @@
    "dominant_race": 2
   },
   "seeds": [
+   7901127383392671541,
    -3092707660633010872,
-   -7193778984353076135,
-   5132376244539200739,
+   -3219236631355057403,
    3940777585694242021
   ],
   "planet_count": 4,
   "moon_count": 0,
   "sizes": [
    2,
-   2,
+   1,
    0,
    2
   ],
@@ -15415,8 +15392,8 @@
   "system": "Atyreny",
   "planet": "Ilvirgin III",
   "sysattr": {
-   "planet_count": 2,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 3,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -15426,7 +15403,7 @@
    "dominant_race": 3
   },
   "seeds": [
-   -8942300850903279532,
+   8449839532371990753,
    -4023459406823660205,
    -158008696755393014
   ],
@@ -15452,8 +15429,8 @@
   "system": "Ungoto-Sto XV",
   "planet": "Mochf XI",
   "sysattr": {
-   "planet_count": 6,
-   "prime_planet_count": 0,
+   "planet_count": 0,
+   "prime_planet_count": 6,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -15463,11 +15440,11 @@
    "dominant_race": 2
   },
   "seeds": [
+   7666680116211047185,
+   -9213138181555474641,
    -3950106853798075464,
-   -723662169733939289,
-   1240470270327148120,
-   -6544219634055358767,
-   -5626895266580412001,
+   9014948309441716584,
+   5899163946382229728,
    -7341419836880793207
   ],
   "planet_count": 4,
@@ -15476,7 +15453,7 @@
    0,
    0,
    1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -15491,10 +15468,10 @@
   "galaxy": 0,
   "region": "Haelian Expanse",
   "system": "Yisolarn",
-  "planet": "Erhenga III",
+  "planet": "Owdengay Neri",
   "sysattr": {
-   "planet_count": 6,
-   "prime_planet_count": 0,
+   "planet_count": 0,
+   "prime_planet_count": 6,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -15504,22 +15481,20 @@
    "dominant_race": 2
   },
   "seeds": [
-   186442312731352865,
+   -5248144408131952094,
+   556185074629463241,
+   1093527941322357365,
    3697688296109879226,
-   -2104144826625174543,
-   8534164838924404812,
-   -4037199584142032351,
-   2188978784990305124
+   4193033108198342812,
+   -4037199584142032351
   ],
-  "planet_count": 6,
-  "moon_count": 0,
+  "planet_count": 4,
+  "moon_count": 2,
   "sizes": [
    2,
    0,
    0,
-   1,
-   1,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -15536,8 +15511,8 @@
   "system": "Huayin",
   "planet": "Rustatt",
   "sysattr": {
-   "planet_count": 3,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 4,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -15547,8 +15522,8 @@
    "dominant_race": 2
   },
   "seeds": [
-   -5404398906193921100,
-   -673308176185679502,
+   1502603767301660056,
+   -6108602866197631331,
    -4219813265375167706,
    -3818805829750555404
   ],
@@ -15556,9 +15531,9 @@
   "moon_count": 0,
   "sizes": [
    2,
+   2,
    1,
-   1,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -15573,10 +15548,10 @@
   "galaxy": 0,
   "region": "Sea of Ohkwibe",
   "system": "Yatsub",
-  "planet": "Mebayeba VIII",
+  "planet": "New Fausti",
   "sysattr": {
-   "planet_count": 3,
-   "prime_planet_count": 2,
+   "planet_count": 0,
+   "prime_planet_count": 5,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -15586,20 +15561,20 @@
    "dominant_race": 2
   },
   "seeds": [
+   5653526092665831164,
    -6024579039082421137,
-   -6167243137205712824,
-   1880930637248308086,
-   -7034538071462626388,
-   8704759670177139922
+   -7913770109296734233,
+   -7798774272228984078,
+   8250793294901843991
   ],
   "planet_count": 5,
   "moon_count": 0,
   "sizes": [
    1,
-   0,
    1,
-   0,
-   0
+   2,
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -15614,10 +15589,10 @@
   "galaxy": 0,
   "region": "Gemaki Spur",
   "system": "Krairesa",
-  "planet": "Toda 16/L2",
+  "planet": "West R36",
   "sysattr": {
-   "planet_count": 3,
-   "prime_planet_count": 2,
+   "planet_count": 0,
+   "prime_planet_count": 5,
    "safe_start_planet": 0,
    "gas_giant": true,
    "star_type": 4,
@@ -15627,21 +15602,15 @@
    "dominant_race": 2
   },
   "seeds": [
-   6554296755014754032,
-   -3913240636640673247,
-   6805723639573287811,
-   3972294616698062382,
-   297027769248519202
+   -5129684903906492590,
+   -4886311594784664210,
+   -3199704838712871272,
+   -728960748076819041,
+   730977147112959826
   ],
   "planet_count": 1,
-  "moon_count": 5,
-  "sizes": [
-   1,
-   1,
-   2,
-   0,
-   1
-  ],
+  "moon_count": 4,
+  "sizes": [],
   "voxel": {
    "guide_star_count": 0,
    "black_hole_count": 0,
@@ -15655,11 +15624,11 @@
   "galaxy": 0,
   "region": "Icroco Boundary",
   "system": "Uoyank",
-  "planet": "Rinolu XII",
+  "planet": "Adinghul Ochi",
   "sysattr": {
-   "planet_count": 6,
-   "prime_planet_count": 0,
-   "safe_start_planet": 4,
+   "planet_count": 0,
+   "prime_planet_count": 6,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 2,
@@ -15668,22 +15637,22 @@
    "dominant_race": 1
   },
   "seeds": [
-   7279579821900544538,
-   8292066360733703212,
-   6660159705740611597,
+   -4490021602923160980,
+   -5081599226736606125,
+   3048325525471644577,
+   5474659238251456623,
    -5700115618842115665,
-   5311407966595397577,
-   9008707906332431622
+   -4626903907988852865
   ],
   "planet_count": 6,
   "moon_count": 0,
   "sizes": [
    1,
+   1,
    0,
    1,
-   2,
    1,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -15698,11 +15667,11 @@
   "galaxy": 0,
   "region": "Myatnigh Band",
   "system": "Bovkara",
-  "planet": "Honionno V",
+  "planet": "Ueno 71/M3",
   "sysattr": {
-   "planet_count": 5,
-   "prime_planet_count": 1,
-   "safe_start_planet": 4,
+   "planet_count": 0,
+   "prime_planet_count": 6,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 5,
@@ -15711,20 +15680,20 @@
    "dominant_race": 2
   },
   "seeds": [
+   1447515507802649962,
    -2419247052282714579,
-   3558664221937832657,
-   -5798258241497239443,
+   2585229083142185200,
    -164062293310479754,
-   -48341966026939999,
-   -7334528954140107523
+   4463826697464912667,
+   -4154888721446174724
   ],
   "planet_count": 4,
   "moon_count": 2,
   "sizes": [
    0,
-   1,
    2,
-   1
+   1,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -15739,10 +15708,10 @@
   "galaxy": 0,
   "region": "The Arm of Uedennit",
   "system": "Kawach-Tori III",
-  "planet": "Cekpoolet Omega",
+  "planet": "Aghda Major",
   "sysattr": {
-   "planet_count": 6,
-   "prime_planet_count": 0,
+   "planet_count": 0,
+   "prime_planet_count": 6,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -15752,21 +15721,21 @@
    "dominant_race": 2
   },
   "seeds": [
+   -4479018016788551140,
+   4011610275496722640,
    1695981313138260082,
-   -3761411284354294448,
-   -498464138876775825,
+   6695403011494786660,
    -6134533922774405879,
-   6698537957077091019,
-   2759040811294616692
+   3461772405848506404
   ],
   "planet_count": 5,
   "moon_count": 1,
   "sizes": [
    1,
    0,
-   0,
+   1,
    2,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -15783,8 +15752,8 @@
   "system": "Minandr",
   "planet": "Gehulavi",
   "sysattr": {
-   "planet_count": 1,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 2,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -15801,7 +15770,7 @@
   "moon_count": 0,
   "sizes": [
    2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -15818,8 +15787,8 @@
   "system": "Iijint-Kusa",
   "planet": "Yexisrape XIV",
   "sysattr": {
-   "planet_count": 6,
-   "prime_planet_count": 0,
+   "planet_count": 0,
+   "prime_planet_count": 6,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -15829,22 +15798,21 @@
    "dominant_race": 1
   },
   "seeds": [
-   -527482848893209584,
-   7750084549506692484,
+   -6089362605497285558,
+   7048953304071770928,
+   -5775578130486640220,
    -7744747718975781116,
-   5445260347295742628,
-   4776847327111124114,
+   4562998002750895398,
    -8174704421381815806
   ],
-  "planet_count": 6,
-  "moon_count": 0,
+  "planet_count": 5,
+  "moon_count": 1,
   "sizes": [
    1,
    1,
-   1,
-   1,
-   1,
-   2
+   2,
+   2,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -15861,8 +15829,8 @@
   "system": "Ouchig",
   "planet": "Edwarda II",
   "sysattr": {
-   "planet_count": 5,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 6,
    "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 4,
@@ -15872,10 +15840,10 @@
    "dominant_race": 3
   },
   "seeds": [
-   3108068032008931116,
+   3853195945103197538,
+   1742018268966457771,
    4391689299580658574,
-   -4264718934797924038,
-   -2152359462649196020,
+   -3836439885006541220,
    -2730703428445211283,
    -4318252485880132766
   ],
@@ -15883,11 +15851,11 @@
   "moon_count": 0,
   "sizes": [
    1,
-   2,
    0,
    1,
+   1,
    2,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -15902,11 +15870,11 @@
   "galaxy": 0,
   "region": "Gemaki Spur",
   "system": "Saxas XIX",
-  "planet": "Icyonghu Sigma",
+  "planet": "Sapp 76/A8",
   "sysattr": {
-   "planet_count": 5,
-   "prime_planet_count": 1,
-   "safe_start_planet": 5,
+   "planet_count": 0,
+   "prime_planet_count": 6,
+   "safe_start_planet": 4,
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 3,
@@ -15915,20 +15883,21 @@
    "dominant_race": 2
   },
   "seeds": [
-   -3424082080075628739,
+   7235673407707622943,
+   -2410205918360257026,
    1610069003761702766,
-   6523964514463285493,
    5786938786436275391,
-   -8397251936836489417,
-   -2497315238609980700
+   6381273980525644694,
+   8212977072924827946
   ],
-  "planet_count": 4,
-  "moon_count": 2,
+  "planet_count": 5,
+  "moon_count": 1,
   "sizes": [
    0,
    0,
-   1,
-   1
+   2,
+   0,
+   0
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -15945,8 +15914,8 @@
   "system": "Idovurav",
   "planet": "Uisbecky Gamma",
   "sysattr": {
-   "planet_count": 2,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 3,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -15956,7 +15925,7 @@
    "dominant_race": 3
   },
   "seeds": [
-   -3910866764415620140,
+   5388056543003577995,
    -8271150833764463047,
    8740981981782435261
   ],
@@ -15965,7 +15934,7 @@
   "sizes": [
    0,
    1,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -15980,11 +15949,11 @@
   "galaxy": 0,
   "region": "Myatnigh Band",
   "system": "Pochka-Musg",
-  "planet": "Oradn Minor",
+  "planet": "Anshett",
   "sysattr": {
-   "planet_count": 3,
-   "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "planet_count": 0,
+   "prime_planet_count": 4,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 7,
@@ -15993,17 +15962,17 @@
    "dominant_race": 2
   },
   "seeds": [
-   6327585215543487766,
-   2540296357145977328,
+   -2684048263640150903,
+   -1203596971982414968,
    5336734012686940863,
-   8440585267806925716
+   1137908765792077566
   ],
   "planet_count": 4,
   "moon_count": 0,
   "sizes": [
    2,
    1,
-   2,
+   0,
    2
   ],
   "voxel": {
@@ -16021,8 +15990,8 @@
   "system": "Ukuton XVIII",
   "planet": "Eodonald Migaw",
   "sysattr": {
-   "planet_count": 1,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 2,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -16032,14 +16001,14 @@
    "dominant_race": 1
   },
   "seeds": [
-   -2726002652798176327,
+   -5883085350768253555,
    2460153722318933545
   ],
   "planet_count": 2,
   "moon_count": 0,
   "sizes": [
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -16054,10 +16023,10 @@
   "galaxy": 0,
   "region": "Haelian Expanse",
   "system": "Yottuna",
-  "planet": "Jinga",
+  "planet": "Gehwo Sigma",
   "sysattr": {
-   "planet_count": 6,
-   "prime_planet_count": 0,
+   "planet_count": 0,
+   "prime_planet_count": 6,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -16067,22 +16036,20 @@
    "dominant_race": 1
   },
   "seeds": [
+   -1263963233647249142,
+   -5103706244774462581,
    2068663607218843452,
    -5166778438815949441,
-   7084057203251393084,
-   -3489835426576985187,
-   7823966211022363569,
-   4024423181743706579
+   -7680789113766725283,
+   7823966211022363569
   ],
-  "planet_count": 6,
-  "moon_count": 0,
+  "planet_count": 4,
+  "moon_count": 2,
   "sizes": [
    2,
-   1,
    0,
-   2,
-   2,
-   2
+   1,
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -16097,11 +16064,11 @@
   "galaxy": 0,
   "region": "Thoslo Quadrant",
   "system": "Yedexo-Zahu",
-  "planet": "Oodb",
+  "planet": "Leynn IV",
   "sysattr": {
-   "planet_count": 3,
-   "prime_planet_count": 1,
-   "safe_start_planet": 3,
+   "planet_count": 0,
+   "prime_planet_count": 4,
+   "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 6,
@@ -16110,17 +16077,18 @@
    "dominant_race": 3
   },
   "seeds": [
-   7109872037375251819,
-   6943870939120804343,
+   8556567789761444268,
+   3422671783524444487,
    -3925940420817165402,
-   1468972236856339709
+   3083990853913255326
   ],
-  "planet_count": 3,
-  "moon_count": 1,
+  "planet_count": 4,
+  "moon_count": 0,
   "sizes": [
    0,
+   1,
    0,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -16135,10 +16103,10 @@
   "galaxy": 0,
   "region": "Sea of Ohkwibe",
   "system": "Derabuio",
-  "planet": "Yednaean Hibe",
+  "planet": "Litimonat Bayas",
   "sysattr": {
-   "planet_count": 3,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 4,
    "safe_start_planet": 2,
    "gas_giant": false,
    "star_type": 4,
@@ -16148,17 +16116,17 @@
    "dominant_race": 1
   },
   "seeds": [
-   -8828334374268082221,
-   -755509649930545085,
+   -6611180023042691970,
+   -8317181760099664314,
    -2312316904882598063,
-   3716569131339592738
+   -2228623354827941240
   ],
   "planet_count": 4,
   "moon_count": 0,
   "sizes": [
    2,
-   2,
    1,
+   0,
    0
   ],
   "voxel": {
@@ -16174,10 +16142,10 @@
   "galaxy": 0,
   "region": "Gemaki Spur",
   "system": "Erford-Hayas",
-  "planet": "Wilmun XII",
+  "planet": "Caktonr Prime",
   "sysattr": {
-   "planet_count": 4,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 5,
    "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 4,
@@ -16187,18 +16155,20 @@
    "dominant_race": 2
   },
   "seeds": [
-   6739011941460087410,
-   8353324826911795901,
+   -2149412860977015107,
+   5436247523656199438,
    -33393147599604808,
-   696596092204155615,
-   5523028538376237515
+   4968983034178936403,
+   -2561507556061756014
   ],
-  "planet_count": 3,
-  "moon_count": 2,
+  "planet_count": 5,
+  "moon_count": 0,
   "sizes": [
    1,
-   0,
-   0
+   2,
+   2,
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -16213,7 +16183,7 @@
   "galaxy": 0,
   "region": "Icroco Boundary",
   "system": "Strezh-Hewa",
-  "planet": "Poydeusi Minor",
+  "planet": "Nosorien Alpha",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -16228,7 +16198,7 @@
   "seeds": [
    4848837815354614303,
    -4872070494383252792,
-   7375486458835904258
+   3277988591683341122
   ],
   "planet_count": 3,
   "moon_count": 0,
@@ -16250,11 +16220,11 @@
   "galaxy": 0,
   "region": "Myatnigh Band",
   "system": "Agestra",
-  "planet": "Sagrovi V",
+  "planet": "Maru 19/X4",
   "sysattr": {
    "planet_count": 4,
    "prime_planet_count": 2,
-   "safe_start_planet": 4,
+   "safe_start_planet": 3,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 2,
@@ -16268,17 +16238,16 @@
    -2983631415187693546,
    6156362830932400622,
    -7348291607609976644,
-   -978807913600995811
+   -1372034778357437563
   ],
-  "planet_count": 6,
-  "moon_count": 0,
+  "planet_count": 5,
+  "moon_count": 1,
   "sizes": [
    1,
    2,
    2,
    2,
-   2,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -16297,7 +16266,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 7,
+   "safe_start_planet": 6,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 2,
@@ -16362,7 +16331,7 @@
    1,
    2,
    0,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -16398,7 +16367,7 @@
   "moon_count": 1,
   "sizes": [
    0,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -16433,7 +16402,7 @@
   "moon_count": 0,
   "sizes": [
    1,
-   1
+   2
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -16448,7 +16417,7 @@
   "galaxy": 0,
   "region": "Gemaki Spur",
   "system": "Pisburyd",
-  "planet": "Enjamel Q30",
+  "planet": "Daisy IX",
   "sysattr": {
    "planet_count": 1,
    "prime_planet_count": 2,
@@ -16463,14 +16432,14 @@
   "seeds": [
    -1410804851395427713,
    1561837732659414355,
-   -320300831604263989
+   3749483781318793403
   ],
   "planet_count": 3,
   "moon_count": 0,
   "sizes": [
    2,
-   2,
-   1
+   1,
+   2
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -16509,7 +16478,7 @@
    1,
    1,
    2,
-   0
+   2
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -16550,7 +16519,7 @@
    1,
    2,
    2,
-   2
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -16631,7 +16600,7 @@
    2,
    0,
    1,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -16711,7 +16680,7 @@
   "sizes": [
    2,
    2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -16848,7 +16817,7 @@
   "galaxy": 0,
   "region": "The Arm of Uedennit",
   "system": "Rumetumc",
-  "planet": "Lonique Alpha",
+  "planet": "New Justonab",
   "sysattr": {
    "planet_count": 3,
    "prime_planet_count": 2,
@@ -16865,7 +16834,7 @@
    6594859080668125624,
    4823086399250064805,
    -6789289241618385494,
-   4404394289170125702
+   1751629118578599971
   ],
   "planet_count": 5,
   "moon_count": 0,
@@ -16958,8 +16927,8 @@
    1,
    1,
    0,
-   0,
-   2
+   1,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -17062,7 +17031,7 @@
   "sysattr": {
    "planet_count": 6,
    "prime_planet_count": 0,
-   "safe_start_planet": 1,
+   "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 0,
    "economy_type": 6,
@@ -17168,7 +17137,7 @@
    1,
    1,
    1,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -17334,7 +17303,7 @@
    1,
    0,
    2,
-   2
+   0
   ],
   "voxel": {
    "guide_star_count": 0,
@@ -17349,10 +17318,10 @@
   "galaxy": 0,
   "region": "Sea of Onhakitc",
   "system": "Runumen-Inu",
-  "planet": "Hous",
+  "planet": "Rewicho VII",
   "sysattr": {
-   "planet_count": 1,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 2,
    "safe_start_planet": 0,
    "gas_giant": true,
    "star_type": 4,
@@ -17362,15 +17331,12 @@
    "dominant_race": 1
   },
   "seeds": [
-   9104635997456058165,
-   217079224255152199
+   -3637017038037202318,
+   9104635997456058165
   ],
   "planet_count": 1,
-  "moon_count": 5,
-  "sizes": [
-   0,
-   0
-  ],
+  "moon_count": 1,
+  "sizes": [],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
@@ -17386,9 +17352,9 @@
   "system": "Deledela II",
   "planet": "Baymouthg X",
   "sysattr": {
-   "planet_count": 6,
-   "prime_planet_count": 0,
-   "safe_start_planet": 1,
+   "planet_count": 0,
+   "prime_planet_count": 6,
+   "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 3,
@@ -17397,18 +17363,18 @@
    "dominant_race": 1
   },
   "seeds": [
-   -4983890715755023063,
-   -415134155040431682,
+   -1017270374989204656,
+   -8538967666549650457,
+   -9180067475233906066,
    -2598870964561480181,
-   -6457019955671406592,
-   -801834339579076681,
+   1583516931120108669,
    4227753512159361295
   ],
   "planet_count": 5,
   "moon_count": 1,
   "sizes": [
    1,
-   1,
+   2,
    1,
    2,
    0
@@ -17426,10 +17392,10 @@
   "galaxy": 1,
   "region": "Mepox Spur",
   "system": "Kavisnin",
-  "planet": "Bodm",
+  "planet": "Inezal",
   "sysattr": {
-   "planet_count": 1,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 6,
    "safe_start_planet": 0,
    "gas_giant": true,
    "star_type": 4,
@@ -17439,15 +17405,16 @@
    "dominant_race": 2
   },
   "seeds": [
-   8099278118534149198,
-   -7892669464736891381
+   5523574434118384014,
+   6720851497504226944,
+   -7892669464736891381,
+   -8325560480128698458,
+   8970730418022388758,
+   5866468098578350143
   ],
   "planet_count": 1,
   "moon_count": 5,
-  "sizes": [
-   2,
-   0
-  ],
+  "sizes": [],
   "voxel": {
    "guide_star_count": 120,
    "black_hole_count": 1,
@@ -17461,10 +17428,10 @@
   "galaxy": 1,
   "region": "Mepox Spur",
   "system": "Taikkinnv",
-  "planet": "Eblostills Hagi",
+  "planet": "New Memiendt",
   "sysattr": {
-   "planet_count": 3,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 4,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -17474,17 +17441,17 @@
    "dominant_race": 1
   },
   "seeds": [
+   -2322127395331670467,
    3059687715915986631,
-   -3437383415506507161,
-   6551972945562835022,
-   8785012294231996310
+   9046324976383110542,
+   7819960360154246872
   ],
   "planet_count": 3,
   "moon_count": 1,
   "sizes": [
    0,
-   0,
-   1
+   1,
+   0
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -17501,9 +17468,9 @@
   "system": "Andtal",
   "planet": "Rikin",
   "sysattr": {
-   "planet_count": 1,
-   "prime_planet_count": 1,
-   "safe_start_planet": 2,
+   "planet_count": 0,
+   "prime_planet_count": 2,
+   "safe_start_planet": 1,
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 5,
@@ -17519,7 +17486,7 @@
   "moon_count": 0,
   "sizes": [
    2,
-   0
+   1
   ],
   "voxel": {
    "guide_star_count": 120,
@@ -17534,10 +17501,10 @@
   "galaxy": 255,
   "region": "Affalefra Mass",
   "system": "Kukopi-Oke III",
-  "planet": "New Ahei",
+  "planet": "Aghdadoi Minor",
   "sysattr": {
-   "planet_count": 2,
-   "prime_planet_count": 1,
+   "planet_count": 0,
+   "prime_planet_count": 3,
    "safe_start_planet": 0,
    "gas_giant": false,
    "star_type": 4,
@@ -17547,16 +17514,14 @@
    "dominant_race": 3
   },
   "seeds": [
-   1974046133892030276,
-   -4182029193838716610,
-   -7831221909400722908
+   2387317751573565074,
+   3755729865964212377,
+   -8243148829667736239
   ],
-  "planet_count": 3,
-  "moon_count": 0,
+  "planet_count": 1,
+  "moon_count": 2,
   "sizes": [
-   0,
-   1,
-   1
+   0
   ],
   "voxel": {
    "guide_star_count": 120,

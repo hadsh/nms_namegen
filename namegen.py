@@ -18,9 +18,10 @@ from nms_namegen.planet import planetName
 #   * planet_count / prime_planet_count come from systemAttributes and describe
 #     the logical bodies the game assigns to the system.
 #   * rendered_planets / rendered_moons come from planetSeeds and describe how
-#     those bodies are actually split into planets vs moons. For gas giants
-#     planetSeeds overrides this to 1 planet + 5 moons, so the rendered split
-#     deliberately does NOT equal planet_count + prime_planet_count.
+#     those bodies are actually split into planets vs moons. Every moon takes
+#     one of the logical body slots, so rendered_planets + rendered_moons
+#     equals planet_count + prime_planet_count but rendered_planets alone
+#     deliberately does not.
 def systemComposition(portal_code, galaxy):
     attributes = systemAttributes(portal_code, galaxy)
     seeds = planetSeeds(portal_code, galaxy)

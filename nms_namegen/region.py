@@ -85,7 +85,7 @@ def voxelAttributes(portal_code):
     z = (portal_code & 0xFFF000) >> 12
     # x/z run 12 bits (0x000-0xFFF), y runs 8 bits (0x00-0xFF): both are
     # signed offsets from the galactic centre, folded the same way the
-    # game does (0.00% median error vs 5531 wiki region pages). Using the
+    # game does (0.00% median error vs 5531 labelled regions). Using the
     # raw unsigned value here instead of folding it made every high-half
     # coordinate look "far",
     # which pushed guide_star_renegade_count to 0 and silently skipped the
@@ -102,21 +102,27 @@ def voxelAttributes(portal_code):
     voxelAttributes["inside_gap"] = 0
     voxelAttributes["guide_star_renegade_count"] = 0
 
-    distance = math.sqrt(x * x + y * y + z * z)
-    # print(distance)
-    if distance < 8.0:
+    # The distance is truncated to an integer BEFORE both the gap test and
+    # the renegade subtraction, and the subtraction is itself an integer
+    # division. Keeping the float distance here rounded a slice of voxels
+    # into the wrong band, which shifted guide_star_renegade_count and, with
+    # it, the safe-start draw. This one is a fidelity fix, not a scoring
+    # one: it moves nothing at all on records discovered in 2025 or later
+    # (1,041 purple and 7,314 Euclid systems, identical either way). It only
+    # shows up against pre-Origins records, which describe a universe the
+    # game no longer generates, so that apparent gain is not evidence.
+    distance = int(math.sqrt(x * x + y * y + z * z))
+    if distance < 8:
         voxelAttributes["guide_star_count"] = 0
         voxelAttributes["black_hole_count"] = 0
         voxelAttributes["atlas_station_count"] = 0
         voxelAttributes["inside_gap"] = 1
 
-    if (distance < 1440.0) and (distance > 8.0):
-        diff = distance - 8.0
-        diff *= 120.0
-        diff /= 1440.0
+    if 8 < distance < 1440:
+        diff = int((distance - 8) * 120 / 1440)
 
-        if diff < 0.0:
-            diff = 0.0
+        if diff < 0:
+            diff = 0
         if diff > 0x78:
             diff = 0x78
         voxelAttributes["guide_star_renegade_count"] = 0x78 - diff

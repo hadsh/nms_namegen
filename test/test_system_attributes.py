@@ -95,7 +95,7 @@ class TestSystemAttributes(unittest.TestCase):
             {
                 "planet_count": 1,
                 "prime_planet_count": 1,
-                "safe_start_planet": 2,
+                "safe_start_planet": 1,
                 "gas_giant": False,
                 "star_type": 0,
                 "economy_type": 1,
@@ -129,7 +129,7 @@ class TestSystemAttributes(unittest.TestCase):
             {
                 "planet_count": 2,
                 "prime_planet_count": 1,
-                "safe_start_planet": 2,
+                "safe_start_planet": 1,
                 "gas_giant": False,
                 "star_type": 0,
                 "economy_type": 6,

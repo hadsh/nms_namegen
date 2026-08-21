@@ -36,14 +36,17 @@ class TestSystemComposition(unittest.TestCase):
                 composition["planet_count"] + composition["prime_planet_count"],
             )
 
-    def test_gas_giant_rendered_split_is_fixed(self):
-        # planetSeeds overrides gas-giant systems to a fixed 1 planet + 5 moons
-        # regardless of the logical planet_count, so the rendered split
-        # deliberately diverges from planet_count + prime_planet_count.
+    def test_gas_giant_renders_one_planet_and_the_rest_as_moons(self):
+        # The gas-giant layout renders a single giant plus every other body
+        # as a moon, so rendered_planets is 1 whatever the body count is.
+        # The body count itself is still the logical one.
         composition = systemComposition(0x03E912345678, 0)
         self.assertTrue(composition["gas_giant"])
         self.assertEqual(composition["rendered_planets"], 1)
-        self.assertEqual(composition["rendered_moons"], 5)
+        self.assertEqual(
+            composition["rendered_planets"] + composition["rendered_moons"],
+            composition["planet_count"] + composition["prime_planet_count"],
+        )
 
 
 class TestAttributesCLI(unittest.TestCase):
@@ -129,7 +132,7 @@ class TestPlanetSeedsCLI(unittest.TestCase):
                 ],
                 "planet_count": 3,
                 "moon_count": 1,
-                "sizes": [0, 0, 1],
+                "sizes": [0, 0, 0],
             },
         )
 

@@ -30,7 +30,28 @@ Compared to upstream:
   return dict (dropped when `attributes` was added), and adds CLI
   commands (`system-attributes`, `planet-seeds`, `voxel`) exposing the
   remaining raw library functions as JSON.
-* `voxelAttributes()` now folds the x/y/z portal-code coordinates to
+* The planet/moon split in `planetSeeds()` was reworked. The extra-body
+  loop now draws its size class before its seed and can turn extra bodies
+  into moons (it previously did neither, and burnt a stray draw), the
+  safe-start draw spans `0..planet_count` rather than one slot more, and
+  purple systems route all their bodies through that loop behind two
+  nested probability draws instead of one flat gate. The defect was
+  specific to purple systems: planet counts go from 58.1% to 94.1% on
+  1,041 labelled purple systems, and gas-giant precision from 80.3% to
+  94.7%. Ordinary systems were already close and move from 93.0% to 93.3%
+  (7,314 systems). See the comments in `nms_namegen/system.py`.
+* `voxelAttributes()` now truncates the galactic-centre distance to an
+  integer before the central-gap test and the renegade subtraction, which
+  is where a slice of voxels was landing in the wrong band. This is a
+  fidelity fix only, with no measurable effect on either corpus.
+
+Corpus figures above are measured against community records discovered in
+2025 or later. The game has regenerated its universe several times, most
+visibly at the Origins update, and older records describe a universe this
+generator no longer produces: single-body systems are 7.1% of pre-2021
+records and 0.2% of recent ones, and body counts match at 59% against 95%.
+Measuring across all eras scores the archive, not the generator.
+* `voxelAttributes()` also folds the x/y/z portal-code coordinates to
   signed offsets from the galactic centre before computing distance,
   instead of using the raw unsigned bits. That was skewing the
   `star_type` renegade override for systems near the coordinate
@@ -77,8 +98,8 @@ compatible.*
 `attributes` is a convenience command: `planet_count`/`prime_planet_count`
 are the logical bodies the game assigns, while `rendered_planets`/
 `rendered_moons` are how those bodies are actually split for display. The
-two differ for gas giants, which `planetSeeds` fixes at 1 planet + 5
-moons. `system-attributes` and `planet-seeds` expose the two underlying
+two differ whenever moons are placed, since every moon takes one of the
+logical body slots. `system-attributes` and `planet-seeds` expose the two underlying
 dicts unmerged, for callers that need the raw fields (see Library below).
 
 ### Options
@@ -151,8 +172,10 @@ Voxel flags (black hole / Atlas station / central gap) for a portal code.
 
 * `planet_count`, `prime_planet_count`, `safe_start_planet` : logical body
   counts and the safe-start planet index, as rolled by the game's RNG.
-* `gas_giant` : `True` if the purple gas-giant gate collapsed the system
-  to a single gas giant with five moons (see `planetSeeds`).
+* `gas_giant` : `True` if the system uses the gas-giant layout, a single
+  giant planet orbited by every other body as a moon (see `planetSeeds`).
+  Purple systems only. Most of these hold six bodies, so 1 planet and 5
+  moons, but smaller ones exist.
 * `star_type` : star colour class, 0-4 (yellow/white, green, blue, red,
   purple/exotic). Exposed by both the `attributes` and `system-attributes`
   CLI commands, and by `systemComposition()`.
