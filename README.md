@@ -290,11 +290,11 @@ which currently agrees on every one.
 It has no knowledge of names changed by travellers or by Discovery
 Services. It generates the original procedural name only.
 
-Region and system name generation was tested upstream against a corpus of
-roughly 600 system names from AGT data. The system-attribute work in this
-fork is verified against the ground truth described above and, for purple
-systems specifically, against about 1041 labelled systems extracted from
-the [glyphs.had.sh](https://glyphs.had.sh/) spatial database.
+Name generation and the system attributes are verified against the whole
+[glyphs.had.sh](https://glyphs.had.sh/) spatial database, not a sample of
+it. The ground truth shipped in `test/fixtures/` comes out of that work
+and is published with this library so the figures above can be checked
+rather than taken on trust.
 
 Star colour maps to what players record as a colour, not to a spectral
 class: the game shows several spectral classes per colour.
