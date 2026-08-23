@@ -10,6 +10,30 @@ voxel flags) that the game derives from the same seeds.
 You can use the modules in the `nms_namegen` folder directly in your own
 code, or use `namegen.py` as a command line utility.
 
+## How often it is right
+
+Measured against `test/fixtures/nms-systems-ground-truth-2026-08-23.json`:
+1000 star systems recorded by hand by players on the community wiki, 200
+per star colour, spread over 64 galaxies. Every address is derived from
+the portal coordinates and confirmed twice, by the region name and by the
+distance to the galactic centre. Every record is post-Origins. No value in
+that file is computed, predicted or completed by this library or any
+other, which is what makes it usable as a scoreboard.
+
+| Field | Agreement | Sample |
+|---|---|---|
+| Star colour | 99.10% | 991/1000 |
+| Uncharted system | 99.80% | 998/1000 |
+| Dominant race | 99.10% | 991/1000 |
+| Conflict level | 99.03% | 817/825 |
+| Economy category | 99.02% | 811/819 |
+| Wealth tier | 98.90% | 811/820 |
+| Planet count | 98.80% | 988/1000 |
+| Planet and moon counts, both | 98.40% | 984/1000 |
+
+Samples differ because a record only counts for a field it actually
+carries: the corpus never fills a blank in.
+
 ## What this fork changes
 
 Compared to upstream:
@@ -60,6 +84,16 @@ Measuring across all eras scores the archive, not the generator.
   `conflict_level` and `dominant_race`, reusing four RNG draws that
   were already being consumed but previously discarded. See the
   Library section below for details and corpus match rates.
+* `systemAttributes()` now also reports whether a system is `uncharted`,
+  `abandoned` or `pirate`. The first two come from draws the library was
+  already making and throwing away, the third from a draw the generator
+  peeks at without consuming, so none of them moves the RNG stream. An
+  uncharted system has no faction, and `dominant_race` now returns 0 for
+  it rather than a race the game never shows.
+* The corpus figures for the four infobox fields are now measured on a
+  1000-system ground truth (`test/fixtures/`) recorded by hand by
+  players, with addresses confirmed by two independent checks and every
+  record post-Origins. See the Library section.
 * `planetSeeds()` additionally exposes `sizes`, the per-slot size roll
   it already computes internally to decide moon placement. Marked
   experimental, see Library below.
@@ -148,10 +182,11 @@ System composition attributes as JSON.
 ```
 
 Raw system attributes (includes `star_type`, `economy_type`, `wealth`,
-`conflict_level`, `dominant_race`).
+`conflict_level`, `dominant_race`, and the `uncharted` / `abandoned` /
+`pirate` flags).
 ```bash
 ./namegen.py system-attributes -p 003df8f87945 -g 0
-#output: {"planet_count": 3, "prime_planet_count": 1, "safe_start_planet": 3, "gas_giant": false, "star_type": 0, "economy_type": 6, "wealth": 2, "conflict_level": 2, "dominant_race": 3}
+#output: {"planet_count": 3, "prime_planet_count": 1, "safe_start_planet": 3, "gas_giant": false, "star_type": 0, "economy_type": 6, "wealth": 2, "conflict_level": 2, "dominant_race": 3, "uncharted": false, "abandoned": false, "pirate": false}
 ```
 
 Raw planet seeds for a system (includes the experimental `sizes` field).
@@ -181,17 +216,31 @@ Voxel flags (black hole / Atlas station / central gap) for a portal code.
   CLI commands, and by `systemComposition()`.
 * `economy_type` : economy category, 1-7 (1=trading, 2=advanced
   materials, 3=scientific, 4=mining, 5=manufacturing, 6=technology,
-  7=power generation). Validated 94.76% against a wiki corpus of 7964
-  systems.
-* `wealth` : wealth tier, 1-3 (1=low, 2=medium, 3=high). Validated
-  97.82% against a corpus of 12929 systems.
+  7=power generation). 99.02% agreement on the ground truth below.
+* `wealth` : wealth tier, 1-3 (1=low, 2=medium, 3=high). 98.90%.
 * `conflict_level` : conflict level, 1-3 (1=low, 2=medium, 3=high).
-  Pirate systems are a separate mechanic and not modelled here.
-  Validated 97.30% against a corpus of 9246 systems (pirate rows
-  excluded).
-* `dominant_race` : dominant race, 1-3 (1=Gek, 2=Korvax, 3=Vy'keen).
-  Uncharted/abandoned systems have no race to predict and are excluded.
-  Validated 94.78% against a corpus of 11325 systems.
+  99.03%. Pirate systems are reported through the `pirate` flag rather
+  than as a conflict level, see below.
+* `dominant_race` : dominant race, 1-3 (1=Gek, 2=Korvax, 3=Vy'keen), or
+  0 when the system is uncharted and has none. 99.10%.
+* `uncharted` : `True` when the system carries no faction at all, which
+  the game shows as an Uncharted system. The ground truth holds 181 of
+  them, this predicts 181, and 180 are the same ones: precision and
+  recall both 99.4%.
+* `abandoned` : `True` for an abandoned system. Rare - one system in a
+  thousand - so this flag comes from the generation route and the corpus
+  can neither confirm nor deny it. It also drops `wealth` and
+  `conflict_level` to their lowest tier, which is what the route does.
+* `pirate` : `True` for a pirate-controlled system, read from a draw the
+  generator peeks at without consuming. Community records carry no
+  pirate field, so this one is unvalidated; note that the systems it
+  flags carry ordinary wealth and conflict values in those records,
+  which is why neither field is overridden here.
+
+The percentages above come from the ground truth described at the top of
+this README. Older figures elsewhere in these notes were measured on
+larger but unfiltered wiki dumps, which mix in records describing
+universes the game has since regenerated.
 
 `economy_type`, `wealth`, `conflict_level` and `dominant_race` reuse
 four RNG draws consumed by the game right after the planet/prime counts

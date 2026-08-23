@@ -106,11 +106,16 @@ def voxelAttributes(portal_code):
     # the renegade subtraction, and the subtraction is itself an integer
     # division. Keeping the float distance here rounded a slice of voxels
     # into the wrong band, which shifted guide_star_renegade_count and, with
-    # it, the safe-start draw. This one is a fidelity fix, not a scoring
-    # one: it moves nothing at all on records discovered in 2025 or later
-    # (1,041 purple and 7,314 Euclid systems, identical either way). It only
-    # shows up against pre-Origins records, which describe a universe the
-    # game no longer generates, so that apparent gain is not evidence.
+    # it, the safe-start draw. It was first taken for a pure fidelity fix;
+    # the 2026-08-23 ground truth (1,000 hand-recorded systems, addresses
+    # confirmed twice) shows it also scores: two shells change branch, the
+    # voxels at distance 8.0-8.9 (truncated to 8, which falls through both
+    # tests and restores the skipped draw) and those around 1,330, together
+    # 87 of the 1,000 systems. Holding everything else at HEAD, this line
+    # alone carries the whole attribute gain: economy/wealth/conflict/race
+    # 97.1/97.6/98.1/97.9 with the float distance, 99.0/98.8/98.9/99.2 with
+    # the truncated one, plus star colour 98.2 -> 99.1 and planet counts
+    # 98.3 -> 98.8.
     distance = int(math.sqrt(x * x + y * y + z * z))
     if distance < 8:
         voxelAttributes["guide_star_count"] = 0

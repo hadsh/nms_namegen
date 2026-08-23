@@ -11,8 +11,45 @@ CONST_A = 0x64DD81482CBD31D7
 CONST_B = 0xE36AA5C613612997
 
 # abandonedSystemProbability * 100, indexed by star type (yellow, green, blue,
-# red, purple), from the original disassembly transcription (upstream 160de15).
+# red, purple), from upstream commit 160de15.
 ABANDONED_SYSTEM_PCT = [0, 10, 10, 0, 35]
+
+# The three per-star-type probability tables the generator reads, as the exact
+# 32-bit floats the game holds them in. The first is ABANDONED_SYSTEM_PCT above
+# expressed the way the comparison is really made; the other two drive draws
+# this library used to discard.
+ABANDONED_SYSTEM_THRESHOLD = [
+    0.0,
+    0.10000000149011612,
+    0.10000000149011612,
+    0.0,
+    0.3499999940395355,
+]
+EMPTY_SYSTEM_THRESHOLD = [
+    0.0,
+    0.4000000059604645,
+    0.4000000059604645,
+    0.949999988079071,
+    0.20000000298023224,
+]
+PIRATE_SYSTEM_THRESHOLD = [
+    0.25,
+    0.15000000596046448,
+    0.15000000596046448,
+    0.5,
+    0.05000000074505806,
+]
+
+
+def _probability(word):
+    """Reads a 32-bit draw the way the generator does, as a float32 in [0,1).
+
+    The thresholds above are float32 literals and the game compares against
+    them in single precision, so the division is rounded to float32 too. It
+    matters at the edges only, but the edges are exactly where a systematic
+    error would hide.
+    """
+    return np.float32((word & 0xFFFFFFFF) / 4294967296.0)
 
 
 # Returns a system name for No Man's Sky
@@ -98,8 +135,8 @@ def systemAttributes(portal_code, galaxy):
     )
     # print("UA:", hex(universalAddress))
     va = voxelAttributes(portal_code)
-    # Restored from the original disassembly transcription (upstream commit
-    # 160de15, dropped in the "Cleaned up system code" commit): the game
+    # Restored from upstream commit 160de15, dropped in the "Cleaned up
+    # system code" commit: the generator
     # decrements the system id before every branch comparison below (the
     # universal address above uses the raw id). Corpus-verified: with the
     # anomaly restoration this fixes 12 mispredicted boundary systems and
@@ -131,8 +168,8 @@ def systemAttributes(portal_code, galaxy):
         if (((seed & 0xFFFFFFFF) * 0x64) >> 0x20) < 0x1E:
             star_type = rng.random(3) + 1
 
-        # Restored from the original disassembly transcription (upstream
-        # commit 160de15): black-hole and Atlas-station system ids are
+        # Restored from upstream commit 160de15: black-hole and
+        # Atlas-station system ids are
         # anomalies; they force star_type to 0 and, via the condition below,
         # skip the safe_start draw. Dropping this shifted every subsequent
         # RNG draw for those systems.
@@ -204,17 +241,41 @@ def systemAttributes(portal_code, galaxy):
     if system_id > 0x3E7 and system_id < 0x429:  # Purple
         star_type = 4
 
-    # Abandoned-system check (probability per star type from the original
-    # disassembly transcription: [0, .10, .10, 0, .35]). When a system is
+    # Abandoned-system check (probability per star type from upstream
+    # commit 160de15: [0, .10, .10, 0, .35]). When a system is
     # abandoned, the empty-system draw is SKIPPED, shifting every subsequent
     # draw back one slot. Derived from 1,091 ground-truth purple systems:
     # the gas-giant gate below only aligns across the corpus under this
     # conditional skip (precision 79%/recall 97% vs 65%/70% without it), and
     # it also lifts green/red (star types 1/2) planet accuracy 92.9->93.9%
     # across the rest of the corpus.
-    abandoned = rng.random(100) < ABANDONED_SYSTEM_PCT[star_type]
+    rng._updateSeed()
+    abandoned = bool(_probability(rng.seed) < ABANDONED_SYSTEM_THRESHOLD[star_type])
+
+    # The draw this used to throw away is the empty-system check, and its
+    # result is readable: below EMPTY_SYSTEM_THRESHOLD the system carries no
+    # faction at all, which is what the game shows as "Uncharted". The stream
+    # position is unchanged, only the value is now read instead of discarded.
+    # Measured on the 2026-08-23 ground truth: 181 systems recorded as
+    # Uncharted, 181 predicted, 180 in common (precision and recall 99.4%).
+    uncharted = False
     if not abandoned:
-        rng._updateSeed()  # empty-system check
+        rng._updateSeed()
+        uncharted = bool(_probability(rng.seed) < EMPTY_SYSTEM_THRESHOLD[star_type])
+
+    if uncharted:
+        # No inhabitants, so no dominant race to report. The draw itself
+        # already happened above; only its reading changes.
+        dominant_race = 0
+
+    if abandoned:
+        # The generator drops both fields to their lowest bucket on an
+        # abandoned system, whatever the draws said. Only one ground-truth
+        # system is abandoned, so the corpus neither confirms nor denies this;
+        # it is here because it is what the route does, and that one system
+        # agrees.
+        wealth = 1
+        conflict_level = 1
 
     diff = 6 - planet_count
     if diff < 1:
@@ -246,6 +307,23 @@ def systemAttributes(portal_code, galaxy):
                 planet_count = 0
                 prime_planet_count = 6
 
+    # Pirate check. The generator peeks at the next word WITHOUT consuming it:
+    # nothing downstream shifts, which is why this can be read at all this late
+    # in the stream. Guarded exactly as the route guards it - a system that is
+    # abandoned or empty is never a pirate system, and neither is one that both
+    # has the base star type and drew a non-zero class limit.
+    #
+    # The corpus cannot check this one: the wiki has no pirate field, and the
+    # 18 ground-truth systems flagged here carry ordinary wealth and conflict
+    # values. Forcing those two fields to a pirate bucket, as one reading of
+    # the route suggests, costs 1.5 points on each (wealth 98.8 -> 97.3,
+    # conflict 98.9 -> 97.6), so the flag is reported and nothing else.
+    pirate = False
+    if not abandoned and not uncharted and (star_type != 0 or safe_start <= 0):
+        peek = PRNG(rng.seed)
+        peek._updateSeed()
+        pirate = bool(_probability(peek.seed) < PIRATE_SYSTEM_THRESHOLD[star_type])
+
     return {
         "planet_count": planet_count,
         "prime_planet_count": prime_planet_count,
@@ -272,10 +350,22 @@ def systemAttributes(portal_code, galaxy):
         # (a separate mechanic, not modeled here) are excluded. Validated
         # 97.30% (9246 systems, pirate rows excluded from that corpus check).
         "conflict_level": conflict_level,
-        # Dominant race, 1-3 (1=gek, 2=korvax, 3=vy'keen). Uncharted/
-        # abandoned-without-race locals codes are not modeled here.
-        # Validated 94.78% (11325 systems, those rows excluded).
+        # Dominant race, 1-3 (1=gek, 2=korvax, 3=vy'keen), or 0 when the
+        # system is uncharted and has none. Validated 99.10% over the whole
+        # 2026-08-23 ground truth (1000 systems, uncharted ones included -
+        # they used to be dropped from this measurement because the library
+        # had nothing to say about them).
         "dominant_race": dominant_race,
+        # No faction, no space station: what the game calls an Uncharted
+        # system. Precision and recall 99.4% on 181 ground-truth systems.
+        "uncharted": uncharted,
+        # Abandoned system (the derelict-freighter kind). Rare: 1 system in
+        # the 1000-system ground truth, so the flag is reported from the
+        # route, not corpus-validated.
+        "abandoned": abandoned,
+        # Pirate-controlled system. Read from a peek draw, not corpus-checked:
+        # see the comment where it is computed.
+        "pirate": pirate,
     }
 
 # Corpus figures quoted in this module are measured only against community

@@ -14,7 +14,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8210875627173698765,
@@ -51,7 +54,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6085766963989575466,
@@ -94,7 +100,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4834842200471977149,
@@ -137,7 +146,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8326265754150941286,
@@ -178,7 +190,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3396306335894084980,
@@ -212,9 +227,12 @@
    "gas_giant": false,
    "star_type": 2,
    "economy_type": 5,
-   "wealth": 2,
-   "conflict_level": 2,
-   "dominant_race": 3
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    -683371650936320970,
@@ -256,7 +274,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3795211945017380745,
@@ -296,7 +317,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8209826336523223319,
@@ -336,7 +360,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    8851915062141083093,
@@ -377,7 +404,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4268643573084805537,
@@ -412,7 +442,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6264681617559981102,
@@ -453,7 +486,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3888081025398615840,
@@ -496,7 +532,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1830392042363317226,
@@ -539,7 +578,10 @@
    "economy_type": 6,
    "wealth": 3,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3480774484168347172,
@@ -574,7 +616,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2371521501076806080,
@@ -614,7 +659,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -86422986226154356,
@@ -651,7 +699,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6779217330252945654,
@@ -688,7 +739,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1941458742306723127,
@@ -729,7 +783,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3660276818185525626,
@@ -766,7 +823,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    4568128175311487008,
@@ -809,7 +869,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    7615970034390858008,
@@ -844,7 +907,10 @@
    "economy_type": 3,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3657827672524278301,
@@ -883,7 +949,10 @@
    "economy_type": 2,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7847586789141479272,
@@ -923,7 +992,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6411566144280143911,
@@ -965,7 +1037,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8022311996578470590,
@@ -1006,7 +1081,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3325355023720399236,
@@ -1041,7 +1119,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5534566931616120933,
@@ -1082,7 +1163,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -813919552202435695,
@@ -1123,7 +1207,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1834184460311270913,
@@ -1158,7 +1245,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8292279561146924633,
@@ -1193,7 +1283,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8214972593179885367,
@@ -1234,7 +1327,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6389074075759486626,
@@ -1271,7 +1367,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -799892334647618473,
@@ -1312,7 +1411,10 @@
    "economy_type": 4,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8128818271087327013,
@@ -1355,7 +1457,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8304591161886945529,
@@ -1398,7 +1503,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8054104795570829664,
@@ -1438,7 +1546,10 @@
    "economy_type": 2,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7759829894819562964,
@@ -1480,7 +1591,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2902048788535600444,
@@ -1518,7 +1632,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -6151873334413128224,
@@ -1560,7 +1677,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6412930011444309073,
@@ -1603,7 +1723,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7210766569468568828,
@@ -1642,9 +1765,12 @@
    "gas_giant": false,
    "star_type": 2,
    "economy_type": 5,
-   "wealth": 2,
-   "conflict_level": 2,
-   "dominant_race": 2
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    7751883881811710471,
@@ -1686,7 +1812,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7091752064043200156,
@@ -1722,7 +1851,10 @@
    "economy_type": 5,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1025552557279560651,
@@ -1763,7 +1895,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1370429160166660237,
@@ -1798,7 +1933,10 @@
    "economy_type": 1,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5335262329730965678,
@@ -1833,7 +1971,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5662816401146256548,
@@ -1874,7 +2015,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2777237360860359861,
@@ -1913,7 +2057,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3901070367338428106,
@@ -1953,9 +2100,12 @@
    "gas_giant": false,
    "star_type": 1,
    "economy_type": 7,
-   "wealth": 2,
-   "conflict_level": 3,
-   "dominant_race": 2
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    1800639148843162734,
@@ -1990,7 +2140,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    9012454567654536774,
@@ -2025,7 +2178,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7144198600460511236,
@@ -2064,7 +2220,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7897078959403500224,
@@ -2107,7 +2266,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1695560959287044082,
@@ -2144,7 +2306,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8130834988879797805,
@@ -2183,7 +2348,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    5304440709024298742,
@@ -2220,7 +2388,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3605530873633229795,
@@ -2263,7 +2434,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2427641689452987599,
@@ -2300,7 +2474,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1316996460953526921,
@@ -2342,7 +2519,10 @@
    "economy_type": 6,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6039911016995536198,
@@ -2385,7 +2565,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6650362790467092204,
@@ -2424,7 +2607,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7939356395977615134,
@@ -2466,7 +2652,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1947234599603395863,
@@ -2502,7 +2691,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    1181033957082157420,
@@ -2545,7 +2737,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2125941301046312897,
@@ -2583,7 +2778,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    26787695845693755,
@@ -2617,7 +2815,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4495686446694575588,
@@ -2657,7 +2858,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8099196829341526476,
@@ -2698,7 +2902,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3858533870675478078,
@@ -2738,7 +2945,10 @@
    "economy_type": 6,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -7904689921990468009,
@@ -2773,7 +2983,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3066403449945754775,
@@ -2809,7 +3022,10 @@
    "economy_type": 1,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    304763248525257151,
@@ -2852,7 +3068,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5672746731949552480,
@@ -2887,7 +3106,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7003742997072460862,
@@ -2926,7 +3148,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    489714781650997827,
@@ -2969,7 +3194,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4258997213371730193,
@@ -3009,7 +3237,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1371144469785171187,
@@ -3050,7 +3281,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6588109908116090426,
@@ -3090,7 +3324,10 @@
    "economy_type": 5,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8292645663885211106,
@@ -3132,7 +3369,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1392364017372854150,
@@ -3169,7 +3409,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7320724462372334128,
@@ -3210,7 +3453,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2309191291870818017,
@@ -3249,7 +3495,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1580599960252309294,
@@ -3288,7 +3537,10 @@
    "economy_type": 6,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8824499721524520864,
@@ -3328,7 +3580,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4159209129145387983,
@@ -3371,7 +3626,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1508644895759367793,
@@ -3410,7 +3668,10 @@
    "economy_type": 7,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3318730523285396057,
@@ -3451,7 +3712,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6491025678071613524,
@@ -3494,7 +3758,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    6090459798097845353,
@@ -3535,7 +3802,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4968508460950560168,
@@ -3572,7 +3842,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5896584563789288247,
@@ -3615,7 +3888,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3320737055140141367,
@@ -3658,7 +3934,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -9189144096909454752,
@@ -3701,7 +3980,10 @@
    "economy_type": 1,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6332584011104748639,
@@ -3741,7 +4023,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2762816677080710013,
@@ -3784,7 +4069,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4236478471092972151,
@@ -3825,7 +4113,10 @@
    "economy_type": 2,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5163945120217653547,
@@ -3864,7 +4155,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7484949701717425858,
@@ -3906,7 +4200,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1620558069514293161,
@@ -3941,7 +4238,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5570708754990557947,
@@ -3976,7 +4276,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7026619815038267030,
@@ -4011,7 +4314,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3327142409475225233,
@@ -4054,7 +4360,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2459762632870475749,
@@ -4096,7 +4405,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -828644334930680885,
@@ -4137,7 +4449,10 @@
    "economy_type": 7,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    7461533539481264588,
@@ -4179,7 +4494,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6188807705975463563,
@@ -4221,7 +4539,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3659579665664758152,
@@ -4258,7 +4579,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3793957945006223281,
@@ -4299,7 +4623,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    3547080991888673538,
@@ -4340,7 +4667,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5778970251878143337,
@@ -4377,7 +4707,10 @@
    "economy_type": 1,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1880493479911278257,
@@ -4415,7 +4748,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7114499724059660492,
@@ -4456,7 +4792,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5916566479948018583,
@@ -4494,7 +4833,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5557931284662501087,
@@ -4533,7 +4875,10 @@
    "economy_type": 2,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    2502790981794062351,
@@ -4574,7 +4919,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2166404387055415208,
@@ -4614,7 +4962,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1401116959416613847,
@@ -4657,7 +5008,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    1679796098603662871,
@@ -4694,7 +5048,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3013643041024807898,
@@ -4733,7 +5090,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6534669103863007057,
@@ -4773,7 +5133,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5282155025723529548,
@@ -4812,7 +5175,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8967259984007447621,
@@ -4855,7 +5221,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    148012245377667427,
@@ -4893,7 +5262,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    258251476827048082,
@@ -4933,7 +5305,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2630092988051384857,
@@ -4973,7 +5348,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    120992599494594075,
@@ -5014,7 +5392,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8830460511517735461,
@@ -5055,7 +5436,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5835554762154626906,
@@ -5094,7 +5478,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8708957915560275112,
@@ -5135,7 +5522,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5142385957452252254,
@@ -5173,7 +5563,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    6177505244955437036,
@@ -5213,7 +5606,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8472149161010582982,
@@ -5256,7 +5652,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2320682961326319929,
@@ -5293,7 +5692,10 @@
    "economy_type": 7,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4439058053517287475,
@@ -5328,7 +5730,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5977928350850902038,
@@ -5370,7 +5775,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5031876093125628522,
@@ -5405,7 +5813,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -6465329515625266245,
@@ -5448,7 +5859,10 @@
    "economy_type": 1,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5600329532642154999,
@@ -5490,7 +5904,10 @@
    "economy_type": 7,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3379865407393781610,
@@ -5527,7 +5944,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    7022217375431858462,
@@ -5562,7 +5982,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6092308343254133387,
@@ -5599,7 +6022,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5787261735045207220,
@@ -5642,7 +6068,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7487176073698353624,
@@ -5681,7 +6110,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5826945262058969858,
@@ -5722,7 +6154,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3409293616090210636,
@@ -5761,7 +6196,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8653649132328990981,
@@ -5801,9 +6239,12 @@
    "gas_giant": false,
    "star_type": 2,
    "economy_type": 2,
-   "wealth": 2,
-   "conflict_level": 3,
-   "dominant_race": 2
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    -6816013136500198772,
@@ -5845,7 +6286,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7106864696807785683,
@@ -5883,7 +6327,10 @@
    "economy_type": 3,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4218118996481436095,
@@ -5924,7 +6371,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5151725838342511117,
@@ -5966,7 +6416,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5023448748744079887,
@@ -6008,7 +6461,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3014181028601422125,
@@ -6047,7 +6503,10 @@
    "economy_type": 2,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    208461360741689525,
@@ -6087,7 +6546,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3050299475655751375,
@@ -6128,7 +6590,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4471184062563801485,
@@ -6170,7 +6635,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -736869671966101943,
@@ -6212,7 +6680,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2367011821188198980,
@@ -6255,7 +6726,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7860278734153113537,
@@ -6296,7 +6770,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    462871509336718764,
@@ -6331,7 +6808,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4055450484418871408,
@@ -6368,7 +6848,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7437636460620402931,
@@ -6410,7 +6893,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -91614783350630261,
@@ -6447,7 +6933,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8112421215909108978,
@@ -6489,7 +6978,10 @@
    "economy_type": 6,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4878878512845805214,
@@ -6526,7 +7018,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2028811562036127000,
@@ -6567,7 +7062,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6908630704177032741,
@@ -6607,7 +7105,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6193216148373726535,
@@ -6648,7 +7149,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5200997121946314403,
@@ -6683,7 +7187,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3221969568984335664,
@@ -6723,7 +7230,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6520929046103807058,
@@ -6760,7 +7270,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4547129231744514162,
@@ -6800,7 +7313,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2291104045767829318,
@@ -6840,7 +7356,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2927917454384695739,
@@ -6883,7 +7402,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -1467492430714820184,
@@ -6923,7 +7445,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5819380048029299552,
@@ -6961,7 +7486,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2389090749468557083,
@@ -6996,7 +7524,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1622697800924195241,
@@ -7037,7 +7568,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4351176749291456358,
@@ -7072,7 +7606,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4164719600638719743,
@@ -7107,7 +7644,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6096470345095137436,
@@ -7146,7 +7686,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3478879117497182300,
@@ -7186,7 +7729,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4256826224059684565,
@@ -7227,7 +7773,10 @@
    "economy_type": 2,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6156872656525658251,
@@ -7268,7 +7817,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4643619066466377728,
@@ -7306,7 +7858,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3126845581471491528,
@@ -7344,7 +7899,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -4298524323765136160,
@@ -7385,7 +7943,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7829078249781203074,
@@ -7428,7 +7989,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5032650387521559970,
@@ -7469,7 +8033,10 @@
    "economy_type": 2,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7729260841367637686,
@@ -7512,7 +8079,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1220887683600806536,
@@ -7547,7 +8117,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    625320409760674741,
@@ -7586,7 +8159,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4677026768297879781,
@@ -7625,7 +8201,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4787760816672478913,
@@ -7663,7 +8242,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3769009928561684534,
@@ -7702,7 +8284,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2764470134909108117,
@@ -7737,7 +8322,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2201189478763681878,
@@ -7776,7 +8364,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1115979883040013363,
@@ -7817,7 +8408,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -1496013104973017772,
@@ -7852,7 +8446,10 @@
    "economy_type": 6,
    "wealth": 3,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -777904181016020901,
@@ -7888,7 +8485,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6329204672672095039,
@@ -7926,7 +8526,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2975343648550155281,
@@ -7965,7 +8568,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    5505913611983575191,
@@ -8001,7 +8607,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5293743419947316124,
@@ -8044,7 +8653,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8841757805497352450,
@@ -8085,7 +8697,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8119840297945197951,
@@ -8126,7 +8741,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1161672889089365223,
@@ -8163,7 +8781,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5035195084686865892,
@@ -8202,7 +8823,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2658724670754725963,
@@ -8242,7 +8866,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7303802607075752598,
@@ -8275,9 +8902,12 @@
    "gas_giant": false,
    "star_type": 2,
    "economy_type": 3,
-   "wealth": 2,
-   "conflict_level": 3,
-   "dominant_race": 3
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    4768875879595807670,
@@ -8317,7 +8947,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8910515537019962286,
@@ -8356,7 +8989,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5421653323531155423,
@@ -8397,7 +9033,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7526169427183578110,
@@ -8439,7 +9078,10 @@
    "economy_type": 1,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7598796999462802923,
@@ -8482,7 +9124,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    8743060008556322672,
@@ -8525,7 +9170,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5271624782518929121,
@@ -8560,7 +9208,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5645363224285162635,
@@ -8595,7 +9246,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2741892033723091104,
@@ -8638,7 +9292,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4016737444706543660,
@@ -8680,7 +9337,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2124458545324242090,
@@ -8722,7 +9382,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5013903325843043545,
@@ -8762,7 +9425,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6731484600277526549,
@@ -8800,7 +9466,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    8407568930699814984,
@@ -8837,7 +9506,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8768550241093653599,
@@ -8879,7 +9551,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1390425062939457497,
@@ -8916,7 +9591,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2789386616556906216,
@@ -8951,7 +9629,10 @@
    "economy_type": 6,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3644712908551022210,
@@ -8994,7 +9675,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8850400908585887789,
@@ -9036,7 +9720,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1466550657389961641,
@@ -9075,7 +9762,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7090718395072635741,
@@ -9112,7 +9802,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    553762898939164459,
@@ -9149,7 +9842,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4912793201832222994,
@@ -9191,7 +9887,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4424052913139460928,
@@ -9233,7 +9932,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    457177082628868717,
@@ -9273,7 +9975,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7963815938767600344,
@@ -9310,7 +10015,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -993183605697777290,
@@ -9352,7 +10060,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8120576376904490587,
@@ -9393,7 +10104,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    8546633637868028571,
@@ -9428,7 +10142,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8137368060316028296,
@@ -9467,7 +10184,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3317456413128651176,
@@ -9504,7 +10224,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6882268643213369590,
@@ -9547,7 +10270,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8304686898089768334,
@@ -9590,7 +10316,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4413193600298272014,
@@ -9627,7 +10356,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6164511519615024425,
@@ -9666,7 +10398,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1945367424624685081,
@@ -9707,7 +10442,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1104216573791082029,
@@ -9747,7 +10485,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6455442680346324711,
@@ -9786,7 +10527,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1130195062804326203,
@@ -9823,7 +10567,10 @@
    "economy_type": 2,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    8209363909080052037,
@@ -9865,7 +10612,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -196538020222768078,
@@ -9906,7 +10656,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1042568429539766986,
@@ -9945,7 +10698,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1216758076796696947,
@@ -9982,7 +10738,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -2880194555235993618,
@@ -10019,7 +10778,10 @@
    "economy_type": 5,
    "wealth": 3,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -9098714928854518717,
@@ -10056,7 +10818,10 @@
    "economy_type": 4,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1125481707589728150,
@@ -10092,7 +10857,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2686114174334226591,
@@ -10134,7 +10902,10 @@
    "economy_type": 7,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2022246707988033659,
@@ -10175,7 +10946,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6157392163942000105,
@@ -10212,7 +10986,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6412474555229816760,
@@ -10247,7 +11024,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5039332815341201505,
@@ -10286,9 +11066,12 @@
    "gas_giant": false,
    "star_type": 2,
    "economy_type": 6,
-   "wealth": 2,
-   "conflict_level": 3,
-   "dominant_race": 2
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    5974193223057307372,
@@ -10329,7 +11112,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8771236351649709770,
@@ -10368,9 +11154,12 @@
    "gas_giant": false,
    "star_type": 1,
    "economy_type": 1,
-   "wealth": 2,
-   "conflict_level": 2,
-   "dominant_race": 1
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    9161084070966585553,
@@ -10409,7 +11198,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3260398368710811778,
@@ -10446,7 +11238,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6608139571245360929,
@@ -10489,7 +11284,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1007977157872630826,
@@ -10525,7 +11323,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -7247902263039189994,
@@ -10568,7 +11369,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2072208254826282626,
@@ -10605,9 +11409,12 @@
    "gas_giant": false,
    "star_type": 1,
    "economy_type": 5,
-   "wealth": 3,
-   "conflict_level": 2,
-   "dominant_race": 3
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    -812775638101591512,
@@ -10649,7 +11456,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1388770297655163182,
@@ -10691,7 +11501,10 @@
    "economy_type": 5,
    "wealth": 3,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5258700498791313926,
@@ -10732,7 +11545,10 @@
    "economy_type": 6,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1428554318330780664,
@@ -10773,7 +11589,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5605116725360644922,
@@ -10816,7 +11635,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6969184711045843658,
@@ -10853,7 +11675,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5892580266932834826,
@@ -10894,7 +11719,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1495836214784549307,
@@ -10937,7 +11765,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    9123214766587488143,
@@ -10974,7 +11805,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4267214420244599271,
@@ -11011,7 +11845,10 @@
    "economy_type": 2,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2807838211477048555,
@@ -11046,7 +11883,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7050243745988656378,
@@ -11086,7 +11926,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    4990266620497947376,
@@ -11122,7 +11965,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    1003156836654460715,
@@ -11164,7 +12010,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8483355998668775960,
@@ -11201,7 +12050,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    2910646656467727565,
@@ -11238,7 +12090,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3756459292490301842,
@@ -11275,7 +12130,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1423327509455329479,
@@ -11315,7 +12173,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8182709201386061104,
@@ -11352,7 +12213,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8805161692200498077,
@@ -11389,7 +12253,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -895837900207177303,
@@ -11429,7 +12296,10 @@
    "economy_type": 7,
    "wealth": 3,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    151661779642325289,
@@ -11464,7 +12334,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7798896673200002290,
@@ -11507,7 +12380,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -35953362520530022,
@@ -11550,7 +12426,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3133239224289821105,
@@ -11592,7 +12471,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6950723263106055834,
@@ -11635,7 +12517,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -4987151356972354720,
@@ -11674,7 +12559,10 @@
    "economy_type": 5,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4457672857387898016,
@@ -11711,7 +12599,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1060767183822087980,
@@ -11754,7 +12645,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5876532253319693777,
@@ -11793,7 +12687,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3669296388415767878,
@@ -11836,7 +12733,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6880923610494494282,
@@ -11873,7 +12773,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8204690863189629141,
@@ -11914,7 +12817,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8592938607052880892,
@@ -11956,7 +12862,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6892232042553642501,
@@ -11993,7 +12902,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5105400288411038438,
@@ -12035,7 +12947,10 @@
    "economy_type": 3,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3397253525519228396,
@@ -12078,7 +12993,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6987155318964209962,
@@ -12120,7 +13038,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4983869249422103710,
@@ -12159,7 +13080,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -68603846682399355,
@@ -12196,7 +13120,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7928644620128477693,
@@ -12231,7 +13158,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    6348365647634660353,
@@ -12272,7 +13202,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1352888056097445300,
@@ -12308,8 +13241,11 @@
    "star_type": 2,
    "economy_type": 2,
    "wealth": 1,
-   "conflict_level": 3,
-   "dominant_race": 1
+   "conflict_level": 1,
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    1245743236692593765,
@@ -12348,7 +13284,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6988725414136328048,
@@ -12383,7 +13322,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8572755600647140052,
@@ -12421,7 +13363,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3198449713393667214,
@@ -12460,7 +13405,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2394765484565577995,
@@ -12495,7 +13443,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4177698370204335542,
@@ -12530,7 +13481,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7736843810424790933,
@@ -12571,9 +13525,12 @@
    "gas_giant": false,
    "star_type": 2,
    "economy_type": 7,
-   "wealth": 2,
-   "conflict_level": 2,
-   "dominant_race": 2
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    -1561540943401122465,
@@ -12610,7 +13567,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2061143523653118482,
@@ -12653,7 +13613,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -5260701586967929948,
@@ -12694,7 +13657,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4209030798175127278,
@@ -12736,7 +13702,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2024791187384507770,
@@ -12776,7 +13745,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5291432597715002033,
@@ -12811,9 +13783,12 @@
    "gas_giant": true,
    "star_type": 4,
    "economy_type": 4,
-   "wealth": 2,
-   "conflict_level": 3,
-   "dominant_race": 3
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    77526934369907515,
@@ -12849,7 +13824,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6909459623919910820,
@@ -12891,7 +13869,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4194230007282609726,
@@ -12930,7 +13911,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5895290009999671800,
@@ -12972,7 +13956,10 @@
    "economy_type": 6,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2750876693884960153,
@@ -13011,7 +13998,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3322838934603930234,
@@ -13046,7 +14036,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1339727704431093581,
@@ -13085,7 +14078,10 @@
    "economy_type": 6,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -6790923057496241221,
@@ -13124,7 +14120,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6085668853857366662,
@@ -13166,7 +14165,10 @@
    "economy_type": 1,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1871125989078637833,
@@ -13203,7 +14205,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -1890422593075293186,
@@ -13244,7 +14249,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7381332807464301354,
@@ -13279,7 +14287,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8200538615851235056,
@@ -13322,7 +14333,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2870562065342649777,
@@ -13360,7 +14374,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7435998156654946411,
@@ -13403,7 +14420,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -382665076916582602,
@@ -13440,7 +14460,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7210333611349894665,
@@ -13478,7 +14501,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -602719603442614647,
@@ -13521,7 +14547,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    3773134237872270089,
@@ -13563,7 +14592,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6688760806548592126,
@@ -13598,7 +14630,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2103840424547263928,
@@ -13640,7 +14675,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6110232323110071030,
@@ -13682,7 +14720,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6969718359234325406,
@@ -13723,7 +14764,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2764101462311463599,
@@ -13763,7 +14807,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1748250838664954323,
@@ -13803,7 +14850,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8089883307895800778,
@@ -13843,7 +14893,10 @@
    "economy_type": 7,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6722056935589260650,
@@ -13878,7 +14931,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7477284422195471688,
@@ -13915,7 +14971,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4526569403541385855,
@@ -13950,7 +15009,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7926939905498347857,
@@ -13985,7 +15047,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2936251043880000451,
@@ -14024,7 +15089,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6937557323332688410,
@@ -14063,7 +15131,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2524971013916053237,
@@ -14106,7 +15177,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    9189841483280584737,
@@ -14145,7 +15219,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8029616710039791977,
@@ -14184,7 +15261,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -576059256258276136,
@@ -14226,7 +15306,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2000617985559791677,
@@ -14268,7 +15351,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5394477121784510906,
@@ -14309,7 +15395,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3320022928900197068,
@@ -14352,7 +15441,10 @@
    "economy_type": 2,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1789158965277177153,
@@ -14393,7 +15485,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7808218557794989198,
@@ -14434,7 +15529,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    6395020610000602788,
@@ -14472,7 +15570,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5015566223713391041,
@@ -14514,7 +15615,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2675815135953725191,
@@ -14556,7 +15660,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2881083141720627943,
@@ -14597,7 +15704,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7353234040485886095,
@@ -14638,7 +15748,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8561087689224039048,
@@ -14680,7 +15793,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5927641536078488971,
@@ -14723,7 +15839,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -5846060362121014665,
@@ -14763,7 +15882,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5752490234193263588,
@@ -14806,7 +15928,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1540283004409572967,
@@ -14849,7 +15974,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7540245780214209843,
@@ -14886,7 +16014,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3991677464220559193,
@@ -14926,7 +16057,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8845477663903984710,
@@ -14965,7 +16099,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2902358473553367781,
@@ -15002,7 +16139,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3085763644110651726,
@@ -15045,7 +16185,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    147658551841949856,
@@ -15082,7 +16225,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5042310331549379419,
@@ -15117,7 +16263,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2212923497616675437,
@@ -15154,7 +16303,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -641327283805518558,
@@ -15197,7 +16349,10 @@
    "economy_type": 3,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7223447650133111126,
@@ -15238,7 +16393,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    3611020414546924239,
@@ -15277,7 +16435,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -935916376129631248,
@@ -15318,7 +16479,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8652956986034384075,
@@ -15361,7 +16525,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7901127383392671541,
@@ -15400,7 +16567,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    8449839532371990753,
@@ -15437,7 +16607,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    7666680116211047185,
@@ -15478,7 +16651,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5248144408131952094,
@@ -15519,7 +16695,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1502603767301660056,
@@ -15558,7 +16737,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5653526092665831164,
@@ -15599,7 +16781,10 @@
    "economy_type": 7,
    "wealth": 3,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5129684903906492590,
@@ -15634,7 +16819,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4490021602923160980,
@@ -15677,7 +16865,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1447515507802649962,
@@ -15718,7 +16909,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -4479018016788551140,
@@ -15760,7 +16954,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1248008931064320133,
@@ -15795,7 +16992,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6089362605497285558,
@@ -15835,9 +17035,12 @@
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 6,
-   "wealth": 3,
-   "conflict_level": 3,
-   "dominant_race": 3
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    3853195945103197538,
@@ -15878,9 +17081,12 @@
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 3,
-   "wealth": 3,
-   "conflict_level": 3,
-   "dominant_race": 2
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    7235673407707622943,
@@ -15922,7 +17128,10 @@
    "economy_type": 2,
    "wealth": 3,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5388056543003577995,
@@ -15959,7 +17168,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2684048263640150903,
@@ -15998,7 +17210,10 @@
    "economy_type": 4,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5883085350768253555,
@@ -16033,7 +17248,10 @@
    "economy_type": 4,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1263963233647249142,
@@ -16072,9 +17290,12 @@
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 6,
-   "wealth": 2,
-   "conflict_level": 2,
-   "dominant_race": 3
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    8556567789761444268,
@@ -16111,9 +17332,12 @@
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 4,
-   "wealth": 2,
+   "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    -6611180023042691970,
@@ -16152,7 +17376,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2149412860977015107,
@@ -16193,7 +17420,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4848837815354614303,
@@ -16230,7 +17460,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    117787109261455987,
@@ -16272,7 +17505,10 @@
    "economy_type": 2,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5294261390035197968,
@@ -16314,7 +17550,10 @@
    "economy_type": 1,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4363370991214773672,
@@ -16356,7 +17595,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2094068297133377146,
@@ -16392,7 +17634,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -992174574184097411,
@@ -16427,7 +17672,10 @@
    "economy_type": 2,
    "wealth": 3,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -1410804851395427713,
@@ -16464,7 +17712,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -9113798737263689051,
@@ -16503,7 +17754,10 @@
    "economy_type": 3,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8835658837360556154,
@@ -16544,7 +17798,10 @@
    "economy_type": 1,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7703564108370556586,
@@ -16586,7 +17843,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8429977708918174875,
@@ -16625,7 +17885,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4453615756373953944,
@@ -16668,7 +17931,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -5542305998155151472,
@@ -16705,7 +17971,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    9064162296927995947,
@@ -16746,7 +18015,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -4201323229435269339,
@@ -16785,7 +18057,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    585864272306912861,
@@ -16827,7 +18102,10 @@
    "economy_type": 5,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8803768041279786080,
@@ -16868,7 +18146,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    4557879018257550308,
@@ -16911,7 +18192,10 @@
    "economy_type": 6,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2782402394314513039,
@@ -16953,7 +18237,10 @@
    "economy_type": 7,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7298102945083937524,
@@ -16994,7 +18281,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    1243774995613523696,
@@ -17037,7 +18327,10 @@
    "economy_type": 6,
    "wealth": 3,
    "conflict_level": 3,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": true
   },
   "seeds": [
    -5902600433168475720,
@@ -17078,7 +18371,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -925791679191946017,
@@ -17119,7 +18415,10 @@
    "economy_type": 7,
    "wealth": 1,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8868771081057932328,
@@ -17162,7 +18461,10 @@
    "economy_type": 6,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -7516337071000841772,
@@ -17201,7 +18503,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -6481166067363192245,
@@ -17242,7 +18547,10 @@
    "economy_type": 4,
    "wealth": 2,
    "conflict_level": 1,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -8708995312840297358,
@@ -17285,7 +18593,10 @@
    "economy_type": 1,
    "wealth": 2,
    "conflict_level": 2,
-   "dominant_race": 3
+   "dominant_race": 0,
+   "uncharted": true,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -2607056646188189729,
@@ -17328,7 +18639,10 @@
    "economy_type": 4,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    -3637017038037202318,
@@ -17358,9 +18672,12 @@
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 3,
-   "wealth": 2,
-   "conflict_level": 2,
-   "dominant_race": 1
+   "wealth": 1,
+   "conflict_level": 1,
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    -1017270374989204656,
@@ -17402,7 +18719,10 @@
    "economy_type": 1,
    "wealth": 1,
    "conflict_level": 2,
-   "dominant_race": 2
+   "dominant_race": 2,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    5523574434118384014,
@@ -17438,7 +18758,10 @@
    "economy_type": 2,
    "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 1
+   "dominant_race": 1,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    -2322127395331670467,
@@ -17474,9 +18797,12 @@
    "gas_giant": false,
    "star_type": 4,
    "economy_type": 5,
-   "wealth": 2,
+   "wealth": 1,
    "conflict_level": 1,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": true,
+   "pirate": false
   },
   "seeds": [
    -8214872304427120953,
@@ -17511,7 +18837,10 @@
    "economy_type": 5,
    "wealth": 2,
    "conflict_level": 3,
-   "dominant_race": 3
+   "dominant_race": 3,
+   "uncharted": false,
+   "abandoned": false,
+   "pirate": false
   },
   "seeds": [
    2387317751573565074,
