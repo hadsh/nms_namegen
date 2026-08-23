@@ -100,6 +100,9 @@ class TestSystemAttributesCLI(unittest.TestCase):
                 "wealth": 2,
                 "conflict_level": 2,
                 "dominant_race": 3,
+                "uncharted": False,
+                "abandoned": False,
+                "pirate": False,
             },
         )
 

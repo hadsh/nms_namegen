@@ -17,6 +17,9 @@ class TestSystemAttributes(unittest.TestCase):
                 "wealth": 1,
                 "conflict_level": 1,
                 "dominant_race": 1,
+                "uncharted": False,
+                "abandoned": False,
+                "pirate": False,
             },
         )
 
@@ -34,6 +37,9 @@ class TestSystemAttributes(unittest.TestCase):
                 "wealth": 2,
                 "conflict_level": 3,
                 "dominant_race": 2,
+                "uncharted": False,
+                "abandoned": False,
+                "pirate": False,
             },
         )
 
@@ -51,6 +57,9 @@ class TestSystemAttributes(unittest.TestCase):
                 "wealth": 1,
                 "conflict_level": 2,
                 "dominant_race": 3,
+                "uncharted": False,
+                "abandoned": False,
+                "pirate": False,
             },
         )
 
@@ -68,6 +77,9 @@ class TestSystemAttributes(unittest.TestCase):
                 "wealth": 2,
                 "conflict_level": 1,
                 "dominant_race": 3,
+                "uncharted": False,
+                "abandoned": False,
+                "pirate": False,
             },
         )
 
@@ -85,6 +97,9 @@ class TestSystemAttributes(unittest.TestCase):
                 "wealth": 2,
                 "conflict_level": 2,
                 "dominant_race": 1,
+                "uncharted": False,
+                "abandoned": False,
+                "pirate": False,
             },
         )
 
@@ -102,6 +117,9 @@ class TestSystemAttributes(unittest.TestCase):
                 "wealth": 3,
                 "conflict_level": 1,
                 "dominant_race": 1,
+                "uncharted": False,
+                "abandoned": False,
+                "pirate": False,
             },
         )
 
@@ -119,6 +137,9 @@ class TestSystemAttributes(unittest.TestCase):
                 "wealth": 2,
                 "conflict_level": 1,
                 "dominant_race": 1,
+                "uncharted": False,
+                "abandoned": False,
+                "pirate": False,
             },
         )
 
@@ -136,6 +157,9 @@ class TestSystemAttributes(unittest.TestCase):
                 "wealth": 3,
                 "conflict_level": 2,
                 "dominant_race": 3,
+                "uncharted": False,
+                "abandoned": False,
+                "pirate": False,
             },
         )
 
@@ -153,7 +177,10 @@ class TestSystemAttributes(unittest.TestCase):
                 "economy_type": 3,
                 "wealth": 1,
                 "conflict_level": 2,
-                "dominant_race": 2,
+                "dominant_race": 0,
+                "uncharted": True,
+                "abandoned": False,
+                "pirate": False,
             },
         )
 
@@ -171,6 +198,9 @@ class TestSystemAttributes(unittest.TestCase):
                 "economy_type": 1,
                 "wealth": 2,
                 "conflict_level": 2,
-                "dominant_race": 3,
+                "dominant_race": 0,
+                "uncharted": True,
+                "abandoned": False,
+                "pirate": False,
             },
         )

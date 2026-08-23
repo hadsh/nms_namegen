@@ -14,10 +14,12 @@ def _u64(n):
     return n & 0xFFFFFFFFFFFFFFFF
 
 
-# Cross-checked against an independent second implementation of this
-# library (region/system/planet names, system attributes, planet seeds
-# and voxel attributes), 443 portal codes across a range of galaxies,
-# 0 mismatches on any field.
+# The vectors are generated from this library, so replaying them is a
+# regression net: it catches an unintended change in behaviour, not an
+# error this library has always made. The same 443 vectors are separately
+# verified field by field (region/system/planet names, system attributes,
+# planet seeds, voxel attributes) against a second, independent
+# implementation maintained outside this repository.
 class TestGoldenVectors(unittest.TestCase):
     def test_golden_vectors(self):
         with open("test/fixtures/golden_vectors.json") as file:

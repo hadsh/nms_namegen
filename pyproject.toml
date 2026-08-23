@@ -4,11 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "nms-namegen"
-version = "2.0.0"
+version = "2.1.0"
 authors = [
+  { name="had.sh", email="5282016+hadsh@users.noreply.github.com" },
   { name="Stuart Coyle", email="stuart.coyle@proton.me" },
 ]
-description = "Generates names for the game No Man's Sky"
+description = "Generates names and system data for the game No Man's Sky"
 readme = "README.md"
 requires-python = ">=3.13"
 classifiers = [
@@ -16,11 +17,12 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    
+    "numpy~=2.4",
 ]
 license = "MIT"
 license-files = ["LICENCE"]
 
 [project.urls]
-Homepage = "https://github.com/stuart/nms_namegen"
-Issues = "https://github.com/stuart/nms_namegen/issues"
+Homepage = "https://github.com/hadsh/nms_namegen"
+Issues = "https://github.com/hadsh/nms_namegen/issues"
+Upstream = "https://github.com/stuart/nms_namegen"
