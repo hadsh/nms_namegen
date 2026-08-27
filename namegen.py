@@ -36,6 +36,70 @@ def systemComposition(portal_code, galaxy):
     }
 
 
+# Reads portal codes from stdin and writes one JSON object per line to stdout.
+#
+# Every other command pays the interpreter and numpy import cost per address,
+# which is fine for a single lookup but dominates completely when a caller wants
+# to sift thousands of addresses looking for ones with particular attributes.
+# Amortising that startup over the whole run is the entire point: the work per
+# address is microseconds, the startup is not.
+#
+# Input:  one address per line, optionally "<address> <galaxy>" (galaxy defaults
+#         to the -g value). Blank lines and lines starting with # are skipped.
+# Output: one JSON object per line, in input order, each carrying the address and
+#         galaxy it describes so a caller can stream without tracking position.
+#         A bad line yields {"address": ..., "error": ...} rather than aborting
+#         the run -- a caller sifting random addresses expects some to be junk.
+#
+# The stream is flushed per line so a caller can consume results as they arrive
+# rather than waiting for the process to exit.
+def runBatch(stream, default_galaxy, what):
+    for raw in stream:
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split()
+        address = parts[0]
+        galaxy = default_galaxy
+        if len(parts) > 1:
+            try:
+                galaxy = int(parts[1])
+            except ValueError:
+                print(json.dumps({"address": address,
+                                  "error": "invalid galaxy"}), flush=True)
+                continue
+        try:
+            code = int(address, 16)
+            if len(address) != 12:
+                raise ValueError("portal code must be 12 hex digits")
+            if galaxy < 0 or galaxy > 255:
+                raise ValueError("galaxy must be in range 0-255")
+        except ValueError as exc:
+            print(json.dumps({"address": address, "error": str(exc)}), flush=True)
+            continue
+
+        try:
+            if what == "system-attributes":
+                record = systemAttributes(code, galaxy)
+            elif what == "attributes":
+                record = systemComposition(code, galaxy)
+            elif what == "voxel":
+                record = voxelAttributes(code)
+            elif what == "system":
+                record = {"system_name": systemName(code, galaxy)}
+            elif what == "region":
+                record = {"region_name": regionName(code, galaxy)}
+            elif what == "planet":
+                record = {"planet_name": planetName(code, galaxy)}
+            else:
+                record = {"error": "unknown batch kind: %s" % what}
+        except Exception as exc:  # one bad address must not end the run
+            record = {"error": "%s: %s" % (type(exc).__name__, exc)}
+        record["address"] = address
+        record["galaxy"] = galaxy
+        print(json.dumps(record), flush=True)
+
+
 def main():
     parser = argparse.ArgumentParser(
         prog="namegen.py",
@@ -53,6 +117,7 @@ def main():
             "system-attributes",
             "planet-seeds",
             "voxel",
+            "batch",
         ],
         help="The type of object to get the name of.",
     )
@@ -89,7 +154,28 @@ def main():
 """,
         default=0,
     )
+    parser.add_argument(
+        "--batch-kind",
+        choices=[
+            "system-attributes",
+            "attributes",
+            "voxel",
+            "system",
+            "region",
+            "planet",
+        ],
+        default="system-attributes",
+        help="""
+        For the batch command: which record to emit per address.
+        Defaults to system-attributes.
+""",
+    )
+
     args = parser.parse_args()
+
+    if args.command == "batch":
+        runBatch(sys.stdin, args.galaxy, args.batch_kind)
+        sys.exit(0)
 
     if args.portal_code:
         try:
