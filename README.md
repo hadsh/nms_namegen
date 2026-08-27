@@ -78,6 +78,7 @@ compatible.*
 | `system-attributes` | Raw `systemAttributes()` dict as JSON | `-p`, `-g` |
 | `planet-seeds` | Raw `planetSeeds()` dict as JSON: planet seeds, rendered planet/moon counts, sizes | `-p`, `-g` |
 | `voxel` | Raw `voxelAttributes()` dict as JSON: black hole / Atlas station / central gap flags | `-p` only, ignores `-g` |
+| `batch` | One JSON object per line, for addresses read from stdin | stdin, `-g`, `--batch-kind` |
 
 `attributes` is a convenience command: `planet_count` and
 `prime_planet_count` are the logical bodies the game assigns, while
@@ -86,6 +87,34 @@ split for display. The two differ whenever moons are placed, since every
 moon takes one of the logical body slots. `system-attributes` and
 `planet-seeds` expose the two underlying dicts unmerged, for callers that
 need the raw fields (see Library below).
+
+### Batch mode
+
+Every other command pays the interpreter and numpy import cost once per address.
+That is fine for a single lookup and hopeless for sifting: a caller looking for
+systems with particular attributes has to try thousands of addresses, and the
+startup cost dominates completely. `batch` amortises it over the whole run.
+
+```bash
+printf '03E9F3545C3E\n003df8f87945\n' | ./namegen.py batch -g 0
+#output: {"planet_count": 0, ..., "address": "03E9F3545C3E", "galaxy": 0}
+#        {"planet_count": 3, ..., "address": "003df8f87945", "galaxy": 0}
+```
+
+Measured on this machine: about 10,000 addresses per second, against roughly 6
+per second when each one is a separate process.
+
+Input is one address per line, optionally `<address> <galaxy>` to override `-g`
+per line. Blank lines and lines beginning with `#` are ignored. `--batch-kind`
+selects which record to emit (`system-attributes` by default, or `attributes`,
+`voxel`, `system`, `region`, `planet`).
+
+Output is one JSON object per line in input order, each carrying back the
+`address` and `galaxy` it describes so a caller can stream results without
+tracking position. A line that cannot be used yields
+`{"address": ..., "error": ...}` instead of ending the run, because a caller
+sifting randomly generated addresses should expect some of them to be junk.
+Output is flushed per line, so results can be consumed as they arrive.
 
 ### Options
 
