@@ -42,11 +42,11 @@ biome, terrain, sentinel level. Dissonance is a sentinel-level property of a
 body, so it is decided in the per-planet attribute generator, which is not
 ported. Porting that is the work; scoring more candidates is not.
 
-One caveat on the label. `dissonant` is the single field the balanced
-corpus's `method` block does not document, and `codes` has no entry for it.
-Everything above assumes it means "this system contains at least one
-dissonant body". Nothing in the results contradicts that reading - the
-body-count trend mildly supports it - but nothing confirms it either.
+On the label. `dissonant` means one planet in the system is dissonant. It
+is the single field the balanced corpus's `method` block does not document
+and `codes` has no entry for it, so that comes from the corpus's compiler,
+not the file. It is a per-body overlay reported at the system level, which
+is why it can only be scored in aggregate here.
 
 ## Scripts
 

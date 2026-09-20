@@ -176,8 +176,10 @@ sentinel level. Dissonance is a sentinel-level property of a body. It is
 almost certainly drawn in that generator, from the body seed, which means it
 is reachable in principle and simply is not ported. Porting it is the work.
 
-Also not ruled out: that `dissonant` does not mean what we assumed. It is the
-one field the balanced corpus's `method` block does not document and `codes`
-has no entry for it. Everything here reads it as "this system contains at
-least one dissonant body". Nothing in the results contradicts that - the
-body-count trend mildly supports it - and nothing confirms it.
+The label's meaning is settled, though the corpus does not state it:
+`dissonant` means one planet in the system is dissonant. It is the one field
+the balanced corpus's `method` block does not document and `codes` has no
+entry for it, so this is confirmed by the corpus's compiler rather than by
+the file. It is a per-body overlay reported at the system level, which is why
+it can only be scored in aggregate here, and it is what the body-count trend
+in section 6 looks like.
