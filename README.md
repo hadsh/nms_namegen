@@ -42,6 +42,12 @@ Names are deliberately absent from that table. The corpus uses region
 names to confirm its own addresses, so scoring names against it would
 measure the filter it was built with, not the generator.
 
+Dissonance is absent for a different reason: it cannot be derived. The
+generator's two PRNG streams were searched exhaustively for it and it is not
+in either of them, at any reading, on 1002 hand-recorded non-purple systems.
+See `research/dissonance/` for what was ruled out and where the draw probably
+lives instead.
+
 ## Installation
 
 Python 3.13 or later, and numpy.
